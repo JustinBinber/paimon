@@ -36,6 +36,7 @@ import org.apache.paimon.operation.commit.RetryCommitResult.CommitFailRetryResul
 import org.apache.paimon.schema.SchemaManager;
 import org.apache.paimon.table.BucketMode;
 import org.apache.paimon.types.RowType;
+import org.apache.paimon.utils.ExceptionUtils;
 import org.apache.paimon.utils.FileStorePathFactory;
 import org.apache.paimon.utils.Pair;
 import org.apache.paimon.utils.SnapshotManager;
@@ -229,6 +230,7 @@ public abstract class ConflictDetection {
                 deltaEntries =
                         buildDeltaEntriesWithDV(baseEntries, deltaEntries, deltaIndexEntries);
             } catch (Throwable e) {
+                ExceptionUtils.rethrowIfFatalErrorOrOOM(e);
                 return Optional.of(
                         conflictException(commitUser, baseEntries, deltaEntries).apply(e));
             }
@@ -252,6 +254,7 @@ public abstract class ConflictDetection {
             // relies on map for deduplication, this may result in the loss of this file
             FileEntry.mergeEntries(deltaEntries);
         } catch (Throwable e) {
+            ExceptionUtils.rethrowIfFatalErrorOrOOM(e);
             throw conflictException.apply(e);
         }
 
@@ -260,6 +263,7 @@ public abstract class ConflictDetection {
             // merge manifest entries and also check if the files we want to delete are still there
             mergedEntries = FileEntry.mergeEntries(allEntries);
         } catch (Throwable e) {
+            ExceptionUtils.rethrowIfFatalErrorOrOOM(e);
             return Optional.of(conflictException.apply(e));
         }
 
@@ -469,6 +473,7 @@ public abstract class ConflictDetection {
                         tableName);
             }
         } catch (Throwable e) {
+            ExceptionUtils.rethrowIfFatalErrorOrOOM(e);
             Optional<RuntimeException> exception = checkConflictForPartitionExpire(mergedEntries);
             if (exception.isPresent()) {
                 return exception;
