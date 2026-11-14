@@ -21,7 +21,7 @@
   "finalCapacityAndPerformanceResultsPending": false,
   "readme": {
     "path": "README.md",
-    "sha256": "2758230e6eb513e6df1519e840073be27295acd91a3c75db9b666e51692fafb0",
+    "sha256": "73939eb9ffa43845361706feab9823165f81d6b473921e41eb8b5b1ca58c59de",
     "actualExperimentAndNewSeedDistinguished": true
   },
   "fixtureSdkOrigin": "d98f08784c2cf9aed42cc759b3f9c1b3c9bec628",
@@ -38,7 +38,7 @@
     },
     {
       "path": "RESULTS.md",
-      "sha256": "f5b9662b3356d457513dd2f7b637f875ee27dd901423159bd8cca912f78ac89e"
+      "sha256": "91b387e5ba5983b391fb6f266973ad2a0498351d783d43aec1342c49d54119e9"
     },
     {
       "path": "sql-results-32.json",
@@ -48,5 +48,13 @@
   "capacityAnd32FileResultsAccepted": true,
   "remaining65536PerformancePending": false,
   "runtimeCandidate": "3d64be92a161a12130ede4f2719fb4df4a1b8844",
-  "all32MeasuredMergeAndFiveCheckOraclesPassed": true
+  "all32MeasuredMergeAndFiveCheckOraclesPassed": true,
+  "readAcceptance": {
+    "capacityAccepted": true,
+    "performanceAccepted": true,
+    "all16MeasuredQueriesRetained": true,
+    "productionThreeMillionExit137RepairClaim": false,
+    "manifest": "read/SOURCE-MANIFEST.json",
+    "manifestSha256": "4badc05efa1cfa7ac4d3a748d88b92fb32e13db9b7c263f3555957887a070caa"
+  }
 }

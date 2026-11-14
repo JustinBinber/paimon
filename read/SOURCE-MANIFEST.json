@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "path": "read/ReadMemoryVersionedAlignedBench.java",
+      "sha256": "22a3cc5b77866291b0d1b4ff68fd4c652fe5027bdedf8f784c824bc54bf85607",
+      "reusedExistingSource": true
+    },
+    {
+      "path": "read/fixture/CommitMemoryBench.java",
+      "sha256": "1526018474a35f44fdff3bc50531f5d7800ec5cb7ec9d44f24bad08586c069f6",
+      "reusedExistingSource": true
+    },
+    {
+      "path": "read/fixture/build-helper.sh",
+      "sha256": "3d13d48224bd2c011f641996fa2b3b1a9e35318af91cad2ce21a3b00e0705f75",
+      "reusedExistingSource": true
+    },
+    {
+      "path": "read/controllers/run-read-observed.py",
+      "sha256": "715469d7bc869d10673a9fe66a79c2139182c4dfba4bdb60188236c541f54fae",
+      "reusedExistingSource": true
+    },
+    {
+      "path": "read/harness/bench.py",
+      "sha256": "68a21fe162fa830dc3fcc0e39d012750cf9cf121cbe76fe79d220bfd9f13bb5b",
+      "reusedExistingSource": true
+    }
+  ],
+  "noNewProductCode": true,
+  "assembledKitFreshHostRunClaim": false,
+  "actualReadCapacityProofs": "capacity-results.json",
+  "performancePending": false,
+  "capacityResultsAccepted": true,
+  "capacityResultsSha256": "c62b4e7d48d3d0e73b9f8f1afa70b5c5e7792d818c2eaea7ebad01ac6acb64fa",
+  "performanceResultsAccepted": true,
+  "performanceResults": "performance-results.json",
+  "performanceResultsSha256": "29fe3a3d378b5faa115986c5b19e41facc7f35492e5ca73925fde61cea5db5d4",
+  "results": [
+    {
+      "path": "read/README.md",
+      "sha256": "ace15fbc1bb53e14dc95b58bbd7c6e1a2165acd169d4c5b9c3cd0e5ef53df4e6"
+    },
+    {
+      "path": "read/CAPACITY.md",
+      "sha256": "4961d38265b28411c619e6261df15b8ad55c758987dd79e5a6d614e2ad818a24"
+    },
+    {
+      "path": "read/capacity-results.json",
+      "sha256": "c62b4e7d48d3d0e73b9f8f1afa70b5c5e7792d818c2eaea7ebad01ac6acb64fa"
+    },
+    {
+      "path": "read/PERFORMANCE.md",
+      "sha256": "c4359eedc473b7638859d1962d13c4e34cd701ccacc94e6fe619ecc19e84b543"
+    },
+    {
+      "path": "read/performance-results.json",
+      "sha256": "29fe3a3d378b5faa115986c5b19e41facc7f35492e5ca73925fde61cea5db5d4"
+    }
+  ]
+}

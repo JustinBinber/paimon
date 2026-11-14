@@ -1,4 +1,4 @@
-# Data Evolution many-file MERGE reproduction
+# Data Evolution many-file MERGE and READ reproduction
 
 This source-only kit reuses the helper and controller used in the experiments.
 It contains no Paimon/Spark binary, cloud access code or credential. Packaging
@@ -128,3 +128,5 @@ The actual experiment controllers additionally bound rotating GC logs and check
 the actual three JVM heap arguments and process identities. Do not call this
 single-host, multiple-process setup a multiple-node cluster benchmark. A MERGE
 result does not establish repair of the separate production SELECT/LIMIT case.
+
+For the separate controlled wide-table SELECT/LIMIT case, see [read/README.md](read/README.md), [read capacity](read/CAPACITY.md) and [all read performance samples](read/PERFORMANCE.md). Read capacity uses a 512-MiB Driver; successful-case timing uses 2 GiB for every mode. The read protocol reuses physical data inodes and warm caches; it is distinct from the MERGE private-copy protocol.

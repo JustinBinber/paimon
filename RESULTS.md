@@ -83,3 +83,7 @@ Linux `/proc/PID/io` can include waited-for child counters. Do not sum raw Drive
 This validates the reproduced planning-to-commit Data Evolution MERGE chain. It does not establish repair of the separate production three-million-file SELECT/LIMIT incident or whole-chain constant memory. Task arrays, retained result bytes, largest messages/dependency groups, compact RowID/identity summaries and compatibility/diagnostic fallback paths remain scale-dependent. Deletion-vector/callback paths retain original memory bounds.
 
 See README.md for the reused original helper/controller, fixture origin, commands and exact SQL. The assembled source-only kit has not been rerun as a fresh-host package.
+
+## Separate controlled READ acceptance
+
+[Read capacity](read/CAPACITY.md) now records clean upstream Driver heap OOM versus successful streaming LIMIT/full read at the same 512-MiB heap. [Read performance](read/PERFORMANCE.md) reports all 16 successful queries at the common 2-GiB heap, including streaming short-LIMIT slowdown and additional I/O. These results do not establish repair of the production three-million-file exit137 incident.

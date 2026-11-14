@@ -1,0 +1,154 @@
+{
+  "utc": "2026-11-14T18:46:26.935504+00:00",
+  "baseline": "b7cfb397de334d56b8c3eaeb60a2cfa9c9cab627",
+  "candidate": "3d64be92a161a12130ede4f2719fb4df4a1b8844",
+  "fixtureTree": "c7760f47dafb21c5909471cc97bc2f39a7bc138ba2f71b68dbf36aeff8472246",
+  "fixtureRows": 72089,
+  "businessColumns": 259,
+  "projectionIncludesAdditionalRowId": true,
+  "samePhysicalPrivateFixtureResetBeforeEachArm": true,
+  "capacityOnlyNoOomSpeedRatio": true,
+  "results": [
+    {
+      "mode": "upstream",
+      "proofSha256": "34e33ea347af97b83224be0b4b56f52746773cf09bc7c2e3ecffe87dc0fd292b",
+      "queries": [
+        {
+          "phase": "limit20",
+          "exitCode": 1,
+          "classification": "audited-post-start-java-heap-oom",
+          "readAndValidationSeconds": null,
+          "actualHeaps": [
+            "512m",
+            "512m",
+            "512m"
+          ],
+          "allThreeSamplerCoverageIndependentlyChecked": true,
+          "peakRssIncludingSamplersBytes": 1669840896,
+          "reserveViolations": false
+        },
+        {
+          "phase": "full",
+          "exitCode": 1,
+          "classification": "audited-post-start-java-heap-oom",
+          "readAndValidationSeconds": null,
+          "actualHeaps": [
+            "512m",
+            "512m",
+            "512m"
+          ],
+          "allThreeSamplerCoverageIndependentlyChecked": true,
+          "peakRssIncludingSamplersBytes": 1448996864,
+          "reserveViolations": false
+        }
+      ],
+      "independentExact": {
+        "terminal": {
+          "utc": 1794679075.7689567,
+          "pid": 1184081,
+          "startTicks": 23090949,
+          "exitCode": 0,
+          "minAvailableBytes": 10921738240,
+          "minDiskFreeBytes": 9088483328,
+          "peakRssIncludingSamplersBytes": 4395184128,
+          "lingering": [],
+          "memoryReserveViolated": false,
+          "diskFloorViolated": false,
+          "samplers": [],
+          "observed": false,
+          "lingeringSamplers": [],
+          "cgroupOomKillObservedDelta": 0
+        },
+        "checks": [
+          "BENCH correctness=merged rows;unexpected=0;missing=0",
+          "BENCH correctness=unchanged source;unexpected=0;missing=0",
+          "BENCH correctness=old key row-ID pairs;unexpected=0;missing=0",
+          "BENCH correctness=complete row-ID domain;unexpected=0;missing=0",
+          "BENCH correctness=inserted row-ID domain;unexpected=0;missing=0"
+        ],
+        "allFivePassed": true,
+        "actualReaderArtifactSha256": "4bd1e88ab67bc457b8cf6843af1d23893638dd3e1bb00038b852d7707a9866be",
+        "runtimeIdentity": {
+          "driverIdentity": "BENCH driverIdentity=pid=1184081;executor=driver;maxHeap=2147483648;org.apache.paimon.table.sink.CommitMessageSerializer=/home/ubuntu/paimon-memory-evidence/artifacts/normal-fixed-b7-spark3-v1/paimon-spark-3.5_2.12-2.2-SNAPSHOT.jar#4bd1e88ab67bc457b8cf6843af1d23893638dd3e1bb00038b852d7707a9866be;org.apache.paimon.spark.write.InnerTableWriteTaskResult=/home/ubuntu/paimon-memory-evidence/artifacts/normal-fixed-b7-spark3-v1/paimon-spark-3.5_2.12-2.2-SNAPSHOT.jar#4bd1e88ab67bc457b8cf6843af1d23893638dd3e1bb00038b852d7707a9866be;changedWriterOrigin=/home/ubuntu/paimon-memory-evidence/artifacts/normal-fixed-b7-spark3-v1/paimon-spark-3.5_2.12-2.2-SNAPSHOT.jar",
+          "actualArtifactSha256": "4bd1e88ab67bc457b8cf6843af1d23893638dd3e1bb00038b852d7707a9866be",
+          "observedMaxHeapBytes": 2147483648,
+          "pid": 1184081,
+          "startTicks": 23090949
+        }
+      },
+      "preparedTree": "4292a000dd603dc8fe7d0f7e189749d7000c613f3f4f488519b31d0c22190ad7"
+    },
+    {
+      "mode": "streaming",
+      "proofSha256": "c651155c3e6604d5eb9718e04eccd1ddcec33dd6cec12c6920ac6dd9b0f45a2e",
+      "queries": [
+        {
+          "phase": "limit20",
+          "exitCode": 0,
+          "classification": "completed-with-consumer-checks",
+          "readAndValidationSeconds": 9.573720134,
+          "actualHeaps": [
+            "512m",
+            "512m",
+            "512m"
+          ],
+          "allThreeSamplerCoverageIndependentlyChecked": true,
+          "peakRssIncludingSamplersBytes": 1397035008,
+          "reserveViolations": false
+        },
+        {
+          "phase": "full",
+          "exitCode": 0,
+          "classification": "completed-with-consumer-checks",
+          "readAndValidationSeconds": 82.889682472,
+          "actualHeaps": [
+            "512m",
+            "512m",
+            "512m"
+          ],
+          "allThreeSamplerCoverageIndependentlyChecked": true,
+          "peakRssIncludingSamplersBytes": 2202386432,
+          "reserveViolations": false
+        }
+      ],
+      "independentExact": {
+        "terminal": {
+          "utc": 1794680662.1375334,
+          "pid": 1192374,
+          "startTicks": 23248736,
+          "exitCode": 0,
+          "minAvailableBytes": 11782959104,
+          "minDiskFreeBytes": 8774713344,
+          "peakRssIncludingSamplersBytes": 3528347648,
+          "lingering": [],
+          "memoryReserveViolated": false,
+          "diskFloorViolated": false,
+          "samplers": [],
+          "observed": false,
+          "lingeringSamplers": [],
+          "cgroupOomKillObservedDelta": 0
+        },
+        "checks": [
+          "BENCH correctness=merged rows;unexpected=0;missing=0",
+          "BENCH correctness=unchanged source;unexpected=0;missing=0",
+          "BENCH correctness=old key row-ID pairs;unexpected=0;missing=0",
+          "BENCH correctness=complete row-ID domain;unexpected=0;missing=0",
+          "BENCH correctness=inserted row-ID domain;unexpected=0;missing=0"
+        ],
+        "allFivePassed": true,
+        "expectedRows": 72089,
+        "actualReaderArtifactSha256": "b4e627ab3ac34823b8bff8849e737911dfd73c0b28273d01825b4629868e573a",
+        "runtimeIdentity": {
+          "driverIdentity": "BENCH driverIdentity=pid=1192374;executor=driver;maxHeap=2147483648;org.apache.paimon.table.sink.CommitMessageSerializer=/home/ubuntu/paimon-memory-evidence/artifacts/normal-pr-candidate-b7-spark3-v1/paimon-spark-3.5_2.12-2.2-SNAPSHOT.jar#b4e627ab3ac34823b8bff8849e737911dfd73c0b28273d01825b4629868e573a;org.apache.paimon.spark.write.InnerTableWriteTaskResult=/home/ubuntu/paimon-memory-evidence/artifacts/normal-pr-candidate-b7-spark3-v1/paimon-spark-3.5_2.12-2.2-SNAPSHOT.jar#b4e627ab3ac34823b8bff8849e737911dfd73c0b28273d01825b4629868e573a;changedWriterOrigin=/home/ubuntu/paimon-memory-evidence/artifacts/normal-pr-candidate-b7-spark3-v1/paimon-spark-3.5_2.12-2.2-SNAPSHOT.jar",
+          "actualArtifactSha256": "b4e627ab3ac34823b8bff8849e737911dfd73c0b28273d01825b4629868e573a",
+          "observedMaxHeapBytes": 2147483648,
+          "pid": 1192374,
+          "startTicks": 23248736
+        }
+      },
+      "preparedTree": "359aea9eeb9cd45fcc8b6b33f73bad9fd8e7584384e892dc077610bc73a286d4"
+    }
+  ],
+  "upstreamObserverCoverageFlagCorrection": "Original observerCoveragePassed=False was computed from query success, not actual sampler coverage. Both failed query sampler triples independently pass the original coverage gates; original bytes remain unchanged.",
+  "candidateResourceRejectionDisclosure": "Original query controller exited1 only at unstarted exact preflight; both512m query success results preserved, housekeeping retired duplicate uploaded indexes, exact-only continuation exited0 with preregistered2g/512m/512m; no read rerun."
+}

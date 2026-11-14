@@ -1,0 +1,4341 @@
+{
+  "baseline": "b7cfb397de334d56b8c3eaeb60a2cfa9c9cab627",
+  "candidate": "3d64be92a161a12130ede4f2719fb4df4a1b8844",
+  "inputTreeSha256": "c7760f47dafb21c5909471cc97bc2f39a7bc138ba2f71b68dbf36aeff8472246",
+  "baseFiles": 32768,
+  "businessColumns": 259,
+  "updatedBusinessColumns": 128,
+  "snapshot": 33,
+  "resultRows": 72089,
+  "heaps": {
+    "driver": "2g",
+    "executors": [
+      "512m",
+      "512m"
+    ]
+  },
+  "order": [
+    [
+      "U",
+      "F",
+      "S",
+      "L"
+    ],
+    [
+      "L",
+      "S",
+      "F",
+      "U"
+    ]
+  ],
+  "all16ReadQueriesRetained": true,
+  "allFiveExactPassedPerMode": true,
+  "performanceBlocks": 2,
+  "fullWilliamsDesign": false,
+  "samples": [
+    {
+      "block": 1,
+      "tag": "U",
+      "mode": "upstream",
+      "phase": "limit20",
+      "readAndValidationSeconds": 7.335340741,
+      "taskEnds": 1,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 1172,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 1098922583,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 321984101,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 48,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 20631,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 20,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1,
+          "observedTaskEnds": 1,
+          "taskStarts": 1,
+          "distinctEndedIndices": 1,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "collectAsList at ReadMemoryVersionedAlignedBench.java:228",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1208265,
+          "startTicks": 23629583,
+          "sampledPeakHeapBytes": 918546944.0,
+          "observedGcSeconds": 0.288,
+          "samplerRows": 11,
+          "sampledPeakRssBytes": 1535672320,
+          "observedJvmCpuSeconds": 20.38,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 247204,
+              "wchar": 359,
+              "syscr": 408,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 176762702,
+            "wchar": 99613532,
+            "syscr": 27022,
+            "syscw": 1129,
+            "read_bytes": 0,
+            "write_bytes": 1667072,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1207884
+        },
+        "1": {
+          "pid": 1208448,
+          "startTicks": 23629781,
+          "sampledPeakHeapBytes": 58926796.8,
+          "observedGcSeconds": 0.035,
+          "samplerRows": 9,
+          "sampledPeakRssBytes": 234545152,
+          "observedJvmCpuSeconds": 5.46,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 61249,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 174345644,
+              "wchar": 146800011,
+              "syscr": 18395,
+              "syscw": 6981,
+              "read_bytes": 0,
+              "write_bytes": 97923072,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 174284395,
+            "wchar": 146798205,
+            "syscr": 18327,
+            "syscw": 6953,
+            "read_bytes": 0,
+            "write_bytes": 97886208,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 174218262,
+            "wchar": 146797458,
+            "syscr": 18250,
+            "syscw": 6933,
+            "read_bytes": 0,
+            "write_bytes": 97886208,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1208265
+        },
+        "0": {
+          "pid": 1208449,
+          "startTicks": 23629781,
+          "sampledPeakHeapBytes": 67160780.8,
+          "observedGcSeconds": 0.104,
+          "samplerRows": 9,
+          "sampledPeakRssBytes": 309927936,
+          "observedJvmCpuSeconds": 9.57,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 61249,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 45056,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 188429661,
+            "wchar": 148004841,
+            "syscr": 26212,
+            "syscw": 7511,
+            "read_bytes": 0,
+            "write_bytes": 99061760,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1208265
+        }
+      },
+      "observedSummedJvmCpuSeconds": 35.41,
+      "observedSummedJvmGcSeconds": 0.42699999999999994,
+      "commonLiveSamples": 17,
+      "commonLiveSpanSeconds": 8.213837146759033,
+      "maxCommonSampleGapSeconds": 0.5220534801483154,
+      "sourceCompleteSha256": "d402e3eae02796348bc80c42bc98f8c17bb15e300dcc36af5474533fc28eb858",
+      "sourceEventsSha256": "0007a38622f9888363ea609db8e8755ccb2c776cef91708f00aea013d7c7329b",
+      "sourceObserverSha256": "d090a693fe77a3717df31b1356a40755b3e00f115639c03de290d98f7beadf64",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=20;readAndValidationNanos=7335340741;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 1,
+      "tag": "U",
+      "mode": "upstream",
+      "phase": "full",
+      "readAndValidationSeconds": 80.374490109,
+      "taskEnds": 1025,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 128752,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 113846861126,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 13555151858,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 5849,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 2487475,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 72089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1025,
+          "observedTaskEnds": 1025,
+          "taskStarts": 1025,
+          "distinctEndedIndices": 1025,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1025,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "fold at ReadMemoryVersionedAlignedBench.java:242",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1208733,
+          "startTicks": 23631097,
+          "sampledPeakHeapBytes": 1209941504.0,
+          "observedGcSeconds": 0.365,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 1662582784,
+          "observedJvmCpuSeconds": 27.99,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 247231,
+              "wchar": 359,
+              "syscr": 408,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 188553038,
+            "wchar": 186324925,
+            "syscr": 97416,
+            "syscw": 76063,
+            "read_bytes": 0,
+            "write_bytes": 14340096,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1207884
+        },
+        "1": {
+          "pid": 1208905,
+          "startTicks": 23631297,
+          "sampledPeakHeapBytes": 260490240.0,
+          "observedGcSeconds": 3.0189999999999997,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 686067712,
+          "observedJvmCpuSeconds": 107.05,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 61243,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 45056,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1245483385,
+              "wchar": 156278249,
+              "syscr": 297440,
+              "syscw": 55477,
+              "read_bytes": 0,
+              "write_bytes": 100196352,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1245422142,
+            "wchar": 156276443,
+            "syscr": 297372,
+            "syscw": 55449,
+            "read_bytes": 0,
+            "write_bytes": 100151296,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1245422142,
+            "wchar": 156276443,
+            "syscr": 297372,
+            "syscw": 55449,
+            "read_bytes": 0,
+            "write_bytes": 100151296,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1208733
+        },
+        "0": {
+          "pid": 1208906,
+          "startTicks": 23631297,
+          "sampledPeakHeapBytes": 418439168.0,
+          "observedGcSeconds": 3.044,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 900292608,
+          "observedJvmCpuSeconds": 107.34,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45986,
+              "wchar": 1270,
+              "syscr": 63,
+              "syscw": 25,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1237605757,
+              "wchar": 156293157,
+              "syscr": 295336,
+              "syscw": 55854,
+              "read_bytes": 0,
+              "write_bytes": 100274176,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1237559771,
+            "wchar": 156291887,
+            "syscr": 295273,
+            "syscw": 55829,
+            "read_bytes": 0,
+            "write_bytes": 100237312,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1237559771,
+            "wchar": 156291887,
+            "syscr": 295273,
+            "syscw": 55829,
+            "read_bytes": 0,
+            "write_bytes": 100237312,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1208733
+        }
+      },
+      "observedSummedJvmCpuSeconds": 242.38,
+      "observedSummedJvmGcSeconds": 6.427999999999999,
+      "commonLiveSamples": 160,
+      "commonLiveSpanSeconds": 81.348308801651,
+      "maxCommonSampleGapSeconds": 0.5390534400939941,
+      "sourceCompleteSha256": "d402e3eae02796348bc80c42bc98f8c17bb15e300dcc36af5474533fc28eb858",
+      "sourceEventsSha256": "1842b4433e3cbfd46b2bf89cebb824a06832eaad82c6daf88fbc4189d54dc7df",
+      "sourceObserverSha256": "ca5a9e366cc485aae0a4380077b6f6285d068acb386747529e67a65ddb126755",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=72089;readAndValidationNanos=80374490109;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 1,
+      "tag": "F",
+      "mode": "off",
+      "phase": "limit20",
+      "readAndValidationSeconds": 7.81847858,
+      "taskEnds": 1,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 1251,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 1176280615,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 295265305,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 33,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 20631,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 20,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1,
+          "observedTaskEnds": 1,
+          "taskStarts": 1,
+          "distinctEndedIndices": 1,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "collectAsList at ReadMemoryVersionedAlignedBench.java:228",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1211046,
+          "startTicks": 23671251,
+          "sampledPeakHeapBytes": 778963968.0,
+          "observedGcSeconds": 0.375,
+          "samplerRows": 11,
+          "sampledPeakRssBytes": 1410945024,
+          "observedJvmCpuSeconds": 20.97,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 247211,
+              "wchar": 359,
+              "syscr": 408,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 175931438,
+            "wchar": 99789363,
+            "syscr": 26615,
+            "syscw": 1252,
+            "read_bytes": 0,
+            "write_bytes": 1581056,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1210646
+        },
+        "0": {
+          "pid": 1211217,
+          "startTicks": 23671462,
+          "sampledPeakHeapBytes": 75680256.0,
+          "observedGcSeconds": 0.07600000000000001,
+          "samplerRows": 9,
+          "sampledPeakRssBytes": 315113472,
+          "observedJvmCpuSeconds": 9.53,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 15727141,
+              "wchar": 3323,
+              "syscr": 3450,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 188922114,
+              "wchar": 148395231,
+              "syscr": 26334,
+              "syscw": 7541,
+              "read_bytes": 0,
+              "write_bytes": 99368960,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 173194973,
+            "wchar": 148391908,
+            "syscr": 22884,
+            "syscw": 7498,
+            "read_bytes": 0,
+            "write_bytes": 99315712,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 173194973,
+            "wchar": 148391908,
+            "syscr": 22884,
+            "syscw": 7498,
+            "read_bytes": 0,
+            "write_bytes": 99315712,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1211046
+        },
+        "1": {
+          "pid": 1211221,
+          "startTicks": 23671463,
+          "sampledPeakHeapBytes": 81947750.4,
+          "observedGcSeconds": 0.027,
+          "samplerRows": 9,
+          "sampledPeakRssBytes": 242167808,
+          "observedJvmCpuSeconds": 4.87,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16065267,
+              "wchar": 3321,
+              "syscr": 3617,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 174684837,
+              "wchar": 147190819,
+              "syscr": 18370,
+              "syscw": 7000,
+              "read_bytes": 0,
+              "write_bytes": 98189312,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 158619570,
+            "wchar": 147187498,
+            "syscr": 14753,
+            "syscw": 6957,
+            "read_bytes": 0,
+            "write_bytes": 98152448,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 158619570,
+            "wchar": 147187498,
+            "syscr": 14753,
+            "syscw": 6957,
+            "read_bytes": 0,
+            "write_bytes": 98152448,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1211046
+        }
+      },
+      "observedSummedJvmCpuSeconds": 35.37,
+      "observedSummedJvmGcSeconds": 0.47800000000000004,
+      "commonLiveSamples": 17,
+      "commonLiveSpanSeconds": 8.202685832977295,
+      "maxCommonSampleGapSeconds": 0.5223703384399414,
+      "sourceCompleteSha256": "59ce23bdceaac6398fb811dbd620cb84c648ebdd1a4175b47d396c2f173cbfd2",
+      "sourceEventsSha256": "0f07765f06311e86dd2f95c82fd622aa237b7866832ad0ec047553c890b77858",
+      "sourceObserverSha256": "b673b8e1f3a81616f6654bfdc3469a2f9fadab93d4ef65c4fe249af31b41953f",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=20;readAndValidationNanos=7818478580;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 1,
+      "tag": "F",
+      "mode": "off",
+      "phase": "full",
+      "readAndValidationSeconds": 80.288787756,
+      "taskEnds": 1025,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 128482,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 113628750929,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 13149250342,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 5739,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 2492076,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 72089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1025,
+          "observedTaskEnds": 1025,
+          "taskStarts": 1025,
+          "distinctEndedIndices": 1025,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1025,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "fold at ReadMemoryVersionedAlignedBench.java:242",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1211518,
+          "startTicks": 23672793,
+          "sampledPeakHeapBytes": 1170181734.4,
+          "observedGcSeconds": 0.40099999999999997,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 1768787968,
+          "observedJvmCpuSeconds": 29.2,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 247186,
+              "wchar": 359,
+              "syscr": 408,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 188778232,
+            "wchar": 186647425,
+            "syscr": 97312,
+            "syscw": 76110,
+            "read_bytes": 0,
+            "write_bytes": 14389248,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1210646
+        },
+        "1": {
+          "pid": 1211704,
+          "startTicks": 23672994,
+          "sampledPeakHeapBytes": 275274240.0,
+          "observedGcSeconds": 2.993,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 699998208,
+          "observedJvmCpuSeconds": 107.46,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45030,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1244088276,
+              "wchar": 156713287,
+              "syscr": 296966,
+              "syscw": 55911,
+              "read_bytes": 0,
+              "write_bytes": 100511744,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1244043246,
+            "wchar": 156713217,
+            "syscr": 296905,
+            "syscw": 55901,
+            "read_bytes": 0,
+            "write_bytes": 100474880,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1244043246,
+            "wchar": 156713217,
+            "syscr": 296905,
+            "syscw": 55901,
+            "read_bytes": 0,
+            "write_bytes": 100474880,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1211518
+        },
+        "0": {
+          "pid": 1211705,
+          "startTicks": 23672994,
+          "sampledPeakHeapBytes": 262684774.4,
+          "observedGcSeconds": 2.967,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 656646144,
+          "observedJvmCpuSeconds": 107.44,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45030,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1242983384,
+              "wchar": 156684156,
+              "syscr": 296057,
+              "syscw": 55661,
+              "read_bytes": 0,
+              "write_bytes": 100503552,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1242938354,
+            "wchar": 156684086,
+            "syscr": 295996,
+            "syscw": 55651,
+            "read_bytes": 0,
+            "write_bytes": 100466688,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1242938354,
+            "wchar": 156684086,
+            "syscr": 295996,
+            "syscw": 55651,
+            "read_bytes": 0,
+            "write_bytes": 100466688,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1211518
+        }
+      },
+      "observedSummedJvmCpuSeconds": 244.1,
+      "observedSummedJvmGcSeconds": 6.361,
+      "commonLiveSamples": 160,
+      "commonLiveSpanSeconds": 81.48524045944214,
+      "maxCommonSampleGapSeconds": 0.5310592651367188,
+      "sourceCompleteSha256": "59ce23bdceaac6398fb811dbd620cb84c648ebdd1a4175b47d396c2f173cbfd2",
+      "sourceEventsSha256": "9c414fd44062514039489af66f2bfd9f1636c48c90e88e9f428f1d9758b73ebd",
+      "sourceObserverSha256": "1a558765d601ac6ce3eb2e5aeb7b13b65c76c47c3c81559a090038cceca711bc",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=72089;readAndValidationNanos=80288787756;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 1,
+      "tag": "S",
+      "mode": "streaming",
+      "phase": "limit20",
+      "readAndValidationSeconds": 9.625539232,
+      "taskEnds": 1,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 1188,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 1136400309,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 308220438,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 35,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 20631,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 20,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1,
+          "observedTaskEnds": 1,
+          "taskStarts": 1,
+          "distinctEndedIndices": 1,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "collectAsList at ReadMemoryVersionedAlignedBench.java:228",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1216012,
+          "startTicks": 23738767,
+          "sampledPeakHeapBytes": 243330662.4,
+          "observedGcSeconds": 0.19799999999999998,
+          "samplerRows": 13,
+          "sampledPeakRssBytes": 690409472,
+          "observedJvmCpuSeconds": 23.68,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 248397,
+              "wchar": 359,
+              "syscr": 410,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 243241036,
+            "wchar": 225986433,
+            "syscr": 41729,
+            "syscw": 14127,
+            "read_bytes": 0,
+            "write_bytes": 127750144,
+            "cancelled_write_bytes": 63115264
+          },
+          "observedPpid": 1215643
+        },
+        "1": {
+          "pid": 1216198,
+          "startTicks": 23738970,
+          "sampledPeakHeapBytes": 87104409.6,
+          "observedGcSeconds": 0.088,
+          "samplerRows": 11,
+          "sampledPeakRssBytes": 301756416,
+          "observedJvmCpuSeconds": 9.52,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45988,
+              "wchar": 1270,
+              "syscr": 62,
+              "syscw": 25,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 188964337,
+              "wchar": 148395000,
+              "syscr": 26336,
+              "syscw": 7539,
+              "read_bytes": 0,
+              "write_bytes": 99364864,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 188918349,
+            "wchar": 148393730,
+            "syscr": 26274,
+            "syscw": 7514,
+            "read_bytes": 0,
+            "write_bytes": 99328000,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 188918349,
+            "wchar": 148393730,
+            "syscr": 26274,
+            "syscw": 7514,
+            "read_bytes": 0,
+            "write_bytes": 99328000,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1216012
+        },
+        "0": {
+          "pid": 1216197,
+          "startTicks": 23738970,
+          "sampledPeakHeapBytes": 85543014.4,
+          "observedGcSeconds": 0.022000000000000002,
+          "samplerRows": 10,
+          "sampledPeakRssBytes": 232734720,
+          "observedJvmCpuSeconds": 5.52,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16979,
+              "wchar": 4,
+              "syscr": 32,
+              "syscw": 1,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 174684572,
+              "wchar": 147189286,
+              "syscr": 18366,
+              "syscw": 6986,
+              "read_bytes": 0,
+              "write_bytes": 98185216,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 174667593,
+            "wchar": 147189282,
+            "syscr": 18334,
+            "syscw": 6985,
+            "read_bytes": 0,
+            "write_bytes": 98185216,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 174667593,
+            "wchar": 147189282,
+            "syscr": 18334,
+            "syscw": 6985,
+            "read_bytes": 0,
+            "write_bytes": 98185216,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1216012
+        }
+      },
+      "observedSummedJvmCpuSeconds": 38.72,
+      "observedSummedJvmGcSeconds": 0.308,
+      "commonLiveSamples": 22,
+      "commonLiveSpanSeconds": 10.783358097076416,
+      "maxCommonSampleGapSeconds": 0.5386173725128174,
+      "sourceCompleteSha256": "8de71b61ee214757bf952efea138b4088af17dea7cdb70bc495ab70a56ef6e9a",
+      "sourceEventsSha256": "56abb8347ea5c292b5b4cc5e28ffb78387f134261991e8740a1d8386d08dc8d7",
+      "sourceObserverSha256": "3ab7198fab2e3612017892e3f384b8ac52f884fd8acc3a4e87cf5152f5eee1f0",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=20;readAndValidationNanos=9625539232;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 1,
+      "tag": "S",
+      "mode": "streaming",
+      "phase": "full",
+      "readAndValidationSeconds": 82.950126157,
+      "taskEnds": 1025,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 128578,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 113063675279,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 13513410431,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 6319,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 2492119,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 72089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1025,
+          "observedTaskEnds": 1025,
+          "taskStarts": 1025,
+          "distinctEndedIndices": 1025,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1025,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "fold at ReadMemoryVersionedAlignedBench.java:242",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1216496,
+          "startTicks": 23740475,
+          "sampledPeakHeapBytes": 375318528.0,
+          "observedGcSeconds": 0.217,
+          "samplerRows": 86,
+          "sampledPeakRssBytes": 768487424,
+          "observedJvmCpuSeconds": 31.07,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 248409,
+              "wchar": 359,
+              "syscr": 410,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 440733892,
+            "wchar": 312662477,
+            "syscr": 119753,
+            "syscw": 88740,
+            "read_bytes": 0,
+            "write_bytes": 140427264,
+            "cancelled_write_bytes": 63115264
+          },
+          "observedPpid": 1215643
+        },
+        "1": {
+          "pid": 1216681,
+          "startTicks": 23740675,
+          "sampledPeakHeapBytes": 258194432.0,
+          "observedGcSeconds": 2.892,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 656498688,
+          "observedJvmCpuSeconds": 107.01,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 55006,
+              "wchar": 1806,
+              "syscr": 65,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1249451968,
+              "wchar": 156679392,
+              "syscr": 298117,
+              "syscw": 55399,
+              "read_bytes": 0,
+              "write_bytes": 100442112,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1249396962,
+            "wchar": 156677586,
+            "syscr": 298052,
+            "syscw": 55371,
+            "read_bytes": 0,
+            "write_bytes": 100405248,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1249396962,
+            "wchar": 156677586,
+            "syscr": 298052,
+            "syscw": 55371,
+            "read_bytes": 0,
+            "write_bytes": 100405248,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1216496
+        },
+        "0": {
+          "pid": 1216682,
+          "startTicks": 23740675,
+          "sampledPeakHeapBytes": 247867596.8,
+          "observedGcSeconds": 3.6,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 642510848,
+          "observedJvmCpuSeconds": 107.45,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45030,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 45056,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1236089660,
+              "wchar": 157062287,
+              "syscr": 294811,
+              "syscw": 59450,
+              "read_bytes": 0,
+              "write_bytes": 100921344,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1236044630,
+            "wchar": 157062217,
+            "syscr": 294750,
+            "syscw": 59440,
+            "read_bytes": 0,
+            "write_bytes": 100876288,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1236044630,
+            "wchar": 157062217,
+            "syscr": 294750,
+            "syscw": 59440,
+            "read_bytes": 0,
+            "write_bytes": 100876288,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1216496
+        }
+      },
+      "observedSummedJvmCpuSeconds": 245.53000000000003,
+      "observedSummedJvmGcSeconds": 6.709,
+      "commonLiveSamples": 165,
+      "commonLiveSpanSeconds": 83.87216281890869,
+      "maxCommonSampleGapSeconds": 0.5245711803436279,
+      "sourceCompleteSha256": "8de71b61ee214757bf952efea138b4088af17dea7cdb70bc495ab70a56ef6e9a",
+      "sourceEventsSha256": "f8789b39c28c049df85c43f6f96232db68a7c3d121804c8372900721cd25587c",
+      "sourceObserverSha256": "e842c11e8b2a4cdebedc40638c5e6ca288846e7ed0434e30e88453623cfbc9e0",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=72089;readAndValidationNanos=82950126157;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 1,
+      "tag": "L",
+      "mode": "lightweight",
+      "phase": "limit20",
+      "readAndValidationSeconds": 7.554195153,
+      "taskEnds": 1,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 1212,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 1150559479,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 321322247,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 41,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 20631,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 20,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1,
+          "observedTaskEnds": 1,
+          "taskStarts": 1,
+          "distinctEndedIndices": 1,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "collectAsList at ReadMemoryVersionedAlignedBench.java:228",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1220020,
+          "startTicks": 23813661,
+          "sampledPeakHeapBytes": 372731904.0,
+          "observedGcSeconds": 0.16999999999999998,
+          "samplerRows": 11,
+          "sampledPeakRssBytes": 913117184,
+          "observedJvmCpuSeconds": 20.52,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 247213,
+              "wchar": 359,
+              "syscr": 408,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 175719131,
+            "wchar": 99764650,
+            "syscr": 26393,
+            "syscw": 1018,
+            "read_bytes": 0,
+            "write_bytes": 1556480,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1219671
+        },
+        "0": {
+          "pid": 1220209,
+          "startTicks": 23813866,
+          "sampledPeakHeapBytes": 81523507.2,
+          "observedGcSeconds": 0.027999999999999997,
+          "samplerRows": 8,
+          "sampledPeakRssBytes": 225665024,
+          "observedJvmCpuSeconds": 4.45,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16089645,
+              "wchar": 3323,
+              "syscr": 3631,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 174669542,
+              "wchar": 147189172,
+              "syscr": 18337,
+              "syscw": 6983,
+              "read_bytes": 0,
+              "write_bytes": 98185216,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 158579897,
+            "wchar": 147185849,
+            "syscr": 14706,
+            "syscw": 6940,
+            "read_bytes": 0,
+            "write_bytes": 98131968,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 158579897,
+            "wchar": 147185849,
+            "syscr": 14706,
+            "syscw": 6940,
+            "read_bytes": 0,
+            "write_bytes": 98131968,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1220020
+        },
+        "1": {
+          "pid": 1220210,
+          "startTicks": 23813866,
+          "sampledPeakHeapBytes": 76083200.0,
+          "observedGcSeconds": 0.09799999999999999,
+          "samplerRows": 8,
+          "sampledPeakRssBytes": 311754752,
+          "observedJvmCpuSeconds": 9.32,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16055346,
+              "wchar": 3321,
+              "syscr": 3611,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 188902636,
+              "wchar": 148396479,
+              "syscr": 26297,
+              "syscw": 7551,
+              "read_bytes": 0,
+              "write_bytes": 99373056,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 172847290,
+            "wchar": 148393158,
+            "syscr": 22686,
+            "syscw": 7508,
+            "read_bytes": 0,
+            "write_bytes": 99336192,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 172847290,
+            "wchar": 148393158,
+            "syscr": 22686,
+            "syscw": 7508,
+            "read_bytes": 0,
+            "write_bytes": 99336192,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1220020
+        }
+      },
+      "observedSummedJvmCpuSeconds": 34.29,
+      "observedSummedJvmGcSeconds": 0.296,
+      "commonLiveSamples": 16,
+      "commonLiveSpanSeconds": 7.725598573684692,
+      "maxCommonSampleGapSeconds": 0.5296006202697754,
+      "sourceCompleteSha256": "a6fe53fb8f72dfcfe59cfcb256bde928059c8eca0aca1c2cb6420ea9b1220bc7",
+      "sourceEventsSha256": "42e06335d528a58882e958495475e7ad29bf3dcd95611678ada02afcc3449d08",
+      "sourceObserverSha256": "706c584fcfd3060750116714e8cf5c8cf76eeef86736af479fc37ceffbebc8c9",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=20;readAndValidationNanos=7554195153;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 1,
+      "tag": "L",
+      "mode": "lightweight",
+      "phase": "full",
+      "readAndValidationSeconds": 80.344296626,
+      "taskEnds": 1025,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 129546,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 113206471214,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 12952437215,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 5977,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 2486744,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 72089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1025,
+          "observedTaskEnds": 1025,
+          "taskStarts": 1025,
+          "distinctEndedIndices": 1025,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1025,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "fold at ReadMemoryVersionedAlignedBench.java:242",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1220500,
+          "startTicks": 23815178,
+          "sampledPeakHeapBytes": 636886528.0,
+          "observedGcSeconds": 0.214,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 1183887360,
+          "observedJvmCpuSeconds": 28.07,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 247213,
+              "wchar": 359,
+              "syscr": 408,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 188680294,
+            "wchar": 186591070,
+            "syscr": 97185,
+            "syscw": 75838,
+            "read_bytes": 0,
+            "write_bytes": 14340096,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1219671
+        },
+        "0": {
+          "pid": 1220673,
+          "startTicks": 23815380,
+          "sampledPeakHeapBytes": 218038476.8,
+          "observedGcSeconds": 3.31,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 655482880,
+          "observedJvmCpuSeconds": 106.63,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45030,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 45056,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1240185862,
+              "wchar": 156909995,
+              "syscr": 295909,
+              "syscw": 57881,
+              "read_bytes": 0,
+              "write_bytes": 100741120,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1240140832,
+            "wchar": 156909925,
+            "syscr": 295848,
+            "syscw": 57871,
+            "read_bytes": 0,
+            "write_bytes": 100696064,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1240140832,
+            "wchar": 156909925,
+            "syscr": 295848,
+            "syscw": 57871,
+            "read_bytes": 0,
+            "write_bytes": 100696064,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1220500
+        },
+        "1": {
+          "pid": 1220674,
+          "startTicks": 23815380,
+          "sampledPeakHeapBytes": 410718720.0,
+          "observedGcSeconds": 2.8779999999999997,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 863436800,
+          "observedJvmCpuSeconds": 105.77,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45982,
+              "wchar": 1806,
+              "syscr": 62,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1244084376,
+              "wchar": 156589364,
+              "syscr": 296950,
+              "syscw": 54824,
+              "read_bytes": 0,
+              "write_bytes": 100397056,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1244038394,
+            "wchar": 156587558,
+            "syscr": 296888,
+            "syscw": 54796,
+            "read_bytes": 0,
+            "write_bytes": 100360192,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1244038394,
+            "wchar": 156587558,
+            "syscr": 296888,
+            "syscw": 54796,
+            "read_bytes": 0,
+            "write_bytes": 100360192,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1220500
+        }
+      },
+      "observedSummedJvmCpuSeconds": 240.46999999999997,
+      "observedSummedJvmGcSeconds": 6.401999999999999,
+      "commonLiveSamples": 160,
+      "commonLiveSpanSeconds": 81.29358983039856,
+      "maxCommonSampleGapSeconds": 0.5257914066314697,
+      "sourceCompleteSha256": "a6fe53fb8f72dfcfe59cfcb256bde928059c8eca0aca1c2cb6420ea9b1220bc7",
+      "sourceEventsSha256": "b310ae8385374691eb5adec1d633bab950a978af1fbac5b9b78664656cd2abef",
+      "sourceObserverSha256": "66293ac8812e8e1f4e80658277acfc55ae4424c546654c2d759c561e6b79b343",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=72089;readAndValidationNanos=80344296626;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 2,
+      "tag": "L",
+      "mode": "lightweight",
+      "phase": "limit20",
+      "readAndValidationSeconds": 7.460935578,
+      "taskEnds": 1,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 1231,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 1157139494,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 315497245,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 39,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 20631,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 20,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1,
+          "observedTaskEnds": 1,
+          "taskStarts": 1,
+          "distinctEndedIndices": 1,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "collectAsList at ReadMemoryVersionedAlignedBench.java:228",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1225318,
+          "startTicks": 23890333,
+          "sampledPeakHeapBytes": 416474624.0,
+          "observedGcSeconds": 0.162,
+          "samplerRows": 11,
+          "sampledPeakRssBytes": 883011584,
+          "observedJvmCpuSeconds": 20.02,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 248937,
+              "wchar": 359,
+              "syscr": 410,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 175297026,
+            "wchar": 99761603,
+            "syscr": 26008,
+            "syscw": 984,
+            "read_bytes": 0,
+            "write_bytes": 1556480,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1224950
+        },
+        "0": {
+          "pid": 1225495,
+          "startTicks": 23890543,
+          "sampledPeakHeapBytes": 66459955.2,
+          "observedGcSeconds": 0.08600000000000001,
+          "samplerRows": 8,
+          "sampledPeakRssBytes": 317267968,
+          "observedJvmCpuSeconds": 9.57,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16089119,
+              "wchar": 3323,
+              "syscr": 3629,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 189020263,
+              "wchar": 148398178,
+              "syscr": 26434,
+              "syscw": 7590,
+              "read_bytes": 0,
+              "write_bytes": 99368960,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 172931144,
+            "wchar": 148394855,
+            "syscr": 22805,
+            "syscw": 7547,
+            "read_bytes": 0,
+            "write_bytes": 99315712,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 172832934,
+            "wchar": 148393474,
+            "syscr": 22704,
+            "syscw": 7516,
+            "read_bytes": 0,
+            "write_bytes": 99315712,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1225318
+        },
+        "1": {
+          "pid": 1225496,
+          "startTicks": 23890543,
+          "sampledPeakHeapBytes": 78798848.0,
+          "observedGcSeconds": 0.042,
+          "samplerRows": 8,
+          "sampledPeakRssBytes": 229441536,
+          "observedJvmCpuSeconds": 4.77,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 15986613,
+              "wchar": 3322,
+              "syscr": 3564,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 158698092,
+            "wchar": 147187504,
+            "syscr": 14800,
+            "syscw": 6957,
+            "read_bytes": 0,
+            "write_bytes": 98152448,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1225318
+        }
+      },
+      "observedSummedJvmCpuSeconds": 34.36,
+      "observedSummedJvmGcSeconds": 0.29,
+      "commonLiveSamples": 16,
+      "commonLiveSpanSeconds": 7.731942892074585,
+      "maxCommonSampleGapSeconds": 0.530956506729126,
+      "sourceCompleteSha256": "a6787a8f631fde5f0ed818bb6bc160443c5049f4e7ccd458ff2edc824db13437",
+      "sourceEventsSha256": "eaef6b8d91f625f8898e8cde61c5103aa921d74acc658e885df74d95526f1100",
+      "sourceObserverSha256": "8472543c17d5390b9176f55d6d3dca8fb56d995ce41872c2eb190952cbe92fe0",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=20;readAndValidationNanos=7460935578;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 2,
+      "tag": "L",
+      "mode": "lightweight",
+      "phase": "full",
+      "readAndValidationSeconds": 80.508821797,
+      "taskEnds": 1025,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 129239,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 113383329530,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 13211787134,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 6413,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 2491904,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 72089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1025,
+          "observedTaskEnds": 1025,
+          "taskStarts": 1025,
+          "distinctEndedIndices": 1025,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1025,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "fold at ReadMemoryVersionedAlignedBench.java:242",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1225800,
+          "startTicks": 23891842,
+          "sampledPeakHeapBytes": 494525952.0,
+          "observedGcSeconds": 0.261,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 989290496,
+          "observedJvmCpuSeconds": 27.76,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 248929,
+              "wchar": 359,
+              "syscr": 410,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 188646312,
+            "wchar": 186583739,
+            "syscr": 97250,
+            "syscw": 75942,
+            "read_bytes": 0,
+            "write_bytes": 14344192,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1224950
+        },
+        "0": {
+          "pid": 1225983,
+          "startTicks": 23892042,
+          "sampledPeakHeapBytes": 203286118.4,
+          "observedGcSeconds": 3.3569999999999998,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 637181952,
+          "observedJvmCpuSeconds": 106.53,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45030,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1239985541,
+              "wchar": 156940711,
+              "syscr": 295856,
+              "syscw": 58205,
+              "read_bytes": 0,
+              "write_bytes": 100773888,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1239940511,
+            "wchar": 156940641,
+            "syscr": 295795,
+            "syscw": 58195,
+            "read_bytes": 0,
+            "write_bytes": 100737024,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1239940511,
+            "wchar": 156940641,
+            "syscr": 295795,
+            "syscw": 58195,
+            "read_bytes": 0,
+            "write_bytes": 100737024,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1225800
+        },
+        "1": {
+          "pid": 1225984,
+          "startTicks": 23892042,
+          "sampledPeakHeapBytes": 218665267.2,
+          "observedGcSeconds": 3.255,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 607862784,
+          "observedJvmCpuSeconds": 107.22,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 55006,
+              "wchar": 1806,
+              "syscr": 65,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 49152,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1243967095,
+              "wchar": 156885539,
+              "syscr": 296910,
+              "syscw": 57557,
+              "read_bytes": 0,
+              "write_bytes": 100687872,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1243912089,
+            "wchar": 156883733,
+            "syscr": 296845,
+            "syscw": 57529,
+            "read_bytes": 0,
+            "write_bytes": 100638720,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1243912089,
+            "wchar": 156883733,
+            "syscr": 296845,
+            "syscw": 57529,
+            "read_bytes": 0,
+            "write_bytes": 100638720,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1225800
+        }
+      },
+      "observedSummedJvmCpuSeconds": 241.51,
+      "observedSummedJvmGcSeconds": 6.872999999999999,
+      "commonLiveSamples": 160,
+      "commonLiveSpanSeconds": 81.33314418792725,
+      "maxCommonSampleGapSeconds": 0.5247962474822998,
+      "sourceCompleteSha256": "a6787a8f631fde5f0ed818bb6bc160443c5049f4e7ccd458ff2edc824db13437",
+      "sourceEventsSha256": "37074cfadfd7247eeeb415a9fba566634c257015d494220163fb017a7258989f",
+      "sourceObserverSha256": "bf1e16774a53463cd1af6f7450f500806869f6291806a45b76c546a4aea17d98",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=72089;readAndValidationNanos=80508821797;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 2,
+      "tag": "S",
+      "mode": "streaming",
+      "phase": "limit20",
+      "readAndValidationSeconds": 9.759116579,
+      "taskEnds": 1,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 1183,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 1102424649,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 310916874,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 49,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 20631,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 20,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1,
+          "observedTaskEnds": 1,
+          "taskStarts": 1,
+          "distinctEndedIndices": 1,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "collectAsList at ReadMemoryVersionedAlignedBench.java:228",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1227019,
+          "startTicks": 23903425,
+          "sampledPeakHeapBytes": 354277580.8,
+          "observedGcSeconds": 0.152,
+          "samplerRows": 13,
+          "sampledPeakRssBytes": 808726528,
+          "observedJvmCpuSeconds": 23.76,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 250237,
+              "wchar": 359,
+              "syscr": 412,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 243288631,
+            "wchar": 225953562,
+            "syscr": 41755,
+            "syscw": 13776,
+            "read_bytes": 0,
+            "write_bytes": 127721472,
+            "cancelled_write_bytes": 63115264
+          },
+          "observedPpid": 1226633
+        },
+        "0": {
+          "pid": 1227204,
+          "startTicks": 23903628,
+          "sampledPeakHeapBytes": 77724262.4,
+          "observedGcSeconds": 0.09100000000000001,
+          "samplerRows": 10,
+          "sampledPeakRssBytes": 302575616,
+          "observedJvmCpuSeconds": 9.88,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16979,
+              "wchar": 4,
+              "syscr": 32,
+              "syscw": 1,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 188963588,
+              "wchar": 148396838,
+              "syscr": 26336,
+              "syscw": 7562,
+              "read_bytes": 0,
+              "write_bytes": 99373056,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 188946609,
+            "wchar": 148396834,
+            "syscr": 26304,
+            "syscw": 7561,
+            "read_bytes": 0,
+            "write_bytes": 99373056,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 188946609,
+            "wchar": 148396834,
+            "syscr": 26304,
+            "syscw": 7561,
+            "read_bytes": 0,
+            "write_bytes": 99373056,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1227019
+        },
+        "1": {
+          "pid": 1227205,
+          "startTicks": 23903628,
+          "sampledPeakHeapBytes": 80882176.0,
+          "observedGcSeconds": 0.028999999999999998,
+          "samplerRows": 10,
+          "sampledPeakRssBytes": 235786240,
+          "observedJvmCpuSeconds": 5.63,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16979,
+              "wchar": 4,
+              "syscr": 32,
+              "syscw": 1,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 174684471,
+              "wchar": 147189292,
+              "syscr": 18373,
+              "syscw": 6987,
+              "read_bytes": 0,
+              "write_bytes": 98185216,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 174667492,
+            "wchar": 147189288,
+            "syscr": 18341,
+            "syscw": 6986,
+            "read_bytes": 0,
+            "write_bytes": 98185216,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 174667492,
+            "wchar": 147189288,
+            "syscr": 18341,
+            "syscw": 6986,
+            "read_bytes": 0,
+            "write_bytes": 98185216,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1227019
+        }
+      },
+      "observedSummedJvmCpuSeconds": 39.27,
+      "observedSummedJvmGcSeconds": 0.272,
+      "commonLiveSamples": 22,
+      "commonLiveSpanSeconds": 10.794920444488525,
+      "maxCommonSampleGapSeconds": 0.5430660247802734,
+      "sourceCompleteSha256": "7cc01047ec267ad63d276bb5fd22176e37796cdcf5b0980a0956760eeb3cb164",
+      "sourceEventsSha256": "32ec3fb4681fb4257a7ff009d5f36c403806b013bdeeb6ac37f3642895bde370",
+      "sourceObserverSha256": "7d68bb8de61a33d15915ea49a368cd2c389e6753dd9e14ae4e05547e2106acda",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=20;readAndValidationNanos=9759116579;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 2,
+      "tag": "S",
+      "mode": "streaming",
+      "phase": "full",
+      "readAndValidationSeconds": 82.899079137,
+      "taskEnds": 1025,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 129934,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 114431042143,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 13486725342,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 6089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 2492119,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 72089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1025,
+          "observedTaskEnds": 1025,
+          "taskStarts": 1025,
+          "distinctEndedIndices": 1025,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1025,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "fold at ReadMemoryVersionedAlignedBench.java:242",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1227512,
+          "startTicks": 23905140,
+          "sampledPeakHeapBytes": 423693209.6,
+          "observedGcSeconds": 0.22799999999999998,
+          "samplerRows": 86,
+          "sampledPeakRssBytes": 820383744,
+          "observedJvmCpuSeconds": 30.7,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 250279,
+              "wchar": 359,
+              "syscr": 412,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 440600446,
+            "wchar": 312465136,
+            "syscr": 119630,
+            "syscw": 88647,
+            "read_bytes": 0,
+            "write_bytes": 140382208,
+            "cancelled_write_bytes": 63115264
+          },
+          "observedPpid": 1226633
+        },
+        "0": {
+          "pid": 1227684,
+          "startTicks": 23905339,
+          "sampledPeakHeapBytes": 275572121.6,
+          "observedGcSeconds": 2.899,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 699510784,
+          "observedJvmCpuSeconds": 108.13,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 61243,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 49152,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1244858204,
+              "wchar": 156679579,
+              "syscr": 297148,
+              "syscw": 55564,
+              "read_bytes": 0,
+              "write_bytes": 100474880,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1244796961,
+            "wchar": 156677773,
+            "syscr": 297080,
+            "syscw": 55536,
+            "read_bytes": 0,
+            "write_bytes": 100425728,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1244796961,
+            "wchar": 156677773,
+            "syscr": 297080,
+            "syscw": 55536,
+            "read_bytes": 0,
+            "write_bytes": 100425728,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1227512
+        },
+        "1": {
+          "pid": 1227685,
+          "startTicks": 23905339,
+          "sampledPeakHeapBytes": 222334566.4,
+          "observedGcSeconds": 3.36,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 637972480,
+          "observedJvmCpuSeconds": 107.19,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 61243,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1234310617,
+              "wchar": 156899056,
+              "syscr": 294335,
+              "syscw": 57957,
+              "read_bytes": 0,
+              "write_bytes": 100769792,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1234249374,
+            "wchar": 156897250,
+            "syscr": 294267,
+            "syscw": 57929,
+            "read_bytes": 0,
+            "write_bytes": 100732928,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1234249374,
+            "wchar": 156897250,
+            "syscr": 294267,
+            "syscw": 57929,
+            "read_bytes": 0,
+            "write_bytes": 100732928,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1227512
+        }
+      },
+      "observedSummedJvmCpuSeconds": 246.01999999999998,
+      "observedSummedJvmGcSeconds": 6.487,
+      "commonLiveSamples": 165,
+      "commonLiveSpanSeconds": 83.86251878738403,
+      "maxCommonSampleGapSeconds": 0.5333545207977295,
+      "sourceCompleteSha256": "7cc01047ec267ad63d276bb5fd22176e37796cdcf5b0980a0956760eeb3cb164",
+      "sourceEventsSha256": "36da221178a3374c49ee34d0cf068fe123dbb0f2ce3b8617cebf5540c3be423e",
+      "sourceObserverSha256": "c09a2d3e0942d0970dd963d6f210c6c58ed3fb2c958fbc953726e6a9e9b2adab",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=72089;readAndValidationNanos=82899079137;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 2,
+      "tag": "F",
+      "mode": "off",
+      "phase": "limit20",
+      "readAndValidationSeconds": 7.580382836,
+      "taskEnds": 1,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 1233,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 1155039729,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 305171474,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 41,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 20631,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 20,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1,
+          "observedTaskEnds": 1,
+          "taskStarts": 1,
+          "distinctEndedIndices": 1,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "collectAsList at ReadMemoryVersionedAlignedBench.java:228",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1228762,
+          "startTicks": 23916925,
+          "sampledPeakHeapBytes": 880605184.0,
+          "observedGcSeconds": 0.33799999999999997,
+          "samplerRows": 11,
+          "sampledPeakRssBytes": 1595899904,
+          "observedJvmCpuSeconds": 20.26,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 250243,
+              "wchar": 359,
+              "syscr": 412,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 175433160,
+            "wchar": 99780106,
+            "syscr": 26061,
+            "syscw": 1164,
+            "read_bytes": 0,
+            "write_bytes": 1572864,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1228371
+        },
+        "1": {
+          "pid": 1228936,
+          "startTicks": 23917132,
+          "sampledPeakHeapBytes": 82345984.0,
+          "observedGcSeconds": 0.099,
+          "samplerRows": 8,
+          "sampledPeakRssBytes": 308006912,
+          "observedJvmCpuSeconds": 9.17,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16171104,
+              "wchar": 3323,
+              "syscr": 3740,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 172731746,
+            "wchar": 148393134,
+            "syscr": 22555,
+            "syscw": 7503,
+            "read_bytes": 0,
+            "write_bytes": 99319808,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1228762
+        },
+        "0": {
+          "pid": 1228938,
+          "startTicks": 23917132,
+          "sampledPeakHeapBytes": 84043571.2,
+          "observedGcSeconds": 0.034,
+          "samplerRows": 8,
+          "sampledPeakRssBytes": 237056000,
+          "observedJvmCpuSeconds": 4.95,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 15965123,
+              "wchar": 3323,
+              "syscr": 3554,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 174735861,
+              "wchar": 147189976,
+              "syscr": 18427,
+              "syscw": 7009,
+              "read_bytes": 0,
+              "write_bytes": 98185216,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 158770738,
+            "wchar": 147186653,
+            "syscr": 14873,
+            "syscw": 6966,
+            "read_bytes": 0,
+            "write_bytes": 98148352,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 158704605,
+            "wchar": 147185900,
+            "syscr": 14795,
+            "syscw": 6945,
+            "read_bytes": 0,
+            "write_bytes": 98148352,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1228762
+        }
+      },
+      "observedSummedJvmCpuSeconds": 34.38,
+      "observedSummedJvmGcSeconds": 0.471,
+      "commonLiveSamples": 16,
+      "commonLiveSpanSeconds": 7.69280219078064,
+      "maxCommonSampleGapSeconds": 0.5346231460571289,
+      "sourceCompleteSha256": "beae79b1314ebb4ba1d79a7060b18e5e9732f56c9ae3196236a4cbaa7cfe290c",
+      "sourceEventsSha256": "87164cc7f050a836a8bd8126952a0e0d03687fcccb2482b211e5735769636248",
+      "sourceObserverSha256": "ec892c23d9b8e4dbbe2e66b75e0711d19dfb1f4d7c7b332ad7b14112859b218f",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=20;readAndValidationNanos=7580382836;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 2,
+      "tag": "F",
+      "mode": "off",
+      "phase": "full",
+      "readAndValidationSeconds": 80.697623461,
+      "taskEnds": 1025,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 129072,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 113958549670,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 13291249215,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 5759,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 2481971,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 72089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1025,
+          "observedTaskEnds": 1025,
+          "taskStarts": 1025,
+          "distinctEndedIndices": 1025,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1025,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "fold at ReadMemoryVersionedAlignedBench.java:242",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1229208,
+          "startTicks": 23918437,
+          "sampledPeakHeapBytes": 1168891392.0,
+          "observedGcSeconds": 0.39,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 1693294592,
+          "observedJvmCpuSeconds": 30.77,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 250235,
+              "wchar": 359,
+              "syscr": 412,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 187434006,
+            "wchar": 186488062,
+            "syscr": 96402,
+            "syscw": 76007,
+            "read_bytes": 0,
+            "write_bytes": 14233600,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1228371
+        },
+        "0": {
+          "pid": 1229391,
+          "startTicks": 23918646,
+          "sampledPeakHeapBytes": 402146406.4,
+          "observedGcSeconds": 3.024,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 883830784,
+          "observedJvmCpuSeconds": 105.77,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 15975596,
+              "wchar": 3321,
+              "syscr": 3558,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1238231480,
+              "wchar": 156689076,
+              "syscr": 295391,
+              "syscw": 55895,
+              "read_bytes": 0,
+              "write_bytes": 100536320,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1222255884,
+            "wchar": 156685755,
+            "syscr": 291833,
+            "syscw": 55852,
+            "read_bytes": 0,
+            "write_bytes": 100483072,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1222255884,
+            "wchar": 156685755,
+            "syscr": 291833,
+            "syscw": 55852,
+            "read_bytes": 0,
+            "write_bytes": 100483072,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1229208
+        },
+        "1": {
+          "pid": 1229392,
+          "startTicks": 23918646,
+          "sampledPeakHeapBytes": 407183052.8,
+          "observedGcSeconds": 2.927,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 877355008,
+          "observedJvmCpuSeconds": 107.56,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16042854,
+              "wchar": 3323,
+              "syscr": 3603,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1245761565,
+              "wchar": 156674135,
+              "syscr": 297396,
+              "syscw": 55598,
+              "read_bytes": 0,
+              "write_bytes": 100470784,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1229718711,
+            "wchar": 156670812,
+            "syscr": 293793,
+            "syscw": 55555,
+            "read_bytes": 0,
+            "write_bytes": 100433920,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1229718711,
+            "wchar": 156670812,
+            "syscr": 293793,
+            "syscw": 55555,
+            "read_bytes": 0,
+            "write_bytes": 100433920,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1229208
+        }
+      },
+      "observedSummedJvmCpuSeconds": 244.1,
+      "observedSummedJvmGcSeconds": 6.341,
+      "commonLiveSamples": 160,
+      "commonLiveSpanSeconds": 81.3412435054779,
+      "maxCommonSampleGapSeconds": 0.5298902988433838,
+      "sourceCompleteSha256": "beae79b1314ebb4ba1d79a7060b18e5e9732f56c9ae3196236a4cbaa7cfe290c",
+      "sourceEventsSha256": "4275ae5e7db52e7be7b0b34fd88387e0c23e64f798510c2bdcc4903c4e0233c1",
+      "sourceObserverSha256": "54f5a81fa30d71bfb4537794668671be3b7d823bc52c8fc8091a42b484105e6d",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=72089;readAndValidationNanos=80697623461;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 2,
+      "tag": "U",
+      "mode": "upstream",
+      "phase": "limit20",
+      "readAndValidationSeconds": 7.705224944,
+      "taskEnds": 1,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 1234,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 1168808604,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 336326678,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 36,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 20631,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 20,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1,
+          "observedTaskEnds": 1,
+          "taskStarts": 1,
+          "distinctEndedIndices": 1,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "collectAsList at ReadMemoryVersionedAlignedBench.java:228",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1230451,
+          "startTicks": 23930053,
+          "sampledPeakHeapBytes": 845758976.0,
+          "observedGcSeconds": 0.315,
+          "samplerRows": 11,
+          "sampledPeakRssBytes": 1566035968,
+          "observedJvmCpuSeconds": 20.78,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 248969,
+              "wchar": 359,
+              "syscr": 410,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 177658949,
+            "wchar": 99623344,
+            "syscr": 28054,
+            "syscw": 1207,
+            "read_bytes": 0,
+            "write_bytes": 1679360,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1230068
+        },
+        "0": {
+          "pid": 1230625,
+          "startTicks": 23930254,
+          "sampledPeakHeapBytes": 65512345.6,
+          "observedGcSeconds": 0.113,
+          "samplerRows": 9,
+          "sampledPeakRssBytes": 319586304,
+          "observedJvmCpuSeconds": 10.14,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 55016,
+              "wchar": 1806,
+              "syscr": 66,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 45056,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 188510037,
+              "wchar": 148006908,
+              "syscr": 26302,
+              "syscw": 7538,
+              "read_bytes": 0,
+              "write_bytes": 99110912,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 188455021,
+            "wchar": 148005102,
+            "syscr": 26236,
+            "syscw": 7510,
+            "read_bytes": 0,
+            "write_bytes": 99065856,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 188455021,
+            "wchar": 148005102,
+            "syscr": 26236,
+            "syscw": 7510,
+            "read_bytes": 0,
+            "write_bytes": 99065856,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1230451
+        },
+        "1": {
+          "pid": 1230628,
+          "startTicks": 23930255,
+          "sampledPeakHeapBytes": 87542272.0,
+          "observedGcSeconds": 0.033,
+          "samplerRows": 9,
+          "sampledPeakRssBytes": 245022720,
+          "observedJvmCpuSeconds": 5.27,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 45036,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 174294453,
+              "wchar": 146799413,
+              "syscr": 18347,
+              "syscw": 6969,
+              "read_bytes": 0,
+              "write_bytes": 97923072,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 174249417,
+            "wchar": 146799343,
+            "syscr": 18286,
+            "syscw": 6959,
+            "read_bytes": 0,
+            "write_bytes": 97886208,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 174249417,
+            "wchar": 146799343,
+            "syscr": 18286,
+            "syscw": 6959,
+            "read_bytes": 0,
+            "write_bytes": 97886208,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1230451
+        }
+      },
+      "observedSummedJvmCpuSeconds": 36.19,
+      "observedSummedJvmGcSeconds": 0.46099999999999997,
+      "commonLiveSamples": 18,
+      "commonLiveSpanSeconds": 8.70976710319519,
+      "maxCommonSampleGapSeconds": 0.5177667140960693,
+      "sourceCompleteSha256": "44f35d3840591189bac7b9636708e3f485b21d98dc9bef416f20da25c3c59561",
+      "sourceEventsSha256": "1c190069b0eae59b19194d45e1bcf3d59c1da993e2bfde9549516ca64aef0dcd",
+      "sourceObserverSha256": "f2afd7106d8664acaf5e6351ca93d58176284c1f4d3fa967f6ca8fae57f9f082",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=20;readAndValidationNanos=7705224944;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    },
+    {
+      "block": 2,
+      "tag": "U",
+      "mode": "upstream",
+      "phase": "full",
+      "readAndValidationSeconds": 81.038504964,
+      "taskEnds": 1025,
+      "taskMetrics": {
+        "executorRunTimeMillis": {
+          "observedSum": 128733,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorCpuNanos": {
+          "observedSum": 113818723344,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "executorDeserializeCpuNanos": {
+          "observedSum": 13436137126,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "summedTaskGcMillis": {
+          "observedSum": 5688,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleLocalReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleRemoteReadBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleReadRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "shuffleWriteRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "memoryBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "diskBytesSpilled": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "sparkResultSizeBytes": {
+          "observedSum": 2486830,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputRecords": {
+          "observedSum": 72089,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputRecords": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "outputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        },
+        "inputBytes": {
+          "observedSum": 0,
+          "presentAttempts": 1025,
+          "missingEndedAttempts": 0
+        }
+      },
+      "stageCoverage": [
+        {
+          "stageId": 0,
+          "stageAttempt": 0,
+          "expectedTasks": 1025,
+          "observedTaskEnds": 1025,
+          "taskStarts": 1025,
+          "distinctEndedIndices": 1025,
+          "missingEndedIndices": [],
+          "successfulTaskEnds": 1025,
+          "taskTypes": [
+            "ResultTask"
+          ],
+          "writerResultTaskEnds": 0,
+          "name": "fold at ReadMemoryVersionedAlignedBench.java:242",
+          "failure": null
+        }
+      ],
+      "processes": {
+        "driver": {
+          "pid": 1230917,
+          "startTicks": 23931559,
+          "sampledPeakHeapBytes": 1083784192.0,
+          "observedGcSeconds": 0.487,
+          "samplerRows": 84,
+          "sampledPeakRssBytes": 1745616896,
+          "observedJvmCpuSeconds": 30.29,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 248987,
+              "wchar": 359,
+              "syscr": 410,
+              "syscw": 6,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "last": "unavailable"
+          },
+          "rawLifetimeIoDelta": null,
+          "rawLifetimeIoEndpointsComplete": false,
+          "commonLiveIoDelta": {
+            "rchar": 185824625,
+            "wchar": 186280570,
+            "syscr": 95556,
+            "syscw": 76200,
+            "read_bytes": 0,
+            "write_bytes": 14290944,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1230068
+        },
+        "0": {
+          "pid": 1231100,
+          "startTicks": 23931769,
+          "sampledPeakHeapBytes": 253183692.8,
+          "observedGcSeconds": 2.976,
+          "samplerRows": 82,
+          "sampledPeakRssBytes": 668094464,
+          "observedJvmCpuSeconds": 106.53,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 15850590,
+              "wchar": 3324,
+              "syscr": 3514,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1241645523,
+              "wchar": 156304237,
+              "syscr": 296495,
+              "syscw": 55803,
+              "read_bytes": 0,
+              "write_bytes": 100241408,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1225794933,
+            "wchar": 156300913,
+            "syscr": 292981,
+            "syscw": 55760,
+            "read_bytes": 0,
+            "write_bytes": 100204544,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1225794933,
+            "wchar": 156300913,
+            "syscr": 292981,
+            "syscw": 55760,
+            "read_bytes": 0,
+            "write_bytes": 100204544,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1230917
+        },
+        "1": {
+          "pid": 1231101,
+          "startTicks": 23931769,
+          "sampledPeakHeapBytes": 408395059.2,
+          "observedGcSeconds": 2.9250000000000003,
+          "samplerRows": 81,
+          "sampledPeakRssBytes": 880115712,
+          "observedJvmCpuSeconds": 107.52,
+          "rawLifetimeIoEndpoints": {
+            "first": {
+              "rchar": 16089643,
+              "wchar": 3322,
+              "syscr": 3632,
+              "syscw": 43,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "last": {
+              "rchar": 1244428065,
+              "wchar": 156299523,
+              "syscr": 296569,
+              "syscw": 55693,
+              "read_bytes": 0,
+              "write_bytes": 100233216,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "rawLifetimeIoDelta": {
+            "rchar": 1228338422,
+            "wchar": 156296201,
+            "syscr": 292937,
+            "syscw": 55650,
+            "read_bytes": 0,
+            "write_bytes": 100179968,
+            "cancelled_write_bytes": 0
+          },
+          "rawLifetimeIoEndpointsComplete": true,
+          "commonLiveIoDelta": {
+            "rchar": 1228338422,
+            "wchar": 156296201,
+            "syscr": 292937,
+            "syscw": 55650,
+            "read_bytes": 0,
+            "write_bytes": 100179968,
+            "cancelled_write_bytes": 0
+          },
+          "observedPpid": 1230917
+        }
+      },
+      "observedSummedJvmCpuSeconds": 244.33999999999997,
+      "observedSummedJvmGcSeconds": 6.388,
+      "commonLiveSamples": 160,
+      "commonLiveSpanSeconds": 81.37925267219543,
+      "maxCommonSampleGapSeconds": 0.5240428447723389,
+      "sourceCompleteSha256": "44f35d3840591189bac7b9636708e3f485b21d98dc9bef416f20da25c3c59561",
+      "sourceEventsSha256": "672fafa79574a53a38f13228d5139416afdd05759e6e538c59a86fd28ddebbe9",
+      "sourceObserverSha256": "e02e5b01843c205c23da31df8c26886ea47f473d3a71fa4757a829f04ea4b962",
+      "sourceResultMarker": "READ_BENCH readCompleted=true;rows=72089;readAndValidationNanos=81038504964;extraColumns=256;updatedBusinessColumns=128;versioned=true;perRowValueAndDomainChecks=passed;exactMultisetAndKeyRowIdValidation=notPerformed",
+      "allTargetJvmSamplesPresent": true
+    }
+  ],
+  "descriptiveSummary": [
+    {
+      "phase": "limit20",
+      "tag": "U",
+      "mode": "upstream",
+      "rawSeconds": [
+        7.335340741,
+        7.705224944
+      ],
+      "minimumSeconds": 7.335340741,
+      "maximumSeconds": 7.705224944,
+      "descriptiveMedians": {
+        "seconds": 7.5202828425,
+        "driverPeakHeapMiB": 841.28662109375,
+        "driverPeakRssMiB": 1479.009765625,
+        "observedJvmCpuSeconds": 35.8,
+        "observedJvmGcSeconds": 0.44399999999999995,
+        "taskDeserializeCpuSeconds": 0.3291553895,
+        "driverCommonWriteMiB": 1.595703125,
+        "executorsCommonWriteMiB": 187.826171875
+      },
+      "ratioOfMediansPercentVsUpstream": 0.0
+    },
+    {
+      "phase": "limit20",
+      "tag": "F",
+      "mode": "off",
+      "rawSeconds": [
+        7.81847858,
+        7.580382836
+      ],
+      "minimumSeconds": 7.580382836,
+      "maximumSeconds": 7.81847858,
+      "descriptiveMedians": {
+        "seconds": 7.6994307079999995,
+        "driverPeakHeapMiB": 791.34423828125,
+        "driverPeakRssMiB": 1433.775390625,
+        "observedJvmCpuSeconds": 34.875,
+        "observedJvmGcSeconds": 0.47450000000000003,
+        "taskDeserializeCpuSeconds": 0.3002183895,
+        "driverCommonWriteMiB": 1.50390625,
+        "executorsCommonWriteMiB": 188.3203125
+      },
+      "ratioOfMediansPercentVsUpstream": 2.382195846246171
+    },
+    {
+      "phase": "limit20",
+      "tag": "L",
+      "mode": "lightweight",
+      "rawSeconds": [
+        7.554195153,
+        7.460935578
+      ],
+      "minimumSeconds": 7.460935578,
+      "maximumSeconds": 7.554195153,
+      "descriptiveMedians": {
+        "seconds": 7.5075653655,
+        "driverPeakHeapMiB": 376.322998046875,
+        "driverPeakRssMiB": 856.4609375,
+        "observedJvmCpuSeconds": 34.325,
+        "observedJvmGcSeconds": 0.293,
+        "taskDeserializeCpuSeconds": 0.318409746,
+        "driverCommonWriteMiB": 1.484375,
+        "executorsCommonWriteMiB": 188.3203125
+      },
+      "ratioOfMediansPercentVsUpstream": -0.16910902510380854
+    },
+    {
+      "phase": "limit20",
+      "tag": "S",
+      "mode": "streaming",
+      "rawSeconds": [
+        9.625539232,
+        9.759116579
+      ],
+      "minimumSeconds": 9.625539232,
+      "maximumSeconds": 9.759116579,
+      "descriptiveMedians": {
+        "seconds": 9.692327905500001,
+        "driverPeakHeapMiB": 284.96181640625,
+        "driverPeakRssMiB": 714.84375,
+        "observedJvmCpuSeconds": 38.995000000000005,
+        "observedJvmGcSeconds": 0.29000000000000004,
+        "taskDeserializeCpuSeconds": 0.309568656,
+        "driverCommonWriteMiB": 121.818359375,
+        "executorsCommonWriteMiB": 188.384765625
+      },
+      "ratioOfMediansPercentVsUpstream": 28.88249163615153
+    },
+    {
+      "phase": "full",
+      "tag": "U",
+      "mode": "upstream",
+      "rawSeconds": [
+        80.374490109,
+        81.038504964
+      ],
+      "minimumSeconds": 80.374490109,
+      "maximumSeconds": 81.038504964,
+      "descriptiveMedians": {
+        "seconds": 80.7064975365,
+        "driverPeakHeapMiB": 1093.733642578125,
+        "driverPeakRssMiB": 1625.15625,
+        "observedJvmCpuSeconds": 243.35999999999999,
+        "observedJvmGcSeconds": 6.4079999999999995,
+        "taskDeserializeCpuSeconds": 13.495644492,
+        "driverCommonWriteMiB": 13.65234375,
+        "executorsCommonWriteMiB": 191.103515625
+      },
+      "ratioOfMediansPercentVsUpstream": 0.0
+    },
+    {
+      "phase": "full",
+      "tag": "F",
+      "mode": "off",
+      "rawSeconds": [
+        80.288787756,
+        80.697623461
+      ],
+      "minimumSeconds": 80.288787756,
+      "maximumSeconds": 80.697623461,
+      "descriptiveMedians": {
+        "seconds": 80.4932056085,
+        "driverPeakHeapMiB": 1115.356982421875,
+        "driverPeakRssMiB": 1650.849609375,
+        "observedJvmCpuSeconds": 244.1,
+        "observedJvmGcSeconds": 6.351,
+        "taskDeserializeCpuSeconds": 13.220249778500001,
+        "driverCommonWriteMiB": 13.6484375,
+        "executorsCommonWriteMiB": 191.62109375
+      },
+      "ratioOfMediansPercentVsUpstream": -0.2642809866746143
+    },
+    {
+      "phase": "full",
+      "tag": "L",
+      "mode": "lightweight",
+      "rawSeconds": [
+        80.344296626,
+        80.508821797
+      ],
+      "minimumSeconds": 80.344296626,
+      "maximumSeconds": 80.508821797,
+      "descriptiveMedians": {
+        "seconds": 80.4265592115,
+        "driverPeakHeapMiB": 539.49951171875,
+        "driverPeakRssMiB": 1036.251953125,
+        "observedJvmCpuSeconds": 240.98999999999998,
+        "observedJvmGcSeconds": 6.637499999999999,
+        "taskDeserializeCpuSeconds": 13.0821121745,
+        "driverCommonWriteMiB": 13.677734375,
+        "executorsCommonWriteMiB": 191.89453125
+      },
+      "ratioOfMediansPercentVsUpstream": -0.3468597120986239
+    },
+    {
+      "phase": "full",
+      "tag": "S",
+      "mode": "streaming",
+      "rawSeconds": [
+        82.950126157,
+        82.899079137
+      ],
+      "minimumSeconds": 82.899079137,
+      "maximumSeconds": 82.950126157,
+      "descriptiveMedians": {
+        "seconds": 82.924602647,
+        "driverPeakHeapMiB": 380.998486328125,
+        "driverPeakRssMiB": 757.6328125,
+        "observedJvmCpuSeconds": 245.775,
+        "observedJvmGcSeconds": 6.598,
+        "taskDeserializeCpuSeconds": 13.5000678865,
+        "driverCommonWriteMiB": 133.900390625,
+        "executorsCommonWriteMiB": 191.8984375
+      },
+      "ratioOfMediansPercentVsUpstream": 2.7483600183453083
+    }
+  ],
+  "arms": [
+    {
+      "block": 1,
+      "tag": "U",
+      "completeSha256": "d402e3eae02796348bc80c42bc98f8c17bb15e300dcc36af5474533fc28eb858",
+      "terminalSha256": "c3db8c5e139da98582faf0f8f423a9e8070f1055df3bb176ba65f700bb39d7a7",
+      "exactBinding": {
+        "executed": false,
+        "path": "/home/ubuntu/paimon-memory-evidence/final-b7-upstream-read32768-capacity-v1/exact-result.json",
+        "sha256": "b9a2cc95af7b690993194e5fc25c738f24b9721a81a04204b5b53e4d37faf147"
+      },
+      "allFiveExactPassed": true,
+      "preparedUnchanged": true,
+      "noSnapshotMutation": true,
+      "immutableDArchiveInput": true,
+      "physicalClone": false,
+      "canonicalUnchanged": false
+    },
+    {
+      "block": 1,
+      "tag": "F",
+      "completeSha256": "59ce23bdceaac6398fb811dbd620cb84c648ebdd1a4175b47d396c2f173cbfd2",
+      "terminalSha256": "98770d54c0601df6cb17e5afb019fa5aaea2eb4e12cd00db7db8d1791d5bd6a0",
+      "exactBinding": {
+        "executed": true,
+        "path": "/home/ubuntu/paimon-memory-evidence/final-b7-read-perf32768-block1-F-v1/exact-result.json",
+        "sha256": "52e49a7b7ffd05ba5a0624533b19345ce2ff2fd0f9bc68eb3a02f49142d8d25f"
+      },
+      "allFiveExactPassed": true,
+      "preparedUnchanged": true,
+      "noSnapshotMutation": true,
+      "immutableDArchiveInput": true,
+      "physicalClone": false,
+      "canonicalUnchanged": false
+    },
+    {
+      "block": 1,
+      "tag": "L",
+      "completeSha256": "a6fe53fb8f72dfcfe59cfcb256bde928059c8eca0aca1c2cb6420ea9b1220bc7",
+      "terminalSha256": "24dcf567f011f56e2d7509b59c8af892e4b3cda00a9bb6eadc2f0afe32a971c5",
+      "exactBinding": {
+        "executed": true,
+        "path": "/home/ubuntu/paimon-memory-evidence/final-b7-read-perf32768-block1-L-v1/exact-result.json",
+        "sha256": "6320cab036d531cbf876b093b5ec7cb03c936ee3594c8b517be584deea05c0ba"
+      },
+      "allFiveExactPassed": true,
+      "preparedUnchanged": true,
+      "noSnapshotMutation": true,
+      "immutableDArchiveInput": true,
+      "physicalClone": false,
+      "canonicalUnchanged": false
+    },
+    {
+      "block": 1,
+      "tag": "S",
+      "completeSha256": "8de71b61ee214757bf952efea138b4088af17dea7cdb70bc495ab70a56ef6e9a",
+      "terminalSha256": "369cd5c5eb8fc271ddb0c9980180031535a6e0ad65f49a77e4deef3a0093e53a",
+      "exactBinding": {
+        "executed": false,
+        "path": "/home/ubuntu/paimon-memory-evidence/final-b7-streaming-read32768-capacity-v1/continuation-exact-v1/exact-result.json",
+        "sha256": "0eec2b10bef0c6eb4a0f3addea7df06a8b04e44473c22695bce5194d5f13cd2f"
+      },
+      "allFiveExactPassed": true,
+      "preparedUnchanged": true,
+      "noSnapshotMutation": true,
+      "immutableDArchiveInput": true,
+      "physicalClone": false,
+      "canonicalUnchanged": false
+    },
+    {
+      "block": 2,
+      "tag": "U",
+      "completeSha256": "44f35d3840591189bac7b9636708e3f485b21d98dc9bef416f20da25c3c59561",
+      "terminalSha256": "74e0a2548d5d40f94ca50d9a335806e03724a699b1ebe9d799f3d06213e0d85e",
+      "exactBinding": {
+        "executed": false,
+        "path": "/home/ubuntu/paimon-memory-evidence/final-b7-upstream-read32768-capacity-v1/exact-result.json",
+        "sha256": "b9a2cc95af7b690993194e5fc25c738f24b9721a81a04204b5b53e4d37faf147"
+      },
+      "allFiveExactPassed": true,
+      "preparedUnchanged": true,
+      "noSnapshotMutation": true,
+      "immutableDArchiveInput": true,
+      "physicalClone": false,
+      "canonicalUnchanged": false
+    },
+    {
+      "block": 2,
+      "tag": "F",
+      "completeSha256": "beae79b1314ebb4ba1d79a7060b18e5e9732f56c9ae3196236a4cbaa7cfe290c",
+      "terminalSha256": "9fdd1b65509f95bee9167dc87e8b5679b554dba78151d379d6ebcbdd58debb37",
+      "exactBinding": {
+        "executed": false,
+        "path": "/home/ubuntu/paimon-memory-evidence/final-b7-read-perf32768-block1-F-v1/exact-result.json",
+        "sha256": "52e49a7b7ffd05ba5a0624533b19345ce2ff2fd0f9bc68eb3a02f49142d8d25f"
+      },
+      "allFiveExactPassed": true,
+      "preparedUnchanged": true,
+      "noSnapshotMutation": true,
+      "immutableDArchiveInput": true,
+      "physicalClone": false,
+      "canonicalUnchanged": false
+    },
+    {
+      "block": 2,
+      "tag": "L",
+      "completeSha256": "a6787a8f631fde5f0ed818bb6bc160443c5049f4e7ccd458ff2edc824db13437",
+      "terminalSha256": "09acea1426f215f671111cfd7ed7ad4aaab0a4aeeb4cd839dd9827ce45530db2",
+      "exactBinding": {
+        "executed": false,
+        "path": "/home/ubuntu/paimon-memory-evidence/final-b7-read-perf32768-block1-L-v1/exact-result.json",
+        "sha256": "6320cab036d531cbf876b093b5ec7cb03c936ee3594c8b517be584deea05c0ba"
+      },
+      "allFiveExactPassed": true,
+      "preparedUnchanged": true,
+      "noSnapshotMutation": true,
+      "immutableDArchiveInput": true,
+      "physicalClone": false,
+      "canonicalUnchanged": false
+    },
+    {
+      "block": 2,
+      "tag": "S",
+      "completeSha256": "7cc01047ec267ad63d276bb5fd22176e37796cdcf5b0980a0956760eeb3cb164",
+      "terminalSha256": "ffa5a18a55b8593653736652eedb3276ab3dc076f7e5d8647c9b59c215d91857",
+      "exactBinding": {
+        "executed": false,
+        "path": "/home/ubuntu/paimon-memory-evidence/final-b7-streaming-read32768-capacity-v1/continuation-exact-v1/exact-result.json",
+        "sha256": "0eec2b10bef0c6eb4a0f3addea7df06a8b04e44473c22695bce5194d5f13cd2f"
+      },
+      "allFiveExactPassed": true,
+      "preparedUnchanged": true,
+      "noSnapshotMutation": true,
+      "immutableDArchiveInput": true,
+      "physicalClone": false,
+      "canonicalUnchanged": false
+    }
+  ],
+  "sourceAnalysisSha256": [
+    "fafad4d97ec66414079e3549f85ec8e9a569534be9362a60926474a6ddb29784",
+    "2f2a9f74eb9d51a3805e80d97e85a2608d75b680497fac072b0e2a17edacc1a0"
+  ],
+  "scope": [
+    "JVM CPU/GC/heap/RSS cover observed JVM lifetime, not isolated SQL/planning/encoding.",
+    "Task GC overlaps JVM GC; never add them. Sampled peaks may miss real peaks.",
+    "Proc IO includes waited-for children; do not sum raw Driver/Executor lifetime IO.",
+    "Common-live IO is sampled coexistence, not exact SQL/connector-only IO; other short-lived children remain possible.",
+    "rchar/wchar are not disk/network-only. Zero storage read bytes may reflect page cache.",
+    "Spark spill excludes connector metadata sort/replay; Result Size is not raw commit-message bytes."
+  ],
+  "limitations": [
+    "Single host with two Executor JVMs, not a multi-worker-node network benchmark.",
+    "Same physical data inodes and warm OS caches; fresh query JVMs and reversed order do not ensure identical caches.",
+    "Two observations per mode/query: descriptive midpoint/range only, no p95, significance or throughput extrapolation.",
+    "Timers include planning, execution and the common validation consumer; exact isolated encoding/planning CPU is unavailable.",
+    "Independent exact checks are reused once per actual reader mode, outside query timing.",
+    "Controlled read-planning failure does not classify or prove repair of the production three-million-file exit137."
+  ]
+}
