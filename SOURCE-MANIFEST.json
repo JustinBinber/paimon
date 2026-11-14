@@ -18,10 +18,10 @@
   ],
   "assembledKitExecutionClaim": false,
   "existingHelperAndControllerReused": true,
-  "finalCapacityAndPerformanceResultsPending": true,
+  "finalCapacityAndPerformanceResultsPending": false,
   "readme": {
     "path": "README.md",
-    "sha256": "83610902ee77c7b38dd7f67cebfc15b2ee2e61f21f981bd7125f81823bf5bd13",
+    "sha256": "2758230e6eb513e6df1519e840073be27295acd91a3c75db9b666e51692fafb0",
     "actualExperimentAndNewSeedDistinguished": true
   },
   "fixtureSdkOrigin": "d98f08784c2cf9aed42cc759b3f9c1b3c9bec628",
@@ -29,8 +29,16 @@
   "generatorMethodsByteIdenticalToOriginal28714Source": true,
   "results": [
     {
+      "path": "resource-results-32.json",
+      "sha256": "45dbccebb870dbc9e6ec7915bd5e76bea0390264aea51ef25db1773077adc308"
+    },
+    {
+      "path": "resource-results-65536.json",
+      "sha256": "1251adb083cbc5c2d45c16fc1c13cd7122fee960c0a06b785cc90e964a6e5e95"
+    },
+    {
       "path": "RESULTS.md",
-      "sha256": "61f1d30910ef7546e65d596b73f21ce52184cfd7785be42372aff063e25c2aa3"
+      "sha256": "f5b9662b3356d457513dd2f7b637f875ee27dd901423159bd8cca912f78ac89e"
     },
     {
       "path": "sql-results-32.json",
@@ -38,5 +46,7 @@
     }
   ],
   "capacityAnd32FileResultsAccepted": true,
-  "remaining65536PerformancePending": true
+  "remaining65536PerformancePending": false,
+  "runtimeCandidate": "3d64be92a161a12130ede4f2719fb4df4a1b8844",
+  "all32MeasuredMergeAndFiveCheckOraclesPassed": true
 }

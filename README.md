@@ -3,8 +3,8 @@
 This source-only kit reuses the helper and controller used in the experiments.
 It contains no Paimon/Spark binary, cloud access code or credential. Packaging
 these files is not a claim that this assembled kit was executed on a fresh host.
-See RESULTS.md for accepted capacity and 32-file results. The 65536-file
-performance campaign is running; its final measurements are not yet reported.
+See RESULTS.md for accepted capacity and all four balanced performance blocks
+at 32 and 65536 files, including all samples and resource-accounting limits.
 
 Use a Linux scratch directory, Python 3, Spark 3.5.9/Scala 2.12.18 and JDK 17
 for the SQL processes. Build the Spark3 Paimon connector with JDK 8 using normal
@@ -121,8 +121,9 @@ L3 S3 F3 U3
 S4 U4 L4 F4
 ```
 
-Keep prerequisite runs out of these samples. Retain full SQL time, planning and
-commit phases, heap/RSS, CPU, GC, Shuffle and process disk I/O for every arm.
+Keep prerequisite runs out of these samples. Retain full SQL time, existing
+commit log duration, heap/RSS, CPU, GC, Shuffle and process I/O for every arm.
+Exact isolated planning/encoding CPU was not instrumented in these experiments.
 The actual experiment controllers additionally bound rotating GC logs and check
 the actual three JVM heap arguments and process identities. Do not call this
 single-host, multiple-process setup a multiple-node cluster benchmark. A MERGE

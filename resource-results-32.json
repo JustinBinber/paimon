@@ -1,0 +1,4326 @@
+{
+  "files": 32,
+  "base": "b7cfb397de334d56b8c3eaeb60a2cfa9c9cab627",
+  "candidate": "3d64be92a161a12130ede4f2719fb4df4a1b8844",
+  "frozenProductionEquivalent": "f17caf4cc27eaa87927fe0fb28385462aecb373d",
+  "all16SamplesRetained": true,
+  "bindings": [
+    {
+      "file": "final-b7-perf32-common-alive-io-addendum-v1.json",
+      "sha256": "37dff86f666c902e74b1226bd7abc54aa8bda1158aedb897ae2469e75c03e9a0"
+    },
+    {
+      "file": "analysis-final-b7-perf32-metrics-v1__complete.json",
+      "sha256": "852ed5b42982204e4fc4d75eaa7ca0d1189baebf7e2659ef2a1911ca8d192b4e"
+    }
+  ],
+  "medians": [
+    {
+      "mode": "upstream",
+      "sqlSamplesSeconds": [
+        7.642550046,
+        8.069579576,
+        7.987305058,
+        7.914079115
+      ],
+      "sqlSeconds": 7.9506920865,
+      "commitMillis": 65.5,
+      "observedWholeJvmCpuSeconds": 51.325,
+      "observedSummedJvmGcMillis": 312.5,
+      "taskCpuNanos": 4342654872.0,
+      "taskDeserializeCpuNanos": 1089182320.0,
+      "summedTaskGcMillis": 150.0,
+      "shuffleWriteBytes": 4411.0,
+      "sparkDiskBytesSpilled": 0.0,
+      "driverSampledPeakHeapBytes": 118849504.0,
+      "driverSampledPeakRssBytes": 605743104.0,
+      "largestSingleExecutorSampledPeakHeapBytes": 127709748.0,
+      "largestSingleExecutorSampledPeakRssBytes": 427526144.0,
+      "commonAliveSpanSeconds": 14.161259412765503,
+      "driverCommonAliveWriteBytes": 2170880.0,
+      "driverCommonAliveCancelledWriteBytes": 0.0,
+      "sqlRatioOfMediansPercentVsUpstream": 0.0
+    },
+    {
+      "mode": "off",
+      "sqlSamplesSeconds": [
+        7.722187372,
+        8.025444726,
+        7.594872604,
+        7.753153505
+      ],
+      "sqlSeconds": 7.7376704385,
+      "commitMillis": 59.5,
+      "observedWholeJvmCpuSeconds": 48.805,
+      "observedSummedJvmGcMillis": 302.0,
+      "taskCpuNanos": 4317610801.0,
+      "taskDeserializeCpuNanos": 1102950822.0,
+      "summedTaskGcMillis": 137.0,
+      "shuffleWriteBytes": 4411.0,
+      "sparkDiskBytesSpilled": 0.0,
+      "driverSampledPeakHeapBytes": 126327076.0,
+      "driverSampledPeakRssBytes": 582705152.0,
+      "largestSingleExecutorSampledPeakHeapBytes": 133150320.0,
+      "largestSingleExecutorSampledPeakRssBytes": 429572096.0,
+      "commonAliveSpanSeconds": 14.159348249435425,
+      "driverCommonAliveWriteBytes": 2160640.0,
+      "driverCommonAliveCancelledWriteBytes": 0.0,
+      "sqlRatioOfMediansPercentVsUpstream": -2.679284340060195
+    },
+    {
+      "mode": "lightweight",
+      "sqlSamplesSeconds": [
+        7.873958831,
+        7.450485943,
+        7.908746831,
+        7.727028239
+      ],
+      "sqlSeconds": 7.800493535,
+      "commitMillis": 94.5,
+      "observedWholeJvmCpuSeconds": 48.385000000000005,
+      "observedSummedJvmGcMillis": 303.0,
+      "taskCpuNanos": 4251791343.5,
+      "taskDeserializeCpuNanos": 1112223802.0,
+      "summedTaskGcMillis": 145.0,
+      "shuffleWriteBytes": 4411.0,
+      "sparkDiskBytesSpilled": 0.0,
+      "driverSampledPeakHeapBytes": 118009308.0,
+      "driverSampledPeakRssBytes": 554641408.0,
+      "largestSingleExecutorSampledPeakHeapBytes": 122346256.0,
+      "largestSingleExecutorSampledPeakRssBytes": 404154368.0,
+      "commonAliveSpanSeconds": 14.158607602119446,
+      "driverCommonAliveWriteBytes": 2148352.0,
+      "driverCommonAliveCancelledWriteBytes": 0.0,
+      "sqlRatioOfMediansPercentVsUpstream": -1.8891254983327999
+    },
+    {
+      "mode": "streaming",
+      "sqlSamplesSeconds": [
+        8.515053314,
+        8.171018948,
+        7.858951911,
+        7.995252834
+      ],
+      "sqlSeconds": 8.083135891000001,
+      "commitMillis": 139.0,
+      "observedWholeJvmCpuSeconds": 51.41,
+      "observedSummedJvmGcMillis": 310.5,
+      "taskCpuNanos": 4231213183.0,
+      "taskDeserializeCpuNanos": 1128259726.5,
+      "summedTaskGcMillis": 155.0,
+      "shuffleWriteBytes": 4411.0,
+      "sparkDiskBytesSpilled": 0.0,
+      "driverSampledPeakHeapBytes": 148127272.0,
+      "driverSampledPeakRssBytes": 607967232.0,
+      "largestSingleExecutorSampledPeakHeapBytes": 114794776.0,
+      "largestSingleExecutorSampledPeakRssBytes": 444932096.0,
+      "commonAliveSpanSeconds": 15.17687439918518,
+      "driverCommonAliveWriteBytes": 2224128.0,
+      "driverCommonAliveCancelledWriteBytes": 20480.0,
+      "sqlRatioOfMediansPercentVsUpstream": 1.6658147876822627
+    }
+  ],
+  "samples": [
+    {
+      "label": "FINAL-B7-U1-32-PERF-v2",
+      "block": 1,
+      "mode": "upstream",
+      "sqlSeconds": 7.642550046,
+      "commitLogDurationMillis": [
+        68
+      ],
+      "commitMillis": 68,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 48.4,
+      "observedSummedJvmGcMillis": 287,
+      "taskCpuNanos": 4113520545,
+      "taskDeserializeCpuNanos": 1090995215,
+      "summedTaskGcMillis": 116,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59171,
+      "driverSampledPeakHeapBytes": 105006016,
+      "driverSampledPeakRssBytes": 613834752,
+      "largestSingleExecutorSampledPeakHeapBytes": 98270952,
+      "largestSingleExecutorSampledPeakRssBytes": 430338048,
+      "commonAliveSpanSeconds": 14.14781665802002,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.0119619369506836,
+      "driverCommonAliveIo": {
+        "rchar": 223248101,
+        "wchar": 101075719,
+        "syscr": 18657,
+        "syscw": 2509,
+        "read_bytes": 0,
+        "write_bytes": 2170880,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1045037,
+          "startTicks": 21035778,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 105006016,
+          "sampledPeakRssBytes": 613834752,
+          "lastObservedKernelHwmBytes": 613838848,
+          "sampledPeakRssAnonBytes": 589070336,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 198,
+          "gcMillisObservedDelta": 185,
+          "gcCountLastObservedSinceJvmStart": 29,
+          "observedUtimeTicksDelta": 2209,
+          "observedStimeTicksDelta": 64,
+          "observedCpuSecondsDelta": 22.73,
+          "sampleSpanSeconds": 17.1790509223938,
+          "procIoDelta": {
+            "rchar": 260032697,
+            "wchar": 101143971,
+            "syscr": 36417,
+            "syscw": 3041,
+            "read_bytes": 0,
+            "write_bytes": 2289664,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.171810388565063,
+          "postPhaseStartSampledPeakRssBytes": 613834752
+        },
+        "1": {
+          "pid": 1045209,
+          "startTicks": 21035980,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 84146472,
+          "sampledPeakRssBytes": 342482944,
+          "lastObservedKernelHwmBytes": 342482944,
+          "sampledPeakRssAnonBytes": 318500864,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 68,
+          "gcMillisObservedDelta": 35,
+          "gcCountLastObservedSinceJvmStart": 13,
+          "observedUtimeTicksDelta": 1095,
+          "observedStimeTicksDelta": 37,
+          "observedCpuSecondsDelta": 11.32,
+          "sampleSpanSeconds": 14.14781665802002,
+          "procIoDelta": {
+            "rchar": 290650175,
+            "wchar": 148088716,
+            "syscr": 29828,
+            "syscw": 7847,
+            "read_bytes": 0,
+            "write_bytes": 99241984,
+            "cancelled_write_bytes": 122880
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.14781665802002,
+          "postPhaseStartSampledPeakRssBytes": 342482944
+        },
+        "0": {
+          "pid": 1045210,
+          "startTicks": 21035980,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 98270952,
+          "sampledPeakRssBytes": 430338048,
+          "lastObservedKernelHwmBytes": 430338048,
+          "sampledPeakRssAnonBytes": 405831680,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 104,
+          "gcMillisObservedDelta": 67,
+          "gcCountLastObservedSinceJvmStart": 21,
+          "observedUtimeTicksDelta": 1388,
+          "observedStimeTicksDelta": 47,
+          "observedCpuSecondsDelta": 14.35,
+          "sampleSpanSeconds": 14.14781665802002,
+          "procIoDelta": {
+            "rchar": 293042158,
+            "wchar": 148184270,
+            "syscr": 34143,
+            "syscw": 8404,
+            "read_bytes": 0,
+            "write_bytes": 99381248,
+            "cancelled_write_bytes": 122880
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.14781665802002,
+          "postPhaseStartSampledPeakRssBytes": 430338048
+        }
+      },
+      "commonAliveIo": {
+        "mode": "upstream",
+        "label": "FINAL-B7-U1-32-PERF-v2",
+        "block": 1,
+        "commonFirstTime": 1794658263.1045554,
+        "commonLastTime": 1794658277.252372,
+        "commonSpanSeconds": 14.14781665802002,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.0119619369506836,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1045037,
+            "startTicks": 21035778,
+            "ppid": 1045036,
+            "firstIo": {
+              "rchar": 37031322,
+              "wchar": 68611,
+              "syscr": 18168,
+              "syscw": 538,
+              "read_bytes": 0,
+              "write_bytes": 118784,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260279423,
+              "wchar": 101144330,
+              "syscr": 36825,
+              "syscw": 3047,
+              "read_bytes": 0,
+              "write_bytes": 2289664,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223248101,
+              "wchar": 101075719,
+              "syscr": 18657,
+              "syscw": 2509,
+              "read_bytes": 0,
+              "write_bytes": 2170880,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260032697,
+              "wchar": 101143971,
+              "syscr": 36417,
+              "syscw": 3041,
+              "read_bytes": 0,
+              "write_bytes": 2289664,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1045209,
+            "startTicks": 21035980,
+            "ppid": 1045037,
+            "firstIo": {
+              "rchar": 17038,
+              "wchar": 4,
+              "syscr": 32,
+              "syscw": 1,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 290667213,
+              "wchar": 148088720,
+              "syscr": 29860,
+              "syscw": 7848,
+              "read_bytes": 0,
+              "write_bytes": 99241984,
+              "cancelled_write_bytes": 122880
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 290650175,
+              "wchar": 148088716,
+              "syscr": 29828,
+              "syscw": 7847,
+              "read_bytes": 0,
+              "write_bytes": 99241984,
+              "cancelled_write_bytes": 122880
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 290650175,
+              "wchar": 148088716,
+              "syscr": 29828,
+              "syscw": 7847,
+              "read_bytes": 0,
+              "write_bytes": 99241984,
+              "cancelled_write_bytes": 122880
+            }
+          },
+          "0": {
+            "pid": 1045210,
+            "startTicks": 21035980,
+            "ppid": 1045037,
+            "firstIo": {
+              "rchar": 45095,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 293087253,
+              "wchar": 148184340,
+              "syscr": 34204,
+              "syscw": 8414,
+              "read_bytes": 0,
+              "write_bytes": 99418112,
+              "cancelled_write_bytes": 122880
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 293042158,
+              "wchar": 148184270,
+              "syscr": 34143,
+              "syscw": 8404,
+              "read_bytes": 0,
+              "write_bytes": 99381248,
+              "cancelled_write_bytes": 122880
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 293042158,
+              "wchar": 148184270,
+              "syscr": 34143,
+              "syscw": 8404,
+              "read_bytes": 0,
+              "write_bytes": 99381248,
+              "cancelled_write_bytes": 122880
+            }
+          }
+        },
+        "observerMemberSha256": "e12030de34565501010609b0c716ce880a1522f6085029dcdec87959c7b4e2f6"
+      }
+    },
+    {
+      "label": "FINAL-B7-F1-32-PERF-v2",
+      "block": 1,
+      "mode": "off",
+      "sqlSeconds": 7.722187372,
+      "commitLogDurationMillis": [
+        65
+      ],
+      "commitMillis": 65,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 46.11,
+      "observedSummedJvmGcMillis": 313,
+      "taskCpuNanos": 4247124864,
+      "taskDeserializeCpuNanos": 1093919945,
+      "summedTaskGcMillis": 121,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59219,
+      "driverSampledPeakHeapBytes": 120061176,
+      "driverSampledPeakRssBytes": 620072960,
+      "largestSingleExecutorSampledPeakHeapBytes": 137774032,
+      "largestSingleExecutorSampledPeakRssBytes": 436416512,
+      "commonAliveSpanSeconds": 13.134957551956177,
+      "commonAliveSamples": 14,
+      "commonAliveMaxSampleGapSeconds": 1.0129845142364502,
+      "driverCommonAliveIo": {
+        "rchar": 122225872,
+        "wchar": 101223031,
+        "syscr": 16050,
+        "syscw": 2442,
+        "read_bytes": 0,
+        "write_bytes": 2052096,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1046476,
+          "startTicks": 21039527,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 120061176,
+          "sampledPeakRssBytes": 620072960,
+          "lastObservedKernelHwmBytes": 620072960,
+          "sampledPeakRssAnonBytes": 595353600,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 180,
+          "gcMillisObservedDelta": 169,
+          "gcCountLastObservedSinceJvmStart": 28,
+          "observedUtimeTicksDelta": 2273,
+          "observedStimeTicksDelta": 68,
+          "observedCpuSecondsDelta": 23.41,
+          "sampleSpanSeconds": 17.17550230026245,
+          "procIoDelta": {
+            "rchar": 260587074,
+            "wchar": 101403900,
+            "syscr": 36437,
+            "syscw": 3050,
+            "read_bytes": 0,
+            "write_bytes": 2285568,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.16809868812561,
+          "postPhaseStartSampledPeakRssBytes": 620072960
+        },
+        "1": {
+          "pid": 1046640,
+          "startTicks": 21039730,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 137774032,
+          "sampledPeakRssBytes": 436416512,
+          "lastObservedKernelHwmBytes": 436416512,
+          "sampledPeakRssAnonBytes": 412188672,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 131,
+          "gcMillisObservedDelta": 81,
+          "gcCountLastObservedSinceJvmStart": 22,
+          "observedUtimeTicksDelta": 1341,
+          "observedStimeTicksDelta": 43,
+          "observedCpuSecondsDelta": 13.84,
+          "sampleSpanSeconds": 13.134957551956177,
+          "procIoDelta": {
+            "rchar": 276117441,
+            "wchar": 148581145,
+            "syscr": 28535,
+            "syscw": 8445,
+            "read_bytes": 0,
+            "write_bytes": 99758080,
+            "cancelled_write_bytes": 258048
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 13.134957551956177,
+          "postPhaseStartSampledPeakRssBytes": 436416512
+        },
+        "0": {
+          "pid": 1046639,
+          "startTicks": 21039729,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 71016720,
+          "sampledPeakRssBytes": 337223680,
+          "lastObservedKernelHwmBytes": 337223680,
+          "sampledPeakRssAnonBytes": 313139200,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 100,
+          "gcMillisObservedDelta": 63,
+          "gcCountLastObservedSinceJvmStart": 14,
+          "observedUtimeTicksDelta": 856,
+          "observedStimeTicksDelta": 30,
+          "observedCpuSecondsDelta": 8.86,
+          "sampleSpanSeconds": 13.134957551956177,
+          "procIoDelta": {
+            "rchar": 272285552,
+            "wchar": 148460416,
+            "syscr": 24851,
+            "syscw": 7736,
+            "read_bytes": 0,
+            "write_bytes": 99328000,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 13.134957551956177,
+          "postPhaseStartSampledPeakRssBytes": 337223680
+        }
+      },
+      "commonAliveIo": {
+        "mode": "off",
+        "label": "FINAL-B7-F1-32-PERF-v2",
+        "block": 1,
+        "commonFirstTime": 1794658301.6004992,
+        "commonLastTime": 1794658314.7354567,
+        "commonSpanSeconds": 13.134957551956177,
+        "commonSamples": 14,
+        "maxCommonSampleGapSeconds": 1.0129845142364502,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1046476,
+            "startTicks": 21039527,
+            "ppid": 1046475,
+            "firstIo": {
+              "rchar": 138607953,
+              "wchar": 181228,
+              "syscr": 20795,
+              "syscw": 614,
+              "read_bytes": 0,
+              "write_bytes": 233472,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260833825,
+              "wchar": 101404259,
+              "syscr": 36845,
+              "syscw": 3056,
+              "read_bytes": 0,
+              "write_bytes": 2285568,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 122225872,
+              "wchar": 101223031,
+              "syscr": 16050,
+              "syscw": 2442,
+              "read_bytes": 0,
+              "write_bytes": 2052096,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260587074,
+              "wchar": 101403900,
+              "syscr": 36437,
+              "syscw": 3050,
+              "read_bytes": 0,
+              "write_bytes": 2285568,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1046640,
+            "startTicks": 21039730,
+            "ppid": 1046476,
+            "firstIo": {
+              "rchar": 17385533,
+              "wchar": 4849,
+              "syscr": 4582,
+              "syscw": 58,
+              "read_bytes": 0,
+              "write_bytes": 40960,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 293502974,
+              "wchar": 148585994,
+              "syscr": 33117,
+              "syscw": 8503,
+              "read_bytes": 0,
+              "write_bytes": 99799040,
+              "cancelled_write_bytes": 258048
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 276117441,
+              "wchar": 148581145,
+              "syscr": 28535,
+              "syscw": 8445,
+              "read_bytes": 0,
+              "write_bytes": 99758080,
+              "cancelled_write_bytes": 258048
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 276117441,
+              "wchar": 148581145,
+              "syscr": 28535,
+              "syscw": 8445,
+              "read_bytes": 0,
+              "write_bytes": 99758080,
+              "cancelled_write_bytes": 258048
+            }
+          },
+          "0": {
+            "pid": 1046639,
+            "startTicks": 21039729,
+            "ppid": 1046476,
+            "firstIo": {
+              "rchar": 17768547,
+              "wchar": 4849,
+              "syscr": 4961,
+              "syscw": 58,
+              "read_bytes": 0,
+              "write_bytes": 40960,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 290054099,
+              "wchar": 148465265,
+              "syscr": 29812,
+              "syscw": 7794,
+              "read_bytes": 0,
+              "write_bytes": 99368960,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 272285552,
+              "wchar": 148460416,
+              "syscr": 24851,
+              "syscw": 7736,
+              "read_bytes": 0,
+              "write_bytes": 99328000,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 272285552,
+              "wchar": 148460416,
+              "syscr": 24851,
+              "syscw": 7736,
+              "read_bytes": 0,
+              "write_bytes": 99328000,
+              "cancelled_write_bytes": 0
+            }
+          }
+        },
+        "observerMemberSha256": "6259391a403023274a0d84ca217a5cebcbea351c61593f2cb85efbfb98b25e8c"
+      }
+    },
+    {
+      "label": "FINAL-B7-S1-32-PERF-v2",
+      "block": 1,
+      "mode": "streaming",
+      "sqlSeconds": 8.515053314,
+      "commitLogDurationMillis": [
+        151
+      ],
+      "commitMillis": 151,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 52.980000000000004,
+      "observedSummedJvmGcMillis": 327,
+      "taskCpuNanos": 4503756438,
+      "taskDeserializeCpuNanos": 1104178697,
+      "summedTaskGcMillis": 160,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59031,
+      "driverSampledPeakHeapBytes": 118455704,
+      "driverSampledPeakRssBytes": 545333248,
+      "largestSingleExecutorSampledPeakHeapBytes": 126535624,
+      "largestSingleExecutorSampledPeakRssBytes": 461307904,
+      "commonAliveSpanSeconds": 15.186281442642212,
+      "commonAliveSamples": 16,
+      "commonAliveMaxSampleGapSeconds": 1.0201642513275146,
+      "driverCommonAliveIo": {
+        "rchar": 225869281,
+        "wchar": 101325875,
+        "syscr": 20435,
+        "syscw": 2456,
+        "read_bytes": 8192,
+        "write_bytes": 2207744,
+        "cancelled_write_bytes": 20480
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1047920,
+          "startTicks": 21043209,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 118455704,
+          "sampledPeakRssBytes": 545333248,
+          "lastObservedKernelHwmBytes": 547450880,
+          "sampledPeakRssAnonBytes": 520527872,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 194,
+          "gcMillisObservedDelta": 181,
+          "gcCountLastObservedSinceJvmStart": 29,
+          "observedUtimeTicksDelta": 2336,
+          "observedStimeTicksDelta": 53,
+          "observedCpuSecondsDelta": 23.89,
+          "sampleSpanSeconds": 18.217267513275146,
+          "procIoDelta": {
+            "rchar": 262877046,
+            "wchar": 101404633,
+            "syscr": 38381,
+            "syscw": 3015,
+            "read_bytes": 8192,
+            "write_bytes": 2342912,
+            "cancelled_write_bytes": 20480
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 17.2100727558136,
+          "postPhaseStartSampledPeakRssBytes": 545333248
+        },
+        "0": {
+          "pid": 1048071,
+          "startTicks": 21043403,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 126535624,
+          "sampledPeakRssBytes": 461307904,
+          "lastObservedKernelHwmBytes": 461307904,
+          "sampledPeakRssAnonBytes": 436994048,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 114,
+          "gcMillisObservedDelta": 68,
+          "gcCountLastObservedSinceJvmStart": 21,
+          "observedUtimeTicksDelta": 1449,
+          "observedStimeTicksDelta": 46,
+          "observedCpuSecondsDelta": 14.95,
+          "sampleSpanSeconds": 15.186281442642212,
+          "procIoDelta": {
+            "rchar": 293699111,
+            "wchar": 148600815,
+            "syscr": 32987,
+            "syscw": 8307,
+            "read_bytes": 0,
+            "write_bytes": 99495936,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.186281442642212,
+          "postPhaseStartSampledPeakRssBytes": 461307904
+        },
+        "1": {
+          "pid": 1048072,
+          "startTicks": 21043403,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 74159128,
+          "sampledPeakRssBytes": 376041472,
+          "lastObservedKernelHwmBytes": 383184896,
+          "sampledPeakRssAnonBytes": 351944704,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 129,
+          "gcMillisObservedDelta": 78,
+          "gcCountLastObservedSinceJvmStart": 20,
+          "observedUtimeTicksDelta": 1372,
+          "observedStimeTicksDelta": 42,
+          "observedCpuSecondsDelta": 14.14,
+          "sampleSpanSeconds": 15.186281442642212,
+          "procIoDelta": {
+            "rchar": 292244683,
+            "wchar": 148533422,
+            "syscr": 31856,
+            "syscw": 8287,
+            "read_bytes": 0,
+            "write_bytes": 99627008,
+            "cancelled_write_bytes": 270336
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.186281442642212,
+          "postPhaseStartSampledPeakRssBytes": 376041472
+        }
+      },
+      "commonAliveIo": {
+        "mode": "streaming",
+        "label": "FINAL-B7-S1-32-PERF-v2",
+        "block": 1,
+        "commonFirstTime": 1794658337.413928,
+        "commonLastTime": 1794658352.6002095,
+        "commonSpanSeconds": 15.186281442642212,
+        "commonSamples": 16,
+        "maxCommonSampleGapSeconds": 1.0201642513275146,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1047920,
+            "startTicks": 21043209,
+            "ppid": 1047918,
+            "firstIo": {
+              "rchar": 37254519,
+              "wchar": 79117,
+              "syscr": 18354,
+              "syscw": 565,
+              "read_bytes": 0,
+              "write_bytes": 135168,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 263123800,
+              "wchar": 101404992,
+              "syscr": 38789,
+              "syscw": 3021,
+              "read_bytes": 8192,
+              "write_bytes": 2342912,
+              "cancelled_write_bytes": 20480
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 225869281,
+              "wchar": 101325875,
+              "syscr": 20435,
+              "syscw": 2456,
+              "read_bytes": 8192,
+              "write_bytes": 2207744,
+              "cancelled_write_bytes": 20480
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 262877046,
+              "wchar": 101404633,
+              "syscr": 38381,
+              "syscw": 3015,
+              "read_bytes": 8192,
+              "write_bytes": 2342912,
+              "cancelled_write_bytes": 20480
+            }
+          },
+          "0": {
+            "pid": 1048071,
+            "startTicks": 21043403,
+            "ppid": 1047920,
+            "firstIo": {
+              "rchar": 66046,
+              "wchar": 1806,
+              "syscr": 71,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 293765157,
+              "wchar": 148602621,
+              "syscr": 33058,
+              "syscw": 8335,
+              "read_bytes": 0,
+              "write_bytes": 99549184,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 293699111,
+              "wchar": 148600815,
+              "syscr": 32987,
+              "syscw": 8307,
+              "read_bytes": 0,
+              "write_bytes": 99495936,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 293699111,
+              "wchar": 148600815,
+              "syscr": 32987,
+              "syscw": 8307,
+              "read_bytes": 0,
+              "write_bytes": 99495936,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1048072,
+            "startTicks": 21043403,
+            "ppid": 1047920,
+            "firstIo": {
+              "rchar": 80982,
+              "wchar": 1806,
+              "syscr": 81,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292325665,
+              "wchar": 148535228,
+              "syscr": 31937,
+              "syscw": 8315,
+              "read_bytes": 0,
+              "write_bytes": 99663872,
+              "cancelled_write_bytes": 270336
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292244683,
+              "wchar": 148533422,
+              "syscr": 31856,
+              "syscw": 8287,
+              "read_bytes": 0,
+              "write_bytes": 99627008,
+              "cancelled_write_bytes": 270336
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292244683,
+              "wchar": 148533422,
+              "syscr": 31856,
+              "syscw": 8287,
+              "read_bytes": 0,
+              "write_bytes": 99627008,
+              "cancelled_write_bytes": 270336
+            }
+          }
+        },
+        "observerMemberSha256": "00bb383206fa982011e7fc8cab40889a0dd6a395d3aeeea2a0e4236dde693aca"
+      }
+    },
+    {
+      "label": "FINAL-B7-L1-32-PERF-v2",
+      "block": 1,
+      "mode": "lightweight",
+      "sqlSeconds": 7.873958831,
+      "commitLogDurationMillis": [
+        91
+      ],
+      "commitMillis": 91,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 48.21,
+      "observedSummedJvmGcMillis": 299,
+      "taskCpuNanos": 4302024100,
+      "taskDeserializeCpuNanos": 1138888644,
+      "summedTaskGcMillis": 141,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59133,
+      "driverSampledPeakHeapBytes": 117195304,
+      "driverSampledPeakRssBytes": 569307136,
+      "largestSingleExecutorSampledPeakHeapBytes": 139196744,
+      "largestSingleExecutorSampledPeakRssBytes": 415330304,
+      "commonAliveSpanSeconds": 14.153194665908813,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.015733003616333,
+      "driverCommonAliveIo": {
+        "rchar": 223652084,
+        "wchar": 101259661,
+        "syscr": 18562,
+        "syscw": 2371,
+        "read_bytes": 0,
+        "write_bytes": 2138112,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1049459,
+          "startTicks": 21047061,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 117195304,
+          "sampledPeakRssBytes": 569307136,
+          "lastObservedKernelHwmBytes": 569307136,
+          "sampledPeakRssAnonBytes": 544534528,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 164,
+          "gcMillisObservedDelta": 150,
+          "gcCountLastObservedSinceJvmStart": 30,
+          "observedUtimeTicksDelta": 2059,
+          "observedStimeTicksDelta": 63,
+          "observedCpuSecondsDelta": 21.22,
+          "sampleSpanSeconds": 17.18115758895874,
+          "procIoDelta": {
+            "rchar": 260673657,
+            "wchar": 101340073,
+            "syscr": 36518,
+            "syscw": 2943,
+            "read_bytes": 0,
+            "write_bytes": 2273280,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.174151182174683,
+          "postPhaseStartSampledPeakRssBytes": 569307136
+        },
+        "0": {
+          "pid": 1049613,
+          "startTicks": 21047256,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 81821768,
+          "sampledPeakRssBytes": 374935552,
+          "lastObservedKernelHwmBytes": 374935552,
+          "sampledPeakRssAnonBytes": 350666752,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 149,
+          "gcMillisObservedDelta": 88,
+          "gcCountLastObservedSinceJvmStart": 23,
+          "observedUtimeTicksDelta": 1384,
+          "observedStimeTicksDelta": 51,
+          "observedCpuSecondsDelta": 14.35,
+          "sampleSpanSeconds": 14.153194665908813,
+          "procIoDelta": {
+            "rchar": 292959451,
+            "wchar": 148556232,
+            "syscr": 32252,
+            "syscw": 8330,
+            "read_bytes": 0,
+            "write_bytes": 99631104,
+            "cancelled_write_bytes": 258048
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.153194665908813,
+          "postPhaseStartSampledPeakRssBytes": 374935552
+        },
+        "1": {
+          "pid": 1049614,
+          "startTicks": 21047256,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 139196744,
+          "sampledPeakRssBytes": 415330304,
+          "lastObservedKernelHwmBytes": 415330304,
+          "sampledPeakRssAnonBytes": 390762496,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 107,
+          "gcMillisObservedDelta": 61,
+          "gcCountLastObservedSinceJvmStart": 19,
+          "observedUtimeTicksDelta": 1219,
+          "observedStimeTicksDelta": 45,
+          "observedCpuSecondsDelta": 12.64,
+          "sampleSpanSeconds": 14.153194665908813,
+          "procIoDelta": {
+            "rchar": 292665382,
+            "wchar": 148563635,
+            "syscr": 32310,
+            "syscw": 8152,
+            "read_bytes": 0,
+            "write_bytes": 99491840,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.153194665908813,
+          "postPhaseStartSampledPeakRssBytes": 415330304
+        }
+      },
+      "commonAliveIo": {
+        "mode": "lightweight",
+        "label": "FINAL-B7-L1-32-PERF-v2",
+        "block": 1,
+        "commonFirstTime": 1794658375.9312303,
+        "commonLastTime": 1794658390.084425,
+        "commonSpanSeconds": 14.153194665908813,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.015733003616333,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1049459,
+            "startTicks": 21047061,
+            "ppid": 1049458,
+            "firstIo": {
+              "rchar": 37268344,
+              "wchar": 80771,
+              "syscr": 18364,
+              "syscw": 578,
+              "read_bytes": 0,
+              "write_bytes": 135168,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260920428,
+              "wchar": 101340432,
+              "syscr": 36926,
+              "syscw": 2949,
+              "read_bytes": 0,
+              "write_bytes": 2273280,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223652084,
+              "wchar": 101259661,
+              "syscr": 18562,
+              "syscw": 2371,
+              "read_bytes": 0,
+              "write_bytes": 2138112,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260673657,
+              "wchar": 101340073,
+              "syscr": 36518,
+              "syscw": 2943,
+              "read_bytes": 0,
+              "write_bytes": 2273280,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "0": {
+            "pid": 1049613,
+            "startTicks": 21047256,
+            "ppid": 1049459,
+            "firstIo": {
+              "rchar": 61308,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 293020759,
+              "wchar": 148558038,
+              "syscr": 32320,
+              "syscw": 8358,
+              "read_bytes": 0,
+              "write_bytes": 99667968,
+              "cancelled_write_bytes": 258048
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292959451,
+              "wchar": 148556232,
+              "syscr": 32252,
+              "syscw": 8330,
+              "read_bytes": 0,
+              "write_bytes": 99631104,
+              "cancelled_write_bytes": 258048
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292959451,
+              "wchar": 148556232,
+              "syscr": 32252,
+              "syscw": 8330,
+              "read_bytes": 0,
+              "write_bytes": 99631104,
+              "cancelled_write_bytes": 258048
+            }
+          },
+          "1": {
+            "pid": 1049614,
+            "startTicks": 21047256,
+            "ppid": 1049459,
+            "firstIo": {
+              "rchar": 66050,
+              "wchar": 1806,
+              "syscr": 72,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 49152,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292731432,
+              "wchar": 148565441,
+              "syscr": 32382,
+              "syscw": 8180,
+              "read_bytes": 0,
+              "write_bytes": 99540992,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292665382,
+              "wchar": 148563635,
+              "syscr": 32310,
+              "syscw": 8152,
+              "read_bytes": 0,
+              "write_bytes": 99491840,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292665382,
+              "wchar": 148563635,
+              "syscr": 32310,
+              "syscw": 8152,
+              "read_bytes": 0,
+              "write_bytes": 99491840,
+              "cancelled_write_bytes": 0
+            }
+          }
+        },
+        "observerMemberSha256": "a9b90d48449bf0edda361341a8810c48b2cd2d1b6f03c63093ace73186067eb9"
+      }
+    },
+    {
+      "label": "FINAL-B7-F2-32-PERF-v2",
+      "block": 2,
+      "mode": "off",
+      "sqlSeconds": 8.025444726,
+      "commitLogDurationMillis": [
+        53
+      ],
+      "commitMillis": 53,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 51.959999999999994,
+      "observedSummedJvmGcMillis": 302,
+      "taskCpuNanos": 4399461177,
+      "taskDeserializeCpuNanos": 1089633088,
+      "summedTaskGcMillis": 140,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59102,
+      "driverSampledPeakHeapBytes": 121982584,
+      "driverSampledPeakRssBytes": 560848896,
+      "largestSingleExecutorSampledPeakHeapBytes": 126794144,
+      "largestSingleExecutorSampledPeakRssBytes": 446517248,
+      "commonAliveSpanSeconds": 15.170571088790894,
+      "commonAliveSamples": 16,
+      "commonAliveMaxSampleGapSeconds": 1.0184972286224365,
+      "driverCommonAliveIo": {
+        "rchar": 223693219,
+        "wchar": 101333680,
+        "syscr": 18600,
+        "syscw": 2619,
+        "read_bytes": 0,
+        "write_bytes": 2191360,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1051110,
+          "startTicks": 21055525,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 121982584,
+          "sampledPeakRssBytes": 560848896,
+          "lastObservedKernelHwmBytes": 560848896,
+          "sampledPeakRssAnonBytes": 536113152,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 165,
+          "gcMillisObservedDelta": 153,
+          "gcCountLastObservedSinceJvmStart": 32,
+          "observedUtimeTicksDelta": 2221,
+          "observedStimeTicksDelta": 58,
+          "observedCpuSecondsDelta": 22.79,
+          "sampleSpanSeconds": 18.201900005340576,
+          "procIoDelta": {
+            "rchar": 261057879,
+            "wchar": 101412408,
+            "syscr": 37002,
+            "syscw": 3180,
+            "read_bytes": 0,
+            "write_bytes": 2330624,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 17.194570779800415,
+          "postPhaseStartSampledPeakRssBytes": 560848896
+        },
+        "1": {
+          "pid": 1051276,
+          "startTicks": 21055720,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 67574824,
+          "sampledPeakRssBytes": 378687488,
+          "lastObservedKernelHwmBytes": 383148032,
+          "sampledPeakRssAnonBytes": 354205696,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 119,
+          "gcMillisObservedDelta": 85,
+          "gcCountLastObservedSinceJvmStart": 21,
+          "observedUtimeTicksDelta": 1381,
+          "observedStimeTicksDelta": 45,
+          "observedCpuSecondsDelta": 14.26,
+          "sampleSpanSeconds": 15.170571088790894,
+          "procIoDelta": {
+            "rchar": 293799462,
+            "wchar": 148532553,
+            "syscr": 32237,
+            "syscw": 8197,
+            "read_bytes": 0,
+            "write_bytes": 99500032,
+            "cancelled_write_bytes": 135168
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.170571088790894,
+          "postPhaseStartSampledPeakRssBytes": 378687488
+        },
+        "0": {
+          "pid": 1051273,
+          "startTicks": 21055719,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 126794144,
+          "sampledPeakRssBytes": 446517248,
+          "lastObservedKernelHwmBytes": 446517248,
+          "sampledPeakRssAnonBytes": 422060032,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 122,
+          "gcMillisObservedDelta": 64,
+          "gcCountLastObservedSinceJvmStart": 21,
+          "observedUtimeTicksDelta": 1436,
+          "observedStimeTicksDelta": 55,
+          "observedCpuSecondsDelta": 14.91,
+          "sampleSpanSeconds": 15.170571088790894,
+          "procIoDelta": {
+            "rchar": 293723346,
+            "wchar": 148620038,
+            "syscr": 34442,
+            "syscw": 8463,
+            "read_bytes": 0,
+            "write_bytes": 99631104,
+            "cancelled_write_bytes": 135168
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.170571088790894,
+          "postPhaseStartSampledPeakRssBytes": 446517248
+        }
+      },
+      "commonAliveIo": {
+        "mode": "off",
+        "label": "FINAL-B7-F2-32-PERF-v2",
+        "block": 2,
+        "commonFirstTime": 1794658460.5708215,
+        "commonLastTime": 1794658475.7413926,
+        "commonSpanSeconds": 15.170571088790894,
+        "commonSamples": 16,
+        "maxCommonSampleGapSeconds": 1.0184972286224365,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1051110,
+            "startTicks": 21055525,
+            "ppid": 1051109,
+            "firstIo": {
+              "rchar": 37406193,
+              "wchar": 79084,
+              "syscr": 18494,
+              "syscw": 566,
+              "read_bytes": 0,
+              "write_bytes": 139264,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 261099412,
+              "wchar": 101412764,
+              "syscr": 37094,
+              "syscw": 3185,
+              "read_bytes": 0,
+              "write_bytes": 2330624,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223693219,
+              "wchar": 101333680,
+              "syscr": 18600,
+              "syscw": 2619,
+              "read_bytes": 0,
+              "write_bytes": 2191360,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 261057879,
+              "wchar": 101412408,
+              "syscr": 37002,
+              "syscw": 3180,
+              "read_bytes": 0,
+              "write_bytes": 2330624,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1051276,
+            "startTicks": 21055720,
+            "ppid": 1051110,
+            "firstIo": {
+              "rchar": 61308,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 293860770,
+              "wchar": 148534359,
+              "syscr": 32305,
+              "syscw": 8225,
+              "read_bytes": 0,
+              "write_bytes": 99536896,
+              "cancelled_write_bytes": 135168
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 293799462,
+              "wchar": 148532553,
+              "syscr": 32237,
+              "syscw": 8197,
+              "read_bytes": 0,
+              "write_bytes": 99500032,
+              "cancelled_write_bytes": 135168
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 293799462,
+              "wchar": 148532553,
+              "syscr": 32237,
+              "syscw": 8197,
+              "read_bytes": 0,
+              "write_bytes": 99500032,
+              "cancelled_write_bytes": 135168
+            }
+          },
+          "0": {
+            "pid": 1051273,
+            "startTicks": 21055719,
+            "ppid": 1051110,
+            "firstIo": {
+              "rchar": 68521,
+              "wchar": 1806,
+              "syscr": 73,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 293791867,
+              "wchar": 148621844,
+              "syscr": 34515,
+              "syscw": 8491,
+              "read_bytes": 0,
+              "write_bytes": 99684352,
+              "cancelled_write_bytes": 135168
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 293723346,
+              "wchar": 148620038,
+              "syscr": 34442,
+              "syscw": 8463,
+              "read_bytes": 0,
+              "write_bytes": 99631104,
+              "cancelled_write_bytes": 135168
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 293723346,
+              "wchar": 148620038,
+              "syscr": 34442,
+              "syscw": 8463,
+              "read_bytes": 0,
+              "write_bytes": 99631104,
+              "cancelled_write_bytes": 135168
+            }
+          }
+        },
+        "observerMemberSha256": "411e559d080d215674deea60eb7d17164134d7f258aebff780cacb758ae48450"
+      }
+    },
+    {
+      "label": "FINAL-B7-L2-32-PERF-v2",
+      "block": 2,
+      "mode": "lightweight",
+      "sqlSeconds": 7.450485943,
+      "commitLogDurationMillis": [
+        98
+      ],
+      "commitMillis": 98,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 48.76,
+      "observedSummedJvmGcMillis": 288,
+      "taskCpuNanos": 4106224739,
+      "taskDeserializeCpuNanos": 1068398242,
+      "summedTaskGcMillis": 132,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59153,
+      "driverSampledPeakHeapBytes": 116870160,
+      "driverSampledPeakRssBytes": 533716992,
+      "largestSingleExecutorSampledPeakHeapBytes": 109442000,
+      "largestSingleExecutorSampledPeakRssBytes": 459415552,
+      "commonAliveSpanSeconds": 14.187368392944336,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.0261247158050537,
+      "driverCommonAliveIo": {
+        "rchar": 223749416,
+        "wchar": 101339967,
+        "syscr": 18669,
+        "syscw": 2586,
+        "read_bytes": 0,
+        "write_bytes": 2158592,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1052604,
+          "startTicks": 21059373,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 116870160,
+          "sampledPeakRssBytes": 533716992,
+          "lastObservedKernelHwmBytes": 533716992,
+          "sampledPeakRssAnonBytes": 508911616,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 169,
+          "gcMillisObservedDelta": 159,
+          "gcCountLastObservedSinceJvmStart": 31,
+          "observedUtimeTicksDelta": 2183,
+          "observedStimeTicksDelta": 57,
+          "observedCpuSecondsDelta": 22.4,
+          "sampleSpanSeconds": 17.21520185470581,
+          "procIoDelta": {
+            "rchar": 260701690,
+            "wchar": 101418743,
+            "syscr": 36578,
+            "syscw": 3144,
+            "read_bytes": 0,
+            "write_bytes": 2293760,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.20793843269348,
+          "postPhaseStartSampledPeakRssBytes": 533716992
+        },
+        "0": {
+          "pid": 1052762,
+          "startTicks": 21059570,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 83484712,
+          "sampledPeakRssBytes": 368332800,
+          "lastObservedKernelHwmBytes": 368332800,
+          "sampledPeakRssAnonBytes": 344260608,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 101,
+          "gcMillisObservedDelta": 60,
+          "gcCountLastObservedSinceJvmStart": 15,
+          "observedUtimeTicksDelta": 1154,
+          "observedStimeTicksDelta": 40,
+          "observedCpuSecondsDelta": 11.94,
+          "sampleSpanSeconds": 14.187368392944336,
+          "procIoDelta": {
+            "rchar": 292015664,
+            "wchar": 148479116,
+            "syscr": 30636,
+            "syscw": 7863,
+            "read_bytes": 0,
+            "write_bytes": 99471360,
+            "cancelled_write_bytes": 135168
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.187368392944336,
+          "postPhaseStartSampledPeakRssBytes": 368332800
+        },
+        "1": {
+          "pid": 1052763,
+          "startTicks": 21059571,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 109442000,
+          "sampledPeakRssBytes": 459415552,
+          "lastObservedKernelHwmBytes": 459415552,
+          "sampledPeakRssAnonBytes": 434937856,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 104,
+          "gcMillisObservedDelta": 69,
+          "gcCountLastObservedSinceJvmStart": 21,
+          "observedUtimeTicksDelta": 1395,
+          "observedStimeTicksDelta": 47,
+          "observedCpuSecondsDelta": 14.42,
+          "sampleSpanSeconds": 14.187368392944336,
+          "procIoDelta": {
+            "rchar": 294184401,
+            "wchar": 148584110,
+            "syscr": 34734,
+            "syscw": 8453,
+            "read_bytes": 0,
+            "write_bytes": 99627008,
+            "cancelled_write_bytes": 135168
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.187368392944336,
+          "postPhaseStartSampledPeakRssBytes": 459415552
+        }
+      },
+      "commonAliveIo": {
+        "mode": "lightweight",
+        "label": "FINAL-B7-L2-32-PERF-v2",
+        "block": 2,
+        "commonFirstTime": 1794658499.0462513,
+        "commonLastTime": 1794658513.2336197,
+        "commonSpanSeconds": 14.187368392944336,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.0261247158050537,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1052604,
+            "startTicks": 21059373,
+            "ppid": 1052603,
+            "firstIo": {
+              "rchar": 37197827,
+              "wchar": 79135,
+              "syscr": 18315,
+              "syscw": 564,
+              "read_bytes": 0,
+              "write_bytes": 135168,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260947243,
+              "wchar": 101419102,
+              "syscr": 36984,
+              "syscw": 3150,
+              "read_bytes": 0,
+              "write_bytes": 2293760,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223749416,
+              "wchar": 101339967,
+              "syscr": 18669,
+              "syscw": 2586,
+              "read_bytes": 0,
+              "write_bytes": 2158592,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260701690,
+              "wchar": 101418743,
+              "syscr": 36578,
+              "syscw": 3144,
+              "read_bytes": 0,
+              "write_bytes": 2293760,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "0": {
+            "pid": 1052762,
+            "startTicks": 21059570,
+            "ppid": 1052604,
+            "firstIo": {
+              "rchar": 55071,
+              "wchar": 1806,
+              "syscr": 65,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 49152,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292070735,
+              "wchar": 148480922,
+              "syscr": 30701,
+              "syscw": 7891,
+              "read_bytes": 0,
+              "write_bytes": 99520512,
+              "cancelled_write_bytes": 135168
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292015664,
+              "wchar": 148479116,
+              "syscr": 30636,
+              "syscw": 7863,
+              "read_bytes": 0,
+              "write_bytes": 99471360,
+              "cancelled_write_bytes": 135168
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292015664,
+              "wchar": 148479116,
+              "syscr": 30636,
+              "syscw": 7863,
+              "read_bytes": 0,
+              "write_bytes": 99471360,
+              "cancelled_write_bytes": 135168
+            }
+          },
+          "1": {
+            "pid": 1052763,
+            "startTicks": 21059571,
+            "ppid": 1052604,
+            "firstIo": {
+              "rchar": 55071,
+              "wchar": 1806,
+              "syscr": 65,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 294239472,
+              "wchar": 148585916,
+              "syscr": 34799,
+              "syscw": 8481,
+              "read_bytes": 0,
+              "write_bytes": 99663872,
+              "cancelled_write_bytes": 135168
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 294184401,
+              "wchar": 148584110,
+              "syscr": 34734,
+              "syscw": 8453,
+              "read_bytes": 0,
+              "write_bytes": 99627008,
+              "cancelled_write_bytes": 135168
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 294184401,
+              "wchar": 148584110,
+              "syscr": 34734,
+              "syscw": 8453,
+              "read_bytes": 0,
+              "write_bytes": 99627008,
+              "cancelled_write_bytes": 135168
+            }
+          }
+        },
+        "observerMemberSha256": "d8e474189d85a54ace33278aeec4bdd1fa53ebfb61888efad131e1ca9e96112f"
+      }
+    },
+    {
+      "label": "FINAL-B7-U2-32-PERF-v2",
+      "block": 2,
+      "mode": "upstream",
+      "sqlSeconds": 8.069579576,
+      "commitLogDurationMillis": [
+        59
+      ],
+      "commitMillis": 59,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 52.209999999999994,
+      "observedSummedJvmGcMillis": 332,
+      "taskCpuNanos": 4386479154,
+      "taskDeserializeCpuNanos": 1122719971,
+      "summedTaskGcMillis": 145,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59277,
+      "driverSampledPeakHeapBytes": 93225936,
+      "driverSampledPeakRssBytes": 598380544,
+      "largestSingleExecutorSampledPeakHeapBytes": 168805160,
+      "largestSingleExecutorSampledPeakRssBytes": 473325568,
+      "commonAliveSpanSeconds": 15.1824791431427,
+      "commonAliveSamples": 16,
+      "commonAliveMaxSampleGapSeconds": 1.0432536602020264,
+      "driverCommonAliveIo": {
+        "rchar": 223507057,
+        "wchar": 101135081,
+        "syscr": 18959,
+        "syscw": 2724,
+        "read_bytes": 0,
+        "write_bytes": 2215936,
+        "cancelled_write_bytes": 4096
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1054133,
+          "startTicks": 21063157,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 93225936,
+          "sampledPeakRssBytes": 598380544,
+          "lastObservedKernelHwmBytes": 598487040,
+          "sampledPeakRssAnonBytes": 573648896,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 199,
+          "gcMillisObservedDelta": 189,
+          "gcCountLastObservedSinceJvmStart": 32,
+          "observedUtimeTicksDelta": 2299,
+          "observedStimeTicksDelta": 60,
+          "observedCpuSecondsDelta": 23.59,
+          "sampleSpanSeconds": 18.213230848312378,
+          "procIoDelta": {
+            "rchar": 260425871,
+            "wchar": 101213675,
+            "syscr": 36827,
+            "syscw": 3276,
+            "read_bytes": 0,
+            "write_bytes": 2351104,
+            "cancelled_write_bytes": 4096
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 17.20574426651001,
+          "postPhaseStartSampledPeakRssBytes": 598380544
+        },
+        "1": {
+          "pid": 1054287,
+          "startTicks": 21063356,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 168805160,
+          "sampledPeakRssBytes": 473325568,
+          "lastObservedKernelHwmBytes": 477765632,
+          "sampledPeakRssAnonBytes": 448868352,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 129,
+          "gcMillisObservedDelta": 78,
+          "gcCountLastObservedSinceJvmStart": 24,
+          "observedUtimeTicksDelta": 1446,
+          "observedStimeTicksDelta": 50,
+          "observedCpuSecondsDelta": 14.96,
+          "sampleSpanSeconds": 15.1824791431427,
+          "procIoDelta": {
+            "rchar": 293391432,
+            "wchar": 148188630,
+            "syscr": 32678,
+            "syscw": 8398,
+            "read_bytes": 0,
+            "write_bytes": 99381248,
+            "cancelled_write_bytes": 135168
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.1824791431427,
+          "postPhaseStartSampledPeakRssBytes": 473325568
+        },
+        "0": {
+          "pid": 1054286,
+          "startTicks": 21063355,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 75158768,
+          "sampledPeakRssBytes": 379990016,
+          "lastObservedKernelHwmBytes": 379990016,
+          "sampledPeakRssAnonBytes": 355614720,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 120,
+          "gcMillisObservedDelta": 65,
+          "gcCountLastObservedSinceJvmStart": 18,
+          "observedUtimeTicksDelta": 1321,
+          "observedStimeTicksDelta": 45,
+          "observedCpuSecondsDelta": 13.66,
+          "sampleSpanSeconds": 15.1824791431427,
+          "procIoDelta": {
+            "rchar": 292534034,
+            "wchar": 148135370,
+            "syscr": 33905,
+            "syscw": 8193,
+            "read_bytes": 0,
+            "write_bytes": 99233792,
+            "cancelled_write_bytes": 135168
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.1824791431427,
+          "postPhaseStartSampledPeakRssBytes": 379990016
+        }
+      },
+      "commonAliveIo": {
+        "mode": "upstream",
+        "label": "FINAL-B7-U2-32-PERF-v2",
+        "block": 2,
+        "commonFirstTime": 1794658536.8934505,
+        "commonLastTime": 1794658552.0759296,
+        "commonSpanSeconds": 15.1824791431427,
+        "commonSamples": 16,
+        "maxCommonSampleGapSeconds": 1.0432536602020264,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1054133,
+            "startTicks": 21063157,
+            "ppid": 1054132,
+            "firstIo": {
+              "rchar": 37164342,
+              "wchar": 78953,
+              "syscr": 18274,
+              "syscw": 558,
+              "read_bytes": 0,
+              "write_bytes": 135168,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260671399,
+              "wchar": 101214034,
+              "syscr": 37233,
+              "syscw": 3282,
+              "read_bytes": 0,
+              "write_bytes": 2351104,
+              "cancelled_write_bytes": 4096
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223507057,
+              "wchar": 101135081,
+              "syscr": 18959,
+              "syscw": 2724,
+              "read_bytes": 0,
+              "write_bytes": 2215936,
+              "cancelled_write_bytes": 4096
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260425871,
+              "wchar": 101213675,
+              "syscr": 36827,
+              "syscw": 3276,
+              "read_bytes": 0,
+              "write_bytes": 2351104,
+              "cancelled_write_bytes": 4096
+            }
+          },
+          "1": {
+            "pid": 1054287,
+            "startTicks": 21063356,
+            "ppid": 1054133,
+            "firstIo": {
+              "rchar": 61308,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 49152,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 293452740,
+              "wchar": 148190436,
+              "syscr": 32746,
+              "syscw": 8426,
+              "read_bytes": 0,
+              "write_bytes": 99430400,
+              "cancelled_write_bytes": 135168
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 293391432,
+              "wchar": 148188630,
+              "syscr": 32678,
+              "syscw": 8398,
+              "read_bytes": 0,
+              "write_bytes": 99381248,
+              "cancelled_write_bytes": 135168
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 293391432,
+              "wchar": 148188630,
+              "syscr": 32678,
+              "syscw": 8398,
+              "read_bytes": 0,
+              "write_bytes": 99381248,
+              "cancelled_write_bytes": 135168
+            }
+          },
+          "0": {
+            "pid": 1054286,
+            "startTicks": 21063355,
+            "ppid": 1054133,
+            "firstIo": {
+              "rchar": 55071,
+              "wchar": 1806,
+              "syscr": 65,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292589105,
+              "wchar": 148137176,
+              "syscr": 33970,
+              "syscw": 8221,
+              "read_bytes": 0,
+              "write_bytes": 99270656,
+              "cancelled_write_bytes": 135168
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292534034,
+              "wchar": 148135370,
+              "syscr": 33905,
+              "syscw": 8193,
+              "read_bytes": 0,
+              "write_bytes": 99233792,
+              "cancelled_write_bytes": 135168
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292534034,
+              "wchar": 148135370,
+              "syscr": 33905,
+              "syscw": 8193,
+              "read_bytes": 0,
+              "write_bytes": 99233792,
+              "cancelled_write_bytes": 135168
+            }
+          }
+        },
+        "observerMemberSha256": "b4fcd3ca7b149e6f2a727b9d4ec0f890bf5ae63de15314bc9b9ebf96714e1680"
+      }
+    },
+    {
+      "label": "FINAL-B7-S2-32-PERF-v2",
+      "block": 2,
+      "mode": "streaming",
+      "sqlSeconds": 8.171018948,
+      "commitLogDurationMillis": [
+        154
+      ],
+      "commitMillis": 154,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 51.25,
+      "observedSummedJvmGcMillis": 320,
+      "taskCpuNanos": 4217255451,
+      "taskDeserializeCpuNanos": 1155194849,
+      "summedTaskGcMillis": 152,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59084,
+      "driverSampledPeakHeapBytes": 158846928,
+      "driverSampledPeakRssBytes": 637812736,
+      "largestSingleExecutorSampledPeakHeapBytes": 103053928,
+      "largestSingleExecutorSampledPeakRssBytes": 462422016,
+      "commonAliveSpanSeconds": 15.169066429138184,
+      "commonAliveSamples": 16,
+      "commonAliveMaxSampleGapSeconds": 1.0202305316925049,
+      "driverCommonAliveIo": {
+        "rchar": 225922033,
+        "wchar": 101403770,
+        "syscr": 20449,
+        "syscw": 2547,
+        "read_bytes": 0,
+        "write_bytes": 2240512,
+        "cancelled_write_bytes": 20480
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1055633,
+          "startTicks": 21067053,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 158846928,
+          "sampledPeakRssBytes": 637812736,
+          "lastObservedKernelHwmBytes": 637812736,
+          "sampledPeakRssAnonBytes": 613003264,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 184,
+          "gcMillisObservedDelta": 174,
+          "gcCountLastObservedSinceJvmStart": 31,
+          "observedUtimeTicksDelta": 2285,
+          "observedStimeTicksDelta": 65,
+          "observedCpuSecondsDelta": 23.5,
+          "sampleSpanSeconds": 18.195643186569214,
+          "procIoDelta": {
+            "rchar": 263144605,
+            "wchar": 101482686,
+            "syscr": 38570,
+            "syscw": 3104,
+            "read_bytes": 0,
+            "write_bytes": 2379776,
+            "cancelled_write_bytes": 20480
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 17.188183784484863,
+          "postPhaseStartSampledPeakRssBytes": 637812736
+        },
+        "0": {
+          "pid": 1055787,
+          "startTicks": 21067244,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 78171424,
+          "sampledPeakRssBytes": 359473152,
+          "lastObservedKernelHwmBytes": 363388928,
+          "sampledPeakRssAnonBytes": 335474688,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 108,
+          "gcMillisObservedDelta": 57,
+          "gcCountLastObservedSinceJvmStart": 18,
+          "observedUtimeTicksDelta": 1258,
+          "observedStimeTicksDelta": 42,
+          "observedCpuSecondsDelta": 13.0,
+          "sampleSpanSeconds": 15.169066429138184,
+          "procIoDelta": {
+            "rchar": 289924026,
+            "wchar": 148536883,
+            "syscr": 31501,
+            "syscw": 8231,
+            "read_bytes": 4096,
+            "write_bytes": 99622912,
+            "cancelled_write_bytes": 245760
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.169066429138184,
+          "postPhaseStartSampledPeakRssBytes": 359473152
+        },
+        "1": {
+          "pid": 1055788,
+          "startTicks": 21067245,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 103053928,
+          "sampledPeakRssBytes": 462422016,
+          "lastObservedKernelHwmBytes": 462422016,
+          "sampledPeakRssAnonBytes": 437936128,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 137,
+          "gcMillisObservedDelta": 89,
+          "gcCountLastObservedSinceJvmStart": 23,
+          "observedUtimeTicksDelta": 1433,
+          "observedStimeTicksDelta": 42,
+          "observedCpuSecondsDelta": 14.75,
+          "sampleSpanSeconds": 15.169066429138184,
+          "procIoDelta": {
+            "rchar": 293871345,
+            "wchar": 148562473,
+            "syscr": 33250,
+            "syscw": 8233,
+            "read_bytes": 0,
+            "write_bytes": 99495936,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.169066429138184,
+          "postPhaseStartSampledPeakRssBytes": 462422016
+        }
+      },
+      "commonAliveIo": {
+        "mode": "streaming",
+        "label": "FINAL-B7-S2-32-PERF-v2",
+        "block": 2,
+        "commonFirstTime": 1794658575.8490605,
+        "commonLastTime": 1794658591.018127,
+        "commonSpanSeconds": 15.169066429138184,
+        "commonSamples": 16,
+        "maxCommonSampleGapSeconds": 1.0202305316925049,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1055633,
+            "startTicks": 21067053,
+            "ppid": 1055632,
+            "firstIo": {
+              "rchar": 37469350,
+              "wchar": 79275,
+              "syscr": 18529,
+              "syscw": 563,
+              "read_bytes": 0,
+              "write_bytes": 139264,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 263391383,
+              "wchar": 101483045,
+              "syscr": 38978,
+              "syscw": 3110,
+              "read_bytes": 0,
+              "write_bytes": 2379776,
+              "cancelled_write_bytes": 20480
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 225922033,
+              "wchar": 101403770,
+              "syscr": 20449,
+              "syscw": 2547,
+              "read_bytes": 0,
+              "write_bytes": 2240512,
+              "cancelled_write_bytes": 20480
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 263144605,
+              "wchar": 101482686,
+              "syscr": 38570,
+              "syscw": 3104,
+              "read_bytes": 0,
+              "write_bytes": 2379776,
+              "cancelled_write_bytes": 20480
+            }
+          },
+          "0": {
+            "pid": 1055787,
+            "startTicks": 21067244,
+            "ppid": 1055633,
+            "firstIo": {
+              "rchar": 2649958,
+              "wchar": 1806,
+              "syscr": 612,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292573984,
+              "wchar": 148538689,
+              "syscr": 32113,
+              "syscw": 8259,
+              "read_bytes": 4096,
+              "write_bytes": 99676160,
+              "cancelled_write_bytes": 245760
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 289924026,
+              "wchar": 148536883,
+              "syscr": 31501,
+              "syscw": 8231,
+              "read_bytes": 4096,
+              "write_bytes": 99622912,
+              "cancelled_write_bytes": 245760
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 289924026,
+              "wchar": 148536883,
+              "syscr": 31501,
+              "syscw": 8231,
+              "read_bytes": 4096,
+              "write_bytes": 99622912,
+              "cancelled_write_bytes": 245760
+            }
+          },
+          "1": {
+            "pid": 1055788,
+            "startTicks": 21067245,
+            "ppid": 1055633,
+            "firstIo": {
+              "rchar": 66046,
+              "wchar": 1806,
+              "syscr": 71,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 293937391,
+              "wchar": 148564279,
+              "syscr": 33321,
+              "syscw": 8261,
+              "read_bytes": 0,
+              "write_bytes": 99532800,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 293871345,
+              "wchar": 148562473,
+              "syscr": 33250,
+              "syscw": 8233,
+              "read_bytes": 0,
+              "write_bytes": 99495936,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 293871345,
+              "wchar": 148562473,
+              "syscr": 33250,
+              "syscw": 8233,
+              "read_bytes": 0,
+              "write_bytes": 99495936,
+              "cancelled_write_bytes": 0
+            }
+          }
+        },
+        "observerMemberSha256": "5fd4d878276b7782423ea00d81f83bb8a7f9cbcee61b9c998a9e30932c3411ea"
+      }
+    },
+    {
+      "label": "FINAL-B7-L3-32-PERF-v2",
+      "block": 3,
+      "mode": "lightweight",
+      "sqlSeconds": 7.908746831,
+      "commitLogDurationMillis": [
+        57
+      ],
+      "commitMillis": 57,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 48.099999999999994,
+      "observedSummedJvmGcMillis": 307,
+      "taskCpuNanos": 4409233403,
+      "taskDeserializeCpuNanos": 1114632762,
+      "summedTaskGcMillis": 165,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 58976,
+      "driverSampledPeakHeapBytes": 173982456,
+      "driverSampledPeakRssBytes": 664743936,
+      "largestSingleExecutorSampledPeakHeapBytes": 79274240,
+      "largestSingleExecutorSampledPeakRssBytes": 392978432,
+      "commonAliveSpanSeconds": 14.156794548034668,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.0219252109527588,
+      "driverCommonAliveIo": {
+        "rchar": 223402328,
+        "wchar": 101258503,
+        "syscr": 18340,
+        "syscw": 2375,
+        "read_bytes": 0,
+        "write_bytes": 2129920,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1060230,
+          "startTicks": 21153739,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 173982456,
+          "sampledPeakRssBytes": 664743936,
+          "lastObservedKernelHwmBytes": 664752128,
+          "sampledPeakRssAnonBytes": 639971328,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 147,
+          "gcMillisObservedDelta": 138,
+          "gcCountLastObservedSinceJvmStart": 27,
+          "observedUtimeTicksDelta": 2149,
+          "observedStimeTicksDelta": 64,
+          "observedCpuSecondsDelta": 22.13,
+          "sampleSpanSeconds": 17.184925317764282,
+          "procIoDelta": {
+            "rchar": 260862749,
+            "wchar": 101337238,
+            "syscr": 36816,
+            "syscw": 2937,
+            "read_bytes": 0,
+            "write_bytes": 2269184,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.17763662338257,
+          "postPhaseStartSampledPeakRssBytes": 664743936
+        },
+        "1": {
+          "pid": 1060392,
+          "startTicks": 21153930,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 79019432,
+          "sampledPeakRssBytes": 392978432,
+          "lastObservedKernelHwmBytes": 392978432,
+          "sampledPeakRssAnonBytes": 368541696,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 152,
+          "gcMillisObservedDelta": 98,
+          "gcCountLastObservedSinceJvmStart": 24,
+          "observedUtimeTicksDelta": 1297,
+          "observedStimeTicksDelta": 42,
+          "observedCpuSecondsDelta": 13.39,
+          "sampleSpanSeconds": 14.156794548034668,
+          "procIoDelta": {
+            "rchar": 289944541,
+            "wchar": 148549358,
+            "syscr": 31000,
+            "syscw": 8297,
+            "read_bytes": 0,
+            "write_bytes": 99627008,
+            "cancelled_write_bytes": 135168
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.156794548034668,
+          "postPhaseStartSampledPeakRssBytes": 392978432
+        },
+        "0": {
+          "pid": 1060391,
+          "startTicks": 21153930,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 79274240,
+          "sampledPeakRssBytes": 376004608,
+          "lastObservedKernelHwmBytes": 376004608,
+          "sampledPeakRssAnonBytes": 351780864,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 126,
+          "gcMillisObservedDelta": 71,
+          "gcCountLastObservedSinceJvmStart": 20,
+          "observedUtimeTicksDelta": 1218,
+          "observedStimeTicksDelta": 40,
+          "observedCpuSecondsDelta": 12.58,
+          "sampleSpanSeconds": 14.156794548034668,
+          "procIoDelta": {
+            "rchar": 292239797,
+            "wchar": 148569284,
+            "syscr": 32305,
+            "syscw": 8212,
+            "read_bytes": 0,
+            "write_bytes": 99491840,
+            "cancelled_write_bytes": 122880
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.156794548034668,
+          "postPhaseStartSampledPeakRssBytes": 376004608
+        }
+      },
+      "commonAliveIo": {
+        "mode": "lightweight",
+        "label": "FINAL-B7-L3-32-PERF-v2",
+        "block": 3,
+        "commonFirstTime": 1794659442.706583,
+        "commonLastTime": 1794659456.8633776,
+        "commonSpanSeconds": 14.156794548034668,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.0219252109527588,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1060230,
+            "startTicks": 21153739,
+            "ppid": 1060229,
+            "firstIo": {
+              "rchar": 37501951,
+              "wchar": 79091,
+              "syscr": 18567,
+              "syscw": 567,
+              "read_bytes": 0,
+              "write_bytes": 139264,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260904279,
+              "wchar": 101337594,
+              "syscr": 36907,
+              "syscw": 2942,
+              "read_bytes": 0,
+              "write_bytes": 2269184,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223402328,
+              "wchar": 101258503,
+              "syscr": 18340,
+              "syscw": 2375,
+              "read_bytes": 0,
+              "write_bytes": 2129920,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260862749,
+              "wchar": 101337238,
+              "syscr": 36816,
+              "syscw": 2937,
+              "read_bytes": 0,
+              "write_bytes": 2269184,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1060392,
+            "startTicks": 21153930,
+            "ppid": 1060230,
+            "firstIo": {
+              "rchar": 2744789,
+              "wchar": 1806,
+              "syscr": 638,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 53248,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292689330,
+              "wchar": 148551164,
+              "syscr": 31638,
+              "syscw": 8325,
+              "read_bytes": 0,
+              "write_bytes": 99680256,
+              "cancelled_write_bytes": 135168
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 289944541,
+              "wchar": 148549358,
+              "syscr": 31000,
+              "syscw": 8297,
+              "read_bytes": 0,
+              "write_bytes": 99627008,
+              "cancelled_write_bytes": 135168
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 289944541,
+              "wchar": 148549358,
+              "syscr": 31000,
+              "syscw": 8297,
+              "read_bytes": 0,
+              "write_bytes": 99627008,
+              "cancelled_write_bytes": 135168
+            }
+          },
+          "0": {
+            "pid": 1060391,
+            "startTicks": 21153930,
+            "ppid": 1060230,
+            "firstIo": {
+              "rchar": 61312,
+              "wchar": 1806,
+              "syscr": 69,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292301109,
+              "wchar": 148571090,
+              "syscr": 32374,
+              "syscw": 8240,
+              "read_bytes": 0,
+              "write_bytes": 99528704,
+              "cancelled_write_bytes": 122880
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292239797,
+              "wchar": 148569284,
+              "syscr": 32305,
+              "syscw": 8212,
+              "read_bytes": 0,
+              "write_bytes": 99491840,
+              "cancelled_write_bytes": 122880
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292239797,
+              "wchar": 148569284,
+              "syscr": 32305,
+              "syscw": 8212,
+              "read_bytes": 0,
+              "write_bytes": 99491840,
+              "cancelled_write_bytes": 122880
+            }
+          }
+        },
+        "observerMemberSha256": "c8d9c538bf28cb431af6794cf9e4db53ce4958926e5293cbb6f8dd22d4ad2f19"
+      }
+    },
+    {
+      "label": "FINAL-B7-S3-32-PERF-v2",
+      "block": 3,
+      "mode": "streaming",
+      "sqlSeconds": 7.858951911,
+      "commitLogDurationMillis": [
+        108
+      ],
+      "commitMillis": 108,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 48.150000000000006,
+      "observedSummedJvmGcMillis": 301,
+      "taskCpuNanos": 4245170915,
+      "taskDeserializeCpuNanos": 1152340756,
+      "summedTaskGcMillis": 158,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59295,
+      "driverSampledPeakHeapBytes": 243881920,
+      "driverSampledPeakRssBytes": 621510656,
+      "largestSingleExecutorSampledPeakHeapBytes": 86832320,
+      "largestSingleExecutorSampledPeakRssBytes": 415920128,
+      "commonAliveSpanSeconds": 14.171185493469238,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.0185067653656006,
+      "driverCommonAliveIo": {
+        "rchar": 225981250,
+        "wchar": 101346409,
+        "syscr": 20456,
+        "syscw": 2370,
+        "read_bytes": 0,
+        "write_bytes": 2203648,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1061671,
+          "startTicks": 21157486,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 243881920,
+          "sampledPeakRssBytes": 621510656,
+          "lastObservedKernelHwmBytes": 621514752,
+          "sampledPeakRssAnonBytes": 596779008,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 146,
+          "gcMillisObservedDelta": 136,
+          "gcCountLastObservedSinceJvmStart": 28,
+          "observedUtimeTicksDelta": 2261,
+          "observedStimeTicksDelta": 67,
+          "observedCpuSecondsDelta": 23.28,
+          "sampleSpanSeconds": 17.205607414245605,
+          "procIoDelta": {
+            "rchar": 262864902,
+            "wchar": 101425267,
+            "syscr": 38310,
+            "syscw": 2926,
+            "read_bytes": 0,
+            "write_bytes": 2338816,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.19821810722351,
+          "postPhaseStartSampledPeakRssBytes": 621510656
+        },
+        "1": {
+          "pid": 1061837,
+          "startTicks": 21157683,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 86832320,
+          "sampledPeakRssBytes": 415920128,
+          "lastObservedKernelHwmBytes": 415920128,
+          "sampledPeakRssAnonBytes": 391475200,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 131,
+          "gcMillisObservedDelta": 91,
+          "gcCountLastObservedSinceJvmStart": 25,
+          "observedUtimeTicksDelta": 1333,
+          "observedStimeTicksDelta": 40,
+          "observedCpuSecondsDelta": 13.73,
+          "sampleSpanSeconds": 14.171185493469238,
+          "procIoDelta": {
+            "rchar": 292919013,
+            "wchar": 148569018,
+            "syscr": 32695,
+            "syscw": 8502,
+            "read_bytes": 0,
+            "write_bytes": 99774464,
+            "cancelled_write_bytes": 245760
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.171185493469238,
+          "postPhaseStartSampledPeakRssBytes": 415920128
+        },
+        "0": {
+          "pid": 1061836,
+          "startTicks": 21157683,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 74711032,
+          "sampledPeakRssBytes": 346873856,
+          "lastObservedKernelHwmBytes": 346873856,
+          "sampledPeakRssAnonBytes": 322547712,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 156,
+          "gcMillisObservedDelta": 74,
+          "gcCountLastObservedSinceJvmStart": 20,
+          "observedUtimeTicksDelta": 1074,
+          "observedStimeTicksDelta": 40,
+          "observedCpuSecondsDelta": 11.14,
+          "sampleSpanSeconds": 14.171185493469238,
+          "procIoDelta": {
+            "rchar": 291387847,
+            "wchar": 148503111,
+            "syscr": 30369,
+            "syscw": 7937,
+            "read_bytes": 0,
+            "write_bytes": 99348480,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.171185493469238,
+          "postPhaseStartSampledPeakRssBytes": 346873856
+        }
+      },
+      "commonAliveIo": {
+        "mode": "streaming",
+        "label": "FINAL-B7-S3-32-PERF-v2",
+        "block": 3,
+        "commonFirstTime": 1794659480.1921668,
+        "commonLastTime": 1794659494.3633523,
+        "commonSpanSeconds": 14.171185493469238,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.0185067653656006,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1061671,
+            "startTicks": 21157486,
+            "ppid": 1061670,
+            "firstIo": {
+              "rchar": 37130390,
+              "wchar": 79217,
+              "syscr": 18262,
+              "syscw": 562,
+              "read_bytes": 0,
+              "write_bytes": 135168,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 263111640,
+              "wchar": 101425626,
+              "syscr": 38718,
+              "syscw": 2932,
+              "read_bytes": 0,
+              "write_bytes": 2338816,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 225981250,
+              "wchar": 101346409,
+              "syscr": 20456,
+              "syscw": 2370,
+              "read_bytes": 0,
+              "write_bytes": 2203648,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 262864902,
+              "wchar": 101425267,
+              "syscr": 38310,
+              "syscw": 2926,
+              "read_bytes": 0,
+              "write_bytes": 2338816,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1061837,
+            "startTicks": 21157683,
+            "ppid": 1061671,
+            "firstIo": {
+              "rchar": 61308,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292980321,
+              "wchar": 148570824,
+              "syscr": 32763,
+              "syscw": 8530,
+              "read_bytes": 0,
+              "write_bytes": 99811328,
+              "cancelled_write_bytes": 245760
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292919013,
+              "wchar": 148569018,
+              "syscr": 32695,
+              "syscw": 8502,
+              "read_bytes": 0,
+              "write_bytes": 99774464,
+              "cancelled_write_bytes": 245760
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292919013,
+              "wchar": 148569018,
+              "syscr": 32695,
+              "syscw": 8502,
+              "read_bytes": 0,
+              "write_bytes": 99774464,
+              "cancelled_write_bytes": 245760
+            }
+          },
+          "0": {
+            "pid": 1061836,
+            "startTicks": 21157683,
+            "ppid": 1061671,
+            "firstIo": {
+              "rchar": 61308,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 291449155,
+              "wchar": 148504917,
+              "syscr": 30437,
+              "syscw": 7965,
+              "read_bytes": 0,
+              "write_bytes": 99385344,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 291387847,
+              "wchar": 148503111,
+              "syscr": 30369,
+              "syscw": 7937,
+              "read_bytes": 0,
+              "write_bytes": 99348480,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 291387847,
+              "wchar": 148503111,
+              "syscr": 30369,
+              "syscw": 7937,
+              "read_bytes": 0,
+              "write_bytes": 99348480,
+              "cancelled_write_bytes": 0
+            }
+          }
+        },
+        "observerMemberSha256": "7330e746be392ac67b22d8640c78d206c1b8d97df4528d90f1a76dfb976cd641"
+      }
+    },
+    {
+      "label": "FINAL-B7-F3-32-PERF-v2",
+      "block": 3,
+      "mode": "off",
+      "sqlSeconds": 7.594872604,
+      "commitLogDurationMillis": [
+        54
+      ],
+      "commitMillis": 54,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 48.58,
+      "observedSummedJvmGcMillis": 302,
+      "taskCpuNanos": 4272154640,
+      "taskDeserializeCpuNanos": 1111981699,
+      "summedTaskGcMillis": 134,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59219,
+      "driverSampledPeakHeapBytes": 130671568,
+      "driverSampledPeakRssBytes": 556212224,
+      "largestSingleExecutorSampledPeakHeapBytes": 131198600,
+      "largestSingleExecutorSampledPeakRssBytes": 422727680,
+      "commonAliveSpanSeconds": 14.16414475440979,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.023041009902954,
+      "driverCommonAliveIo": {
+        "rchar": 223660238,
+        "wchar": 101334647,
+        "syscr": 18553,
+        "syscw": 2566,
+        "read_bytes": 0,
+        "write_bytes": 2166784,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1063051,
+          "startTicks": 21161256,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 130671568,
+          "sampledPeakRssBytes": 556212224,
+          "lastObservedKernelHwmBytes": 556216320,
+          "sampledPeakRssAnonBytes": 531361792,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 182,
+          "gcMillisObservedDelta": 172,
+          "gcCountLastObservedSinceJvmStart": 31,
+          "observedUtimeTicksDelta": 2227,
+          "observedStimeTicksDelta": 61,
+          "observedCpuSecondsDelta": 22.88,
+          "sampleSpanSeconds": 17.212244272232056,
+          "procIoDelta": {
+            "rchar": 260643720,
+            "wchar": 101413523,
+            "syscr": 36474,
+            "syscw": 3125,
+            "read_bytes": 0,
+            "write_bytes": 2297856,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.204751014709473,
+          "postPhaseStartSampledPeakRssBytes": 556212224
+        },
+        "1": {
+          "pid": 1063204,
+          "startTicks": 21161455,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 131198600,
+          "sampledPeakRssBytes": 422727680,
+          "lastObservedKernelHwmBytes": 422727680,
+          "sampledPeakRssAnonBytes": 398336000,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 116,
+          "gcMillisObservedDelta": 76,
+          "gcCountLastObservedSinceJvmStart": 20,
+          "observedUtimeTicksDelta": 1259,
+          "observedStimeTicksDelta": 45,
+          "observedCpuSecondsDelta": 13.04,
+          "sampleSpanSeconds": 14.16414475440979,
+          "procIoDelta": {
+            "rchar": 292641798,
+            "wchar": 148543046,
+            "syscr": 31520,
+            "syscw": 8219,
+            "read_bytes": 0,
+            "write_bytes": 99622912,
+            "cancelled_write_bytes": 122880
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.16414475440979,
+          "postPhaseStartSampledPeakRssBytes": 422727680
+        },
+        "0": {
+          "pid": 1063203,
+          "startTicks": 21161455,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 75265680,
+          "sampledPeakRssBytes": 371277824,
+          "lastObservedKernelHwmBytes": 371277824,
+          "sampledPeakRssAnonBytes": 346988544,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 102,
+          "gcMillisObservedDelta": 54,
+          "gcCountLastObservedSinceJvmStart": 17,
+          "observedUtimeTicksDelta": 1224,
+          "observedStimeTicksDelta": 42,
+          "observedCpuSecondsDelta": 12.66,
+          "sampleSpanSeconds": 14.16414475440979,
+          "procIoDelta": {
+            "rchar": 292137320,
+            "wchar": 148522157,
+            "syscr": 32213,
+            "syscw": 8179,
+            "read_bytes": 0,
+            "write_bytes": 99491840,
+            "cancelled_write_bytes": 122880
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.16414475440979,
+          "postPhaseStartSampledPeakRssBytes": 371277824
+        }
+      },
+      "commonAliveIo": {
+        "mode": "off",
+        "label": "FINAL-B7-F3-32-PERF-v2",
+        "block": 3,
+        "commonFirstTime": 1794659517.8962674,
+        "commonLastTime": 1794659532.0604122,
+        "commonSpanSeconds": 14.16414475440979,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.023041009902954,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1063051,
+            "startTicks": 21161256,
+            "ppid": 1063050,
+            "firstIo": {
+              "rchar": 37230225,
+              "wchar": 79235,
+              "syscr": 18329,
+              "syscw": 565,
+              "read_bytes": 0,
+              "write_bytes": 131072,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260890463,
+              "wchar": 101413882,
+              "syscr": 36882,
+              "syscw": 3131,
+              "read_bytes": 0,
+              "write_bytes": 2297856,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223660238,
+              "wchar": 101334647,
+              "syscr": 18553,
+              "syscw": 2566,
+              "read_bytes": 0,
+              "write_bytes": 2166784,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260643720,
+              "wchar": 101413523,
+              "syscr": 36474,
+              "syscw": 3125,
+              "read_bytes": 0,
+              "write_bytes": 2297856,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1063204,
+            "startTicks": 21161455,
+            "ppid": 1063051,
+            "firstIo": {
+              "rchar": 45095,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292686893,
+              "wchar": 148543116,
+              "syscr": 31581,
+              "syscw": 8229,
+              "read_bytes": 0,
+              "write_bytes": 99659776,
+              "cancelled_write_bytes": 122880
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292641798,
+              "wchar": 148543046,
+              "syscr": 31520,
+              "syscw": 8219,
+              "read_bytes": 0,
+              "write_bytes": 99622912,
+              "cancelled_write_bytes": 122880
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292641798,
+              "wchar": 148543046,
+              "syscr": 31520,
+              "syscw": 8219,
+              "read_bytes": 0,
+              "write_bytes": 99622912,
+              "cancelled_write_bytes": 122880
+            }
+          },
+          "0": {
+            "pid": 1063203,
+            "startTicks": 21161455,
+            "ppid": 1063051,
+            "firstIo": {
+              "rchar": 46051,
+              "wchar": 1270,
+              "syscr": 63,
+              "syscw": 25,
+              "read_bytes": 0,
+              "write_bytes": 49152,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292183371,
+              "wchar": 148523427,
+              "syscr": 32276,
+              "syscw": 8204,
+              "read_bytes": 0,
+              "write_bytes": 99540992,
+              "cancelled_write_bytes": 122880
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292137320,
+              "wchar": 148522157,
+              "syscr": 32213,
+              "syscw": 8179,
+              "read_bytes": 0,
+              "write_bytes": 99491840,
+              "cancelled_write_bytes": 122880
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292137320,
+              "wchar": 148522157,
+              "syscr": 32213,
+              "syscw": 8179,
+              "read_bytes": 0,
+              "write_bytes": 99491840,
+              "cancelled_write_bytes": 122880
+            }
+          }
+        },
+        "observerMemberSha256": "5e18e57e213d59c6c1a155160cd37bfa6f0a1e22599c7ce6c882810bb2117f5f"
+      }
+    },
+    {
+      "label": "FINAL-B7-U3-32-PERF-v2",
+      "block": 3,
+      "mode": "upstream",
+      "sqlSeconds": 7.987305058,
+      "commitLogDurationMillis": [
+        63
+      ],
+      "commitMillis": 63,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 51.05,
+      "observedSummedJvmGcMillis": 305,
+      "taskCpuNanos": 4458308912,
+      "taskDeserializeCpuNanos": 1078416901,
+      "summedTaskGcMillis": 155,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59265,
+      "driverSampledPeakHeapBytes": 135514160,
+      "driverSampledPeakRssBytes": 588509184,
+      "largestSingleExecutorSampledPeakHeapBytes": 140189152,
+      "largestSingleExecutorSampledPeakRssBytes": 424714240,
+      "commonAliveSpanSeconds": 14.174702167510986,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.0257179737091064,
+      "driverCommonAliveIo": {
+        "rchar": 223163147,
+        "wchar": 100981739,
+        "syscr": 18594,
+        "syscw": 2474,
+        "read_bytes": 0,
+        "write_bytes": 2170880,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1064501,
+          "startTicks": 21165118,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 135514160,
+          "sampledPeakRssBytes": 588509184,
+          "lastObservedKernelHwmBytes": 590962688,
+          "sampledPeakRssAnonBytes": 563613696,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 169,
+          "gcMillisObservedDelta": 153,
+          "gcCountLastObservedSinceJvmStart": 31,
+          "observedUtimeTicksDelta": 2269,
+          "observedStimeTicksDelta": 63,
+          "observedCpuSecondsDelta": 23.32,
+          "sampleSpanSeconds": 18.21388030052185,
+          "procIoDelta": {
+            "rchar": 553352375,
+            "wchar": 249258513,
+            "syscr": 69376,
+            "syscw": 11418,
+            "read_bytes": 0,
+            "write_bytes": 101736448,
+            "cancelled_write_bytes": 1257472
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 17.206666469573975,
+          "postPhaseStartSampledPeakRssBytes": 588509184
+        },
+        "1": {
+          "pid": 1064655,
+          "startTicks": 21165319,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 81155472,
+          "sampledPeakRssBytes": 357588992,
+          "lastObservedKernelHwmBytes": 357588992,
+          "sampledPeakRssAnonBytes": 333389824,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 119,
+          "gcMillisObservedDelta": 73,
+          "gcCountLastObservedSinceJvmStart": 19,
+          "observedUtimeTicksDelta": 1407,
+          "observedStimeTicksDelta": 44,
+          "observedCpuSecondsDelta": 14.51,
+          "sampleSpanSeconds": 15.185956954956055,
+          "procIoDelta": {
+            "rchar": 291548701,
+            "wchar": 148234500,
+            "syscr": 32344,
+            "syscw": 8207,
+            "read_bytes": 0,
+            "write_bytes": 99241984,
+            "cancelled_write_bytes": 135168
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 14.174702167510986,
+          "postPhaseStartSampledPeakRssBytes": 357588992
+        },
+        "0": {
+          "pid": 1064654,
+          "startTicks": 21165318,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 140189152,
+          "sampledPeakRssBytes": 424714240,
+          "lastObservedKernelHwmBytes": 424714240,
+          "sampledPeakRssAnonBytes": 400207872,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 114,
+          "gcMillisObservedDelta": 79,
+          "gcCountLastObservedSinceJvmStart": 20,
+          "observedUtimeTicksDelta": 1282,
+          "observedStimeTicksDelta": 40,
+          "observedCpuSecondsDelta": 13.22,
+          "sampleSpanSeconds": 14.174702167510986,
+          "procIoDelta": {
+            "rchar": 291907466,
+            "wchar": 148139657,
+            "syscr": 31363,
+            "syscw": 8190,
+            "read_bytes": 0,
+            "write_bytes": 99397632,
+            "cancelled_write_bytes": 122880
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.174702167510986,
+          "postPhaseStartSampledPeakRssBytes": 424714240
+        }
+      },
+      "commonAliveIo": {
+        "mode": "upstream",
+        "label": "FINAL-B7-U3-32-PERF-v2",
+        "block": 3,
+        "commonFirstTime": 1794659556.4965527,
+        "commonLastTime": 1794659570.6712549,
+        "commonSpanSeconds": 14.174702167510986,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.0257179737091064,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1064501,
+            "startTicks": 21165118,
+            "ppid": 1064500,
+            "firstIo": {
+              "rchar": 37114917,
+              "wchar": 70341,
+              "syscr": 18239,
+              "syscw": 539,
+              "read_bytes": 0,
+              "write_bytes": 114688,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260278064,
+              "wchar": 101052080,
+              "syscr": 36833,
+              "syscw": 3013,
+              "read_bytes": 0,
+              "write_bytes": 2285568,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223163147,
+              "wchar": 100981739,
+              "syscr": 18594,
+              "syscw": 2474,
+              "read_bytes": 0,
+              "write_bytes": 2170880,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 553352375,
+              "wchar": 249258513,
+              "syscr": 69376,
+              "syscw": 11418,
+              "read_bytes": 0,
+              "write_bytes": 101736448,
+              "cancelled_write_bytes": 1257472
+            }
+          },
+          "1": {
+            "pid": 1064655,
+            "startTicks": 21165319,
+            "ppid": 1064501,
+            "firstIo": {
+              "rchar": 45095,
+              "wchar": 12,
+              "syscr": 61,
+              "syscw": 9,
+              "read_bytes": 0,
+              "write_bytes": 32768,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 291593796,
+              "wchar": 148234512,
+              "syscr": 32405,
+              "syscw": 8216,
+              "read_bytes": 0,
+              "write_bytes": 99274752,
+              "cancelled_write_bytes": 135168
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 291548701,
+              "wchar": 148234500,
+              "syscr": 32344,
+              "syscw": 8207,
+              "read_bytes": 0,
+              "write_bytes": 99241984,
+              "cancelled_write_bytes": 135168
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 291548701,
+              "wchar": 148234500,
+              "syscr": 32344,
+              "syscw": 8207,
+              "read_bytes": 0,
+              "write_bytes": 99241984,
+              "cancelled_write_bytes": 135168
+            }
+          },
+          "0": {
+            "pid": 1064654,
+            "startTicks": 21165318,
+            "ppid": 1064501,
+            "firstIo": {
+              "rchar": 17038,
+              "wchar": 4,
+              "syscr": 32,
+              "syscw": 1,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 291924504,
+              "wchar": 148139661,
+              "syscr": 31395,
+              "syscw": 8191,
+              "read_bytes": 0,
+              "write_bytes": 99397632,
+              "cancelled_write_bytes": 122880
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 291907466,
+              "wchar": 148139657,
+              "syscr": 31363,
+              "syscw": 8190,
+              "read_bytes": 0,
+              "write_bytes": 99397632,
+              "cancelled_write_bytes": 122880
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 291907466,
+              "wchar": 148139657,
+              "syscr": 31363,
+              "syscw": 8190,
+              "read_bytes": 0,
+              "write_bytes": 99397632,
+              "cancelled_write_bytes": 122880
+            }
+          }
+        },
+        "observerMemberSha256": "c1272f1a36a8b851beb742640cf0efca452482d14aba133701f3c8e971b3f109"
+      }
+    },
+    {
+      "label": "FINAL-B7-S4-32-PERF-v2",
+      "block": 4,
+      "mode": "streaming",
+      "sqlSeconds": 7.995252834,
+      "commitLogDurationMillis": [
+        127
+      ],
+      "commitMillis": 127,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 51.57,
+      "observedSummedJvmGcMillis": 297,
+      "taskCpuNanos": 4216151806,
+      "taskDeserializeCpuNanos": 1050552883,
+      "summedTaskGcMillis": 124,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59147,
+      "driverSampledPeakHeapBytes": 137407616,
+      "driverSampledPeakRssBytes": 594423808,
+      "largestSingleExecutorSampledPeakHeapBytes": 137385136,
+      "largestSingleExecutorSampledPeakRssBytes": 428556288,
+      "commonAliveSpanSeconds": 15.184682369232178,
+      "commonAliveSamples": 16,
+      "commonAliveMaxSampleGapSeconds": 1.026679277420044,
+      "driverCommonAliveIo": {
+        "rchar": 226350344,
+        "wchar": 101409590,
+        "syscr": 20820,
+        "syscw": 2568,
+        "read_bytes": 0,
+        "write_bytes": 2265088,
+        "cancelled_write_bytes": 28672
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1066112,
+          "startTicks": 21173136,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 137407616,
+          "sampledPeakRssBytes": 594423808,
+          "lastObservedKernelHwmBytes": 594423808,
+          "sampledPeakRssAnonBytes": 569643008,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 185,
+          "gcMillisObservedDelta": 174,
+          "gcCountLastObservedSinceJvmStart": 31,
+          "observedUtimeTicksDelta": 2297,
+          "observedStimeTicksDelta": 66,
+          "observedCpuSecondsDelta": 23.63,
+          "sampleSpanSeconds": 18.21420168876648,
+          "procIoDelta": {
+            "rchar": 263408468,
+            "wchar": 101488451,
+            "syscr": 38977,
+            "syscw": 3124,
+            "read_bytes": 0,
+            "write_bytes": 2400256,
+            "cancelled_write_bytes": 28672
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 17.20463228225708,
+          "postPhaseStartSampledPeakRssBytes": 594423808
+        },
+        "0": {
+          "pid": 1066264,
+          "startTicks": 21173333,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 79769360,
+          "sampledPeakRssBytes": 359686144,
+          "lastObservedKernelHwmBytes": 359686144,
+          "sampledPeakRssAnonBytes": 335376384,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 82,
+          "gcMillisObservedDelta": 46,
+          "gcCountLastObservedSinceJvmStart": 14,
+          "observedUtimeTicksDelta": 1153,
+          "observedStimeTicksDelta": 45,
+          "observedCpuSecondsDelta": 11.98,
+          "sampleSpanSeconds": 15.184682369232178,
+          "procIoDelta": {
+            "rchar": 292019320,
+            "wchar": 148483099,
+            "syscr": 32046,
+            "syscw": 7833,
+            "read_bytes": 0,
+            "write_bytes": 99340288,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.184682369232178,
+          "postPhaseStartSampledPeakRssBytes": 359686144
+        },
+        "1": {
+          "pid": 1066265,
+          "startTicks": 21173333,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 137385136,
+          "sampledPeakRssBytes": 428556288,
+          "lastObservedKernelHwmBytes": 447578112,
+          "sampledPeakRssAnonBytes": 404189184,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 136,
+          "gcMillisObservedDelta": 77,
+          "gcCountLastObservedSinceJvmStart": 23,
+          "observedUtimeTicksDelta": 1543,
+          "observedStimeTicksDelta": 53,
+          "observedCpuSecondsDelta": 15.96,
+          "sampleSpanSeconds": 15.184682369232178,
+          "procIoDelta": {
+            "rchar": 294260215,
+            "wchar": 148610139,
+            "syscr": 33960,
+            "syscw": 8621,
+            "read_bytes": 0,
+            "write_bytes": 99782656,
+            "cancelled_write_bytes": 245760
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.184682369232178,
+          "postPhaseStartSampledPeakRssBytes": 428556288
+        }
+      },
+      "commonAliveIo": {
+        "mode": "streaming",
+        "label": "FINAL-B7-S4-32-PERF-v2",
+        "block": 4,
+        "commonFirstTime": 1794659636.6759784,
+        "commonLastTime": 1794659651.8606608,
+        "commonSpanSeconds": 15.184682369232178,
+        "commonSamples": 16,
+        "maxCommonSampleGapSeconds": 1.026679277420044,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1066112,
+            "startTicks": 21173136,
+            "ppid": 1066111,
+            "firstIo": {
+              "rchar": 37099654,
+              "wchar": 79217,
+              "syscr": 18248,
+              "syscw": 561,
+              "read_bytes": 0,
+              "write_bytes": 135168,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 263449998,
+              "wchar": 101488807,
+              "syscr": 39068,
+              "syscw": 3129,
+              "read_bytes": 0,
+              "write_bytes": 2400256,
+              "cancelled_write_bytes": 28672
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 226350344,
+              "wchar": 101409590,
+              "syscr": 20820,
+              "syscw": 2568,
+              "read_bytes": 0,
+              "write_bytes": 2265088,
+              "cancelled_write_bytes": 28672
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 263408468,
+              "wchar": 101488451,
+              "syscr": 38977,
+              "syscw": 3124,
+              "read_bytes": 0,
+              "write_bytes": 2400256,
+              "cancelled_write_bytes": 28672
+            }
+          },
+          "0": {
+            "pid": 1066264,
+            "startTicks": 21173333,
+            "ppid": 1066112,
+            "firstIo": {
+              "rchar": 61308,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292080628,
+              "wchar": 148484905,
+              "syscr": 32114,
+              "syscw": 7861,
+              "read_bytes": 0,
+              "write_bytes": 99377152,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292019320,
+              "wchar": 148483099,
+              "syscr": 32046,
+              "syscw": 7833,
+              "read_bytes": 0,
+              "write_bytes": 99340288,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292019320,
+              "wchar": 148483099,
+              "syscr": 32046,
+              "syscw": 7833,
+              "read_bytes": 0,
+              "write_bytes": 99340288,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1066265,
+            "startTicks": 21173333,
+            "ppid": 1066112,
+            "firstIo": {
+              "rchar": 61308,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 49152,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 294321523,
+              "wchar": 148611945,
+              "syscr": 34028,
+              "syscw": 8649,
+              "read_bytes": 0,
+              "write_bytes": 99831808,
+              "cancelled_write_bytes": 245760
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 294260215,
+              "wchar": 148610139,
+              "syscr": 33960,
+              "syscw": 8621,
+              "read_bytes": 0,
+              "write_bytes": 99782656,
+              "cancelled_write_bytes": 245760
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 294260215,
+              "wchar": 148610139,
+              "syscr": 33960,
+              "syscw": 8621,
+              "read_bytes": 0,
+              "write_bytes": 99782656,
+              "cancelled_write_bytes": 245760
+            }
+          }
+        },
+        "observerMemberSha256": "5f479bceb0ba5083d64691bf41f51c5927f02f5aa533473d66620106dda930c4"
+      }
+    },
+    {
+      "label": "FINAL-B7-U4-32-PERF-v2",
+      "block": 4,
+      "mode": "upstream",
+      "sqlSeconds": 7.914079115,
+      "commitLogDurationMillis": [
+        74
+      ],
+      "commitMillis": 74,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 51.6,
+      "observedSummedJvmGcMillis": 320,
+      "taskCpuNanos": 4298830590,
+      "taskDeserializeCpuNanos": 1087369425,
+      "summedTaskGcMillis": 164,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59260,
+      "driverSampledPeakHeapBytes": 132692992,
+      "driverSampledPeakRssBytes": 613105664,
+      "largestSingleExecutorSampledPeakHeapBytes": 115230344,
+      "largestSingleExecutorSampledPeakRssBytes": 408350720,
+      "commonAliveSpanSeconds": 14.141464948654175,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.013218641281128,
+      "driverCommonAliveIo": {
+        "rchar": 223040528,
+        "wchar": 101000673,
+        "syscr": 18505,
+        "syscw": 2287,
+        "read_bytes": 0,
+        "write_bytes": 2138112,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1067533,
+          "startTicks": 21176981,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 132692992,
+          "sampledPeakRssBytes": 613105664,
+          "lastObservedKernelHwmBytes": 614289408,
+          "sampledPeakRssAnonBytes": 588476416,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 162,
+          "gcMillisObservedDelta": 152,
+          "gcCountLastObservedSinceJvmStart": 26,
+          "observedUtimeTicksDelta": 2169,
+          "observedStimeTicksDelta": 57,
+          "observedCpuSecondsDelta": 22.26,
+          "sampleSpanSeconds": 18.183850526809692,
+          "procIoDelta": {
+            "rchar": 260607997,
+            "wchar": 101138241,
+            "syscr": 37152,
+            "syscw": 3003,
+            "read_bytes": 0,
+            "write_bytes": 2318336,
+            "cancelled_write_bytes": 4096
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 17.176458835601807,
+          "postPhaseStartSampledPeakRssBytes": 613105664
+        },
+        "0": {
+          "pid": 1067706,
+          "startTicks": 21177176,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 115230344,
+          "sampledPeakRssBytes": 408350720,
+          "lastObservedKernelHwmBytes": 408350720,
+          "sampledPeakRssAnonBytes": 384077824,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 116,
+          "gcMillisObservedDelta": 75,
+          "gcCountLastObservedSinceJvmStart": 20,
+          "observedUtimeTicksDelta": 1310,
+          "observedStimeTicksDelta": 45,
+          "observedCpuSecondsDelta": 13.55,
+          "sampleSpanSeconds": 15.154700517654419,
+          "procIoDelta": {
+            "rchar": 291359721,
+            "wchar": 148165730,
+            "syscr": 30692,
+            "syscw": 8034,
+            "read_bytes": 0,
+            "write_bytes": 99221504,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 14.141464948654175,
+          "postPhaseStartSampledPeakRssBytes": 408350720
+        },
+        "1": {
+          "pid": 1067707,
+          "startTicks": 21177176,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 74677776,
+          "sampledPeakRssBytes": 397111296,
+          "lastObservedKernelHwmBytes": 397217792,
+          "sampledPeakRssAnonBytes": 372654080,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 133,
+          "gcMillisObservedDelta": 93,
+          "gcCountLastObservedSinceJvmStart": 23,
+          "observedUtimeTicksDelta": 1526,
+          "observedStimeTicksDelta": 53,
+          "observedCpuSecondsDelta": 15.79,
+          "sampleSpanSeconds": 15.154700517654419,
+          "procIoDelta": {
+            "rchar": 293384908,
+            "wchar": 148203524,
+            "syscr": 34588,
+            "syscw": 8621,
+            "read_bytes": 0,
+            "write_bytes": 99389440,
+            "cancelled_write_bytes": 270336
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 15.154700517654419,
+          "postPhaseStartSampledPeakRssBytes": 397111296
+        }
+      },
+      "commonAliveIo": {
+        "mode": "upstream",
+        "label": "FINAL-B7-U4-32-PERF-v2",
+        "block": 4,
+        "commonFirstTime": 1794659675.136135,
+        "commonLastTime": 1794659689.2776,
+        "commonSpanSeconds": 14.141464948654175,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.013218641281128,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1067533,
+            "startTicks": 21176981,
+            "ppid": 1067532,
+            "firstIo": {
+              "rchar": 37241467,
+              "wchar": 80772,
+              "syscr": 18328,
+              "syscw": 580,
+              "read_bytes": 0,
+              "write_bytes": 135168,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260281995,
+              "wchar": 101081445,
+              "syscr": 36833,
+              "syscw": 2867,
+              "read_bytes": 0,
+              "write_bytes": 2273280,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223040528,
+              "wchar": 101000673,
+              "syscr": 18505,
+              "syscw": 2287,
+              "read_bytes": 0,
+              "write_bytes": 2138112,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260607997,
+              "wchar": 101138241,
+              "syscr": 37152,
+              "syscw": 3003,
+              "read_bytes": 0,
+              "write_bytes": 2318336,
+              "cancelled_write_bytes": 4096
+            }
+          },
+          "0": {
+            "pid": 1067706,
+            "startTicks": 21177176,
+            "ppid": 1067533,
+            "firstIo": {
+              "rchar": 61308,
+              "wchar": 1806,
+              "syscr": 68,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 291421029,
+              "wchar": 148167536,
+              "syscr": 30760,
+              "syscw": 8062,
+              "read_bytes": 0,
+              "write_bytes": 99258368,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 291359721,
+              "wchar": 148165730,
+              "syscr": 30692,
+              "syscw": 8034,
+              "read_bytes": 0,
+              "write_bytes": 99221504,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 291359721,
+              "wchar": 148165730,
+              "syscr": 30692,
+              "syscw": 8034,
+              "read_bytes": 0,
+              "write_bytes": 99221504,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1067707,
+            "startTicks": 21177176,
+            "ppid": 1067533,
+            "firstIo": {
+              "rchar": 147569,
+              "wchar": 1806,
+              "syscr": 124,
+              "syscw": 28,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 291758137,
+              "wchar": 148177620,
+              "syscr": 32672,
+              "syscw": 8478,
+              "read_bytes": 0,
+              "write_bytes": 99414016,
+              "cancelled_write_bytes": 258048
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 291610568,
+              "wchar": 148175814,
+              "syscr": 32548,
+              "syscw": 8450,
+              "read_bytes": 0,
+              "write_bytes": 99377152,
+              "cancelled_write_bytes": 258048
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 293384908,
+              "wchar": 148203524,
+              "syscr": 34588,
+              "syscw": 8621,
+              "read_bytes": 0,
+              "write_bytes": 99389440,
+              "cancelled_write_bytes": 270336
+            }
+          }
+        },
+        "observerMemberSha256": "f5a0f2eb271e018805325a9541c335f62f9f36d5938e48fe8492f7af7de43bba"
+      }
+    },
+    {
+      "label": "FINAL-B7-L4-32-PERF-v2",
+      "block": 4,
+      "mode": "lightweight",
+      "sqlSeconds": 7.727028239,
+      "commitLogDurationMillis": [
+        131
+      ],
+      "commitMillis": 131,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 48.56,
+      "observedSummedJvmGcMillis": 314,
+      "taskCpuNanos": 4201558587,
+      "taskDeserializeCpuNanos": 1109814842,
+      "summedTaskGcMillis": 149,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59066,
+      "driverSampledPeakHeapBytes": 118823312,
+      "driverSampledPeakRssBytes": 539975680,
+      "largestSingleExecutorSampledPeakHeapBytes": 135250512,
+      "largestSingleExecutorSampledPeakRssBytes": 392814592,
+      "commonAliveSpanSeconds": 14.160420656204224,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.0204401016235352,
+      "driverCommonAliveIo": {
+        "rchar": 223707287,
+        "wchar": 101326357,
+        "syscr": 18602,
+        "syscw": 2582,
+        "read_bytes": 0,
+        "write_bytes": 2158592,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1069029,
+          "startTicks": 21180932,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 118823312,
+          "sampledPeakRssBytes": 539975680,
+          "lastObservedKernelHwmBytes": 539975680,
+          "sampledPeakRssAnonBytes": 515235840,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 167,
+          "gcMillisObservedDelta": 156,
+          "gcCountLastObservedSinceJvmStart": 31,
+          "observedUtimeTicksDelta": 2259,
+          "observedStimeTicksDelta": 64,
+          "observedCpuSecondsDelta": 23.23,
+          "sampleSpanSeconds": 17.19425392150879,
+          "procIoDelta": {
+            "rchar": 260600930,
+            "wchar": 101399703,
+            "syscr": 36456,
+            "syscw": 3124,
+            "read_bytes": 0,
+            "write_bytes": 2289664,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.18682098388672,
+          "postPhaseStartSampledPeakRssBytes": 539975680
+        },
+        "0": {
+          "pid": 1069184,
+          "startTicks": 21181132,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 84924952,
+          "sampledPeakRssBytes": 392814592,
+          "lastObservedKernelHwmBytes": 392814592,
+          "sampledPeakRssAnonBytes": 368480256,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 131,
+          "gcMillisObservedDelta": 99,
+          "gcCountLastObservedSinceJvmStart": 21,
+          "observedUtimeTicksDelta": 1259,
+          "observedStimeTicksDelta": 47,
+          "observedCpuSecondsDelta": 13.06,
+          "sampleSpanSeconds": 14.160420656204224,
+          "procIoDelta": {
+            "rchar": 292331779,
+            "wchar": 148545652,
+            "syscr": 31599,
+            "syscw": 8263,
+            "read_bytes": 0,
+            "write_bytes": 99622912,
+            "cancelled_write_bytes": 270336
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.160420656204224,
+          "postPhaseStartSampledPeakRssBytes": 392814592
+        },
+        "1": {
+          "pid": 1069185,
+          "startTicks": 21181132,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 135250512,
+          "sampledPeakRssBytes": 389951488,
+          "lastObservedKernelHwmBytes": 389951488,
+          "sampledPeakRssAnonBytes": 365633536,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 117,
+          "gcMillisObservedDelta": 59,
+          "gcCountLastObservedSinceJvmStart": 20,
+          "observedUtimeTicksDelta": 1182,
+          "observedStimeTicksDelta": 45,
+          "observedCpuSecondsDelta": 12.27,
+          "sampleSpanSeconds": 14.160420656204224,
+          "procIoDelta": {
+            "rchar": 292378387,
+            "wchar": 148520092,
+            "syscr": 31991,
+            "syscw": 8159,
+            "read_bytes": 0,
+            "write_bytes": 99495936,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.160420656204224,
+          "postPhaseStartSampledPeakRssBytes": 389951488
+        }
+      },
+      "commonAliveIo": {
+        "mode": "lightweight",
+        "label": "FINAL-B7-L4-32-PERF-v2",
+        "block": 4,
+        "commonFirstTime": 1794659714.647448,
+        "commonLastTime": 1794659728.8078687,
+        "commonSpanSeconds": 14.160420656204224,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.0204401016235352,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1069029,
+            "startTicks": 21180932,
+            "ppid": 1069028,
+            "firstIo": {
+              "rchar": 37140362,
+              "wchar": 73705,
+              "syscr": 18262,
+              "syscw": 548,
+              "read_bytes": 0,
+              "write_bytes": 131072,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260847649,
+              "wchar": 101400062,
+              "syscr": 36864,
+              "syscw": 3130,
+              "read_bytes": 0,
+              "write_bytes": 2289664,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223707287,
+              "wchar": 101326357,
+              "syscr": 18602,
+              "syscw": 2582,
+              "read_bytes": 0,
+              "write_bytes": 2158592,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260600930,
+              "wchar": 101399703,
+              "syscr": 36456,
+              "syscw": 3124,
+              "read_bytes": 0,
+              "write_bytes": 2289664,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "0": {
+            "pid": 1069184,
+            "startTicks": 21181132,
+            "ppid": 1069029,
+            "firstIo": {
+              "rchar": 45095,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292376874,
+              "wchar": 148545722,
+              "syscr": 31660,
+              "syscw": 8273,
+              "read_bytes": 0,
+              "write_bytes": 99659776,
+              "cancelled_write_bytes": 270336
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292331779,
+              "wchar": 148545652,
+              "syscr": 31599,
+              "syscw": 8263,
+              "read_bytes": 0,
+              "write_bytes": 99622912,
+              "cancelled_write_bytes": 270336
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292331779,
+              "wchar": 148545652,
+              "syscr": 31599,
+              "syscw": 8263,
+              "read_bytes": 0,
+              "write_bytes": 99622912,
+              "cancelled_write_bytes": 270336
+            }
+          },
+          "1": {
+            "pid": 1069185,
+            "startTicks": 21181132,
+            "ppid": 1069029,
+            "firstIo": {
+              "rchar": 45095,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 45056,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292423482,
+              "wchar": 148520162,
+              "syscr": 32052,
+              "syscw": 8169,
+              "read_bytes": 0,
+              "write_bytes": 99540992,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292378387,
+              "wchar": 148520092,
+              "syscr": 31991,
+              "syscw": 8159,
+              "read_bytes": 0,
+              "write_bytes": 99495936,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292378387,
+              "wchar": 148520092,
+              "syscr": 31991,
+              "syscw": 8159,
+              "read_bytes": 0,
+              "write_bytes": 99495936,
+              "cancelled_write_bytes": 0
+            }
+          }
+        },
+        "observerMemberSha256": "3914823853735e125c874c79e47b163f5435230cffe4633b92d40aa2277ac3de"
+      }
+    },
+    {
+      "label": "FINAL-B7-F4-32-PERF-v2",
+      "block": 4,
+      "mode": "off",
+      "sqlSeconds": 7.753153505,
+      "commitLogDurationMillis": [
+        68
+      ],
+      "commitMillis": 68,
+      "taskEnds": 14,
+      "observedWholeJvmCpuSeconds": 49.03,
+      "observedSummedJvmGcMillis": 286,
+      "taskCpuNanos": 4363066962,
+      "taskDeserializeCpuNanos": 1119037164,
+      "summedTaskGcMillis": 143,
+      "shuffleWriteBytes": 4411,
+      "sparkDiskBytesSpilled": 0,
+      "sparkMemoryBytesSpilled": 0,
+      "sparkResultSizeBytes": 59290,
+      "driverSampledPeakHeapBytes": 171371592,
+      "driverSampledPeakRssBytes": 604561408,
+      "largestSingleExecutorSampledPeakHeapBytes": 135102040,
+      "largestSingleExecutorSampledPeakRssBytes": 414027776,
+      "commonAliveSpanSeconds": 14.15455174446106,
+      "commonAliveSamples": 15,
+      "commonAliveMaxSampleGapSeconds": 1.0164954662322998,
+      "driverCommonAliveIo": {
+        "rchar": 223721115,
+        "wchar": 101322414,
+        "syscr": 18606,
+        "syscw": 2389,
+        "read_bytes": 0,
+        "write_bytes": 2154496,
+        "cancelled_write_bytes": 0
+      },
+      "allJvms": {
+        "driver": {
+          "pid": 1070550,
+          "startTicks": 21184610,
+          "heapMax": 1073741824,
+          "sampledPeakHeapBytes": 171371592,
+          "sampledPeakRssBytes": 604561408,
+          "lastObservedKernelHwmBytes": 604561408,
+          "sampledPeakRssAnonBytes": 579633152,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 148,
+          "gcMillisObservedDelta": 138,
+          "gcCountLastObservedSinceJvmStart": 28,
+          "observedUtimeTicksDelta": 2214,
+          "observedStimeTicksDelta": 56,
+          "observedCpuSecondsDelta": 22.7,
+          "sampleSpanSeconds": 17.191795110702515,
+          "procIoDelta": {
+            "rchar": 260852632,
+            "wchar": 101395772,
+            "syscr": 36795,
+            "syscw": 2935,
+            "read_bytes": 0,
+            "write_bytes": 2277376,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 1,
+          "procIoSampleSpanSeconds": 16.184875965118408,
+          "postPhaseStartSampledPeakRssBytes": 604561408
+        },
+        "1": {
+          "pid": 1070708,
+          "startTicks": 21184811,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 135102040,
+          "sampledPeakRssBytes": 414027776,
+          "lastObservedKernelHwmBytes": 414027776,
+          "sampledPeakRssAnonBytes": 389738496,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 108,
+          "gcMillisObservedDelta": 69,
+          "gcCountLastObservedSinceJvmStart": 19,
+          "observedUtimeTicksDelta": 1279,
+          "observedStimeTicksDelta": 47,
+          "observedCpuSecondsDelta": 13.26,
+          "sampleSpanSeconds": 14.15455174446106,
+          "procIoDelta": {
+            "rchar": 292762923,
+            "wchar": 148525223,
+            "syscr": 30993,
+            "syscw": 8129,
+            "read_bytes": 0,
+            "write_bytes": 99504128,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.15455174446106,
+          "postPhaseStartSampledPeakRssBytes": 414027776
+        },
+        "0": {
+          "pid": 1070711,
+          "startTicks": 21184811,
+          "heapMax": 536870912,
+          "sampledPeakHeapBytes": 82964672,
+          "sampledPeakRssBytes": 357392384,
+          "lastObservedKernelHwmBytes": 357392384,
+          "sampledPeakRssAnonBytes": 333373440,
+          "sampledPeakSwapBytes": 0,
+          "gcMillisLastObservedSinceJvmStart": 128,
+          "gcMillisObservedDelta": 79,
+          "gcCountLastObservedSinceJvmStart": 22,
+          "observedUtimeTicksDelta": 1268,
+          "observedStimeTicksDelta": 39,
+          "observedCpuSecondsDelta": 13.07,
+          "sampleSpanSeconds": 14.15455174446106,
+          "procIoDelta": {
+            "rchar": 291745792,
+            "wchar": 148550373,
+            "syscr": 32276,
+            "syscw": 8349,
+            "read_bytes": 0,
+            "write_bytes": 99659776,
+            "cancelled_write_bytes": 0
+          },
+          "procIoUnavailableSamples": 0,
+          "procIoSampleSpanSeconds": 14.15455174446106,
+          "postPhaseStartSampledPeakRssBytes": 357392384
+        }
+      },
+      "commonAliveIo": {
+        "mode": "off",
+        "label": "FINAL-B7-F4-32-PERF-v2",
+        "block": 4,
+        "commonFirstTime": 1794659751.4317837,
+        "commonLastTime": 1794659765.5863354,
+        "commonSpanSeconds": 14.15455174446106,
+        "commonSamples": 15,
+        "maxCommonSampleGapSeconds": 1.0164954662322998,
+        "observedExecutorParentsAreDriver": true,
+        "processes": {
+          "driver": {
+            "pid": 1070550,
+            "startTicks": 21184610,
+            "ppid": 1070542,
+            "firstIo": {
+              "rchar": 37173047,
+              "wchar": 73714,
+              "syscr": 18280,
+              "syscw": 551,
+              "read_bytes": 0,
+              "write_bytes": 122880,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 260894162,
+              "wchar": 101396128,
+              "syscr": 36886,
+              "syscw": 2940,
+              "read_bytes": 0,
+              "write_bytes": 2277376,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 223721115,
+              "wchar": 101322414,
+              "syscr": 18606,
+              "syscw": 2389,
+              "read_bytes": 0,
+              "write_bytes": 2154496,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 260852632,
+              "wchar": 101395772,
+              "syscr": 36795,
+              "syscw": 2935,
+              "read_bytes": 0,
+              "write_bytes": 2277376,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "1": {
+            "pid": 1070708,
+            "startTicks": 21184811,
+            "ppid": 1070550,
+            "firstIo": {
+              "rchar": 45095,
+              "wchar": 70,
+              "syscr": 61,
+              "syscw": 10,
+              "read_bytes": 0,
+              "write_bytes": 36864,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 292808018,
+              "wchar": 148525293,
+              "syscr": 31054,
+              "syscw": 8139,
+              "read_bytes": 0,
+              "write_bytes": 99540992,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 292762923,
+              "wchar": 148525223,
+              "syscr": 30993,
+              "syscw": 8129,
+              "read_bytes": 0,
+              "write_bytes": 99504128,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 292762923,
+              "wchar": 148525223,
+              "syscr": 30993,
+              "syscw": 8129,
+              "read_bytes": 0,
+              "write_bytes": 99504128,
+              "cancelled_write_bytes": 0
+            }
+          },
+          "0": {
+            "pid": 1070711,
+            "startTicks": 21184811,
+            "ppid": 1070550,
+            "firstIo": {
+              "rchar": 17038,
+              "wchar": 4,
+              "syscr": 32,
+              "syscw": 1,
+              "read_bytes": 0,
+              "write_bytes": 0,
+              "cancelled_write_bytes": 0
+            },
+            "lastIo": {
+              "rchar": 291762830,
+              "wchar": 148550377,
+              "syscr": 32308,
+              "syscw": 8350,
+              "read_bytes": 0,
+              "write_bytes": 99659776,
+              "cancelled_write_bytes": 0
+            },
+            "commonIntervalIoDelta": {
+              "rchar": 291745792,
+              "wchar": 148550373,
+              "syscr": 32276,
+              "syscw": 8349,
+              "read_bytes": 0,
+              "write_bytes": 99659776,
+              "cancelled_write_bytes": 0
+            },
+            "originalLifetimeIoDelta": {
+              "rchar": 291745792,
+              "wchar": 148550373,
+              "syscr": 32276,
+              "syscw": 8349,
+              "read_bytes": 0,
+              "write_bytes": 99659776,
+              "cancelled_write_bytes": 0
+            }
+          }
+        },
+        "observerMemberSha256": "f7388410a9c919d34e5ab49f2460e42cf2cfa99340ca7029e207b17e2c3cde24"
+      }
+    }
+  ],
+  "scopeNotes": [
+    "Single-host multiple JVMs, not a multiple-node cluster. Four samples per mode do not establish p95 or significance.",
+    "SQL uses the helper monotonic API-call timer. CPU, GC and heap/RSS summarize sampled JVM lifetime, including setup/probe/shutdown.",
+    "Executor peaks denote the largest individual Executor, never the sum of independent peaks. Sampled maxima can miss true peaks.",
+    "Proc IO can include waited-for children. Common-live intervals use all three JVM identities together; not exact SQL or connector-local IO.",
+    "rchar/wchar include read/write-family operations and are not disk-only or network-only byte counters. Do not sum raw parent/child IO.",
+    "Spark spill excludes connector-local sorting/replay; Spark resultSize is not raw commit-message bytes. Isolated encoding CPU is unavailable.",
+    "Zero Spark input bytes or OS storage-read bytes does not imply no data was read; custom IO and page cache affect these counters."
+  ]
+}
