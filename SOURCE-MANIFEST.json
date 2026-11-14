@@ -1,0 +1,42 @@
+{
+  "files": [
+    {
+      "path": "bench.py",
+      "sha256": "68a21fe162fa830dc3fcc0e39d012750cf9cf121cbe76fe79d220bfd9f13bb5b",
+      "byteIdenticalToExistingHarness": true
+    },
+    {
+      "path": "build-helper.sh",
+      "sha256": "3d13d48224bd2c011f641996fa2b3b1a9e35318af91cad2ce21a3b00e0705f75",
+      "byteIdenticalToExistingHarness": true
+    },
+    {
+      "path": "CommitMemoryBench.java",
+      "sha256": "f5a5053e9fc9f6cedd31578e66bde24e8e70463b00242deb4133a27da0a539ec",
+      "byteIdenticalToExistingHarness": true
+    }
+  ],
+  "assembledKitExecutionClaim": false,
+  "existingHelperAndControllerReused": true,
+  "finalCapacityAndPerformanceResultsPending": true,
+  "readme": {
+    "path": "README.md",
+    "sha256": "83610902ee77c7b38dd7f67cebfc15b2ee2e61f21f981bd7125f81823bf5bd13",
+    "actualExperimentAndNewSeedDistinguished": true
+  },
+  "fixtureSdkOrigin": "d98f08784c2cf9aed42cc759b3f9c1b3c9bec628",
+  "runtimeBaseline": "b7cfb397de334d56b8c3eaeb60a2cfa9c9cab627",
+  "generatorMethodsByteIdenticalToOriginal28714Source": true,
+  "results": [
+    {
+      "path": "RESULTS.md",
+      "sha256": "61f1d30910ef7546e65d596b73f21ce52184cfd7785be42372aff063e25c2aa3"
+    },
+    {
+      "path": "sql-results-32.json",
+      "sha256": "410d2646ba853f2c199979ce6bf7559bfdab31cb9b8b30b69d6406b55d74b410"
+    }
+  ],
+  "capacityAnd32FileResultsAccepted": true,
+  "remaining65536PerformancePending": true
+}

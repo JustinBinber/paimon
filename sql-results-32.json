@@ -1,0 +1,190 @@
+{
+  "utc": 1794659914.2545252,
+  "files": 32,
+  "all16MeasuredRunsAndFiveChecksPassed": true,
+  "balancedFourWilliamsBlocks": true,
+  "pilotsExcluded": true,
+  "allSamplesRetained": true,
+  "rows": [
+    {
+      "mode": "upstream",
+      "rawSeconds": [
+        7.642550046,
+        8.069579576,
+        7.987305058,
+        7.914079115
+      ],
+      "medianSeconds": 7.9506920865,
+      "minSeconds": 7.642550046,
+      "maxSeconds": 8.069579576,
+      "ratioOfMediansPercent": 0.0,
+      "pairedBlockOverheadPercents": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "medianPairedOverheadPercent": 0.0
+    },
+    {
+      "mode": "off",
+      "rawSeconds": [
+        7.722187372,
+        8.025444726,
+        7.594872604,
+        7.753153505
+      ],
+      "medianSeconds": 7.7376704385,
+      "minSeconds": 7.594872604,
+      "maxSeconds": 8.025444726,
+      "ratioOfMediansPercent": -2.679284340060195,
+      "pairedBlockOverheadPercents": [
+        1.042025574195371,
+        -0.546928741260122,
+        -4.913202277242979,
+        -2.033409164371236
+      ],
+      "medianPairedOverheadPercent": -1.290168952815679
+    },
+    {
+      "mode": "lightweight",
+      "rawSeconds": [
+        7.873958831,
+        7.450485943,
+        7.908746831,
+        7.727028239
+      ],
+      "medianSeconds": 7.800493535,
+      "minSeconds": 7.450485943,
+      "maxSeconds": 7.908746831,
+      "ratioOfMediansPercent": -1.8891254983327999,
+      "pairedBlockOverheadPercents": [
+        3.0279001590721277,
+        -7.671944085430016,
+        -0.9835385831584831,
+        -2.36352042078366
+      ],
+      "medianPairedOverheadPercent": -1.6735295019710716
+    },
+    {
+      "mode": "streaming",
+      "rawSeconds": [
+        8.515053314,
+        8.171018948,
+        7.858951911,
+        7.995252834
+      ],
+      "medianSeconds": 8.083135891000001,
+      "minSeconds": 7.858951911,
+      "maxSeconds": 8.515053314,
+      "ratioOfMediansPercent": 1.6658147876822627,
+      "pairedBlockOverheadPercents": [
+        11.416389330111798,
+        1.2570589464374837,
+        -1.606964377445963,
+        1.0256874845507635
+      ],
+      "medianPairedOverheadPercent": 1.1413732154941236
+    }
+  ],
+  "samples": [
+    {
+      "block": 1,
+      "mode": "upstream",
+      "label": "FINAL-B7-U1-32-PERF-v2",
+      "seconds": 7.642550046
+    },
+    {
+      "block": 1,
+      "mode": "off",
+      "label": "FINAL-B7-F1-32-PERF-v2",
+      "seconds": 7.722187372
+    },
+    {
+      "block": 1,
+      "mode": "streaming",
+      "label": "FINAL-B7-S1-32-PERF-v2",
+      "seconds": 8.515053314
+    },
+    {
+      "block": 1,
+      "mode": "lightweight",
+      "label": "FINAL-B7-L1-32-PERF-v2",
+      "seconds": 7.873958831
+    },
+    {
+      "block": 2,
+      "mode": "off",
+      "label": "FINAL-B7-F2-32-PERF-v2",
+      "seconds": 8.025444726
+    },
+    {
+      "block": 2,
+      "mode": "lightweight",
+      "label": "FINAL-B7-L2-32-PERF-v2",
+      "seconds": 7.450485943
+    },
+    {
+      "block": 2,
+      "mode": "upstream",
+      "label": "FINAL-B7-U2-32-PERF-v2",
+      "seconds": 8.069579576
+    },
+    {
+      "block": 2,
+      "mode": "streaming",
+      "label": "FINAL-B7-S2-32-PERF-v2",
+      "seconds": 8.171018948
+    },
+    {
+      "block": 3,
+      "mode": "lightweight",
+      "label": "FINAL-B7-L3-32-PERF-v2",
+      "seconds": 7.908746831
+    },
+    {
+      "block": 3,
+      "mode": "streaming",
+      "label": "FINAL-B7-S3-32-PERF-v2",
+      "seconds": 7.858951911
+    },
+    {
+      "block": 3,
+      "mode": "off",
+      "label": "FINAL-B7-F3-32-PERF-v2",
+      "seconds": 7.594872604
+    },
+    {
+      "block": 3,
+      "mode": "upstream",
+      "label": "FINAL-B7-U3-32-PERF-v2",
+      "seconds": 7.987305058
+    },
+    {
+      "block": 4,
+      "mode": "streaming",
+      "label": "FINAL-B7-S4-32-PERF-v2",
+      "seconds": 7.995252834
+    },
+    {
+      "block": 4,
+      "mode": "upstream",
+      "label": "FINAL-B7-U4-32-PERF-v2",
+      "seconds": 7.914079115
+    },
+    {
+      "block": 4,
+      "mode": "lightweight",
+      "label": "FINAL-B7-L4-32-PERF-v2",
+      "seconds": 7.727028239
+    },
+    {
+      "block": 4,
+      "mode": "off",
+      "label": "FINAL-B7-F4-32-PERF-v2",
+      "seconds": 7.753153505
+    }
+  ],
+  "large65536StillPending": true,
+  "noP95Claim": true
+}
