@@ -1,0 +1,58 @@
+{
+  "build_helpers.py": {
+    "bytes": 2168,
+    "sha256": "328cdba85201125982372c522738f37f824fc703c6d745b48a22b08ca5428c03"
+  },
+  "calibrate.py": {
+    "bytes": 3063,
+    "sha256": "962ed812b5f58c64fd763f80427870a608f7eccf60b28022374f07ce2e1045a0"
+  },
+  "CommitMemoryBench.java": {
+    "bytes": 28032,
+    "sha256": "7eb8d4a1991e6df3a5ec5c993d3a1684d352b9236edaf5b395c7d287cb118643"
+  },
+  "CountingCatalogFactory.java": {
+    "bytes": 7075,
+    "sha256": "36f02892d8e7edc549fe222f925c3a90f5c6d94b878b75cf9cdad9a95c285dc4"
+  },
+  "experiment.py": {
+    "bytes": 16773,
+    "sha256": "0c24a57bb6956194a8be7d37280e9c44ad112cf2bdc594b42352764a261e5f13"
+  },
+  "NarrowInspect.java": {
+    "bytes": 3260,
+    "sha256": "5138a6a8c0a02ff2abafdd90fc994de5109f30a573c524bf2231b2b33ac8f104"
+  },
+  "NarrowMetrics.java": {
+    "bytes": 2561,
+    "sha256": "fada6128f172c902034742f7bbbb0d79c2ccd130c7f086cab182affb8d8ae995"
+  },
+  "README.md": {
+    "bytes": 7526,
+    "sha256": "f411147914b978f7805404b869985c4e86d0d6dcff873f80ddcb6555b8c0cede"
+  },
+  "run.py": {
+    "bytes": 19432,
+    "sha256": "1474f7881f7ef13048861655f995e906df661e28e4fc29694191a0d54926b20c"
+  },
+  "samples.csv": {
+    "bytes": 3123,
+    "sha256": "ba17050a536860896b0586eba89268679089e7246a7851534a261e8f5156c843"
+  },
+  "spec.py": {
+    "bytes": 8475,
+    "sha256": "421375cf548ba2875f2b7d9427e195b1ff27a4d5a2fa55ba333ab46f87dcff2b"
+  },
+  "validation-summary.json": {
+    "bytes": 5253,
+    "sha256": "ae2454dd8e191bf5286881248101af5241e9a359ce956d10bc77d69064f4bc46"
+  },
+  "META-INF/services/org.apache.paimon.catalog.CatalogFactory": {
+    "bytes": 30,
+    "sha256": "79b363b65aa8b096a9870a1d39249aa5988bd5c10843dd21adedc140e025924b"
+  },
+  "META-INF/services/org.apache.paimon.factories.Factory": {
+    "bytes": 30,
+    "sha256": "79b363b65aa8b096a9870a1d39249aa5988bd5c10843dd21adedc140e025924b"
+  }
+}

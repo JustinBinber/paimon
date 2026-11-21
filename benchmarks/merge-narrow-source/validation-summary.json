@@ -1,0 +1,172 @@
+{
+  "sourceCommit": "4964431e3d56e161dd29cf87fe3920dd6881a6c2",
+  "sdkSHA256": "84ce790f3861581bae33275c39a56c4598e1871c31000f03aa1f93d5e6e04a6d",
+  "syntheticDataOnly": true,
+  "samples": [
+    {
+      "name": "insert90-F",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    },
+    {
+      "name": "insert90-R",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    },
+    {
+      "name": "insert90-N",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    },
+    {
+      "name": "insert100-R",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    },
+    {
+      "name": "insert100-N",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    },
+    {
+      "name": "insert100-F",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    },
+    {
+      "name": "insert90-idpayload-N",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    },
+    {
+      "name": "insert90-idpayload-F",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    },
+    {
+      "name": "insert90-idpayload-R",
+      "checks": {
+        "singleSnapshot": true,
+        "fullMultiset": true,
+        "oldRowIDs": true,
+        "allRowIDDomain": true,
+        "newRowIDDomain": true,
+        "sourceFullMultiset": true,
+        "sourceInventory": true,
+        "oldPairsInventory": true,
+        "fileLayout": true
+      },
+      "spark": "3.5.9",
+      "snapshotBefore": 32,
+      "snapshotAfter": 33
+    }
+  ],
+  "sourceFileHashes": {
+    "spec.py": "ed5824ca4edb08db2cecbb07c20d2fa6a61a7b392217352ac58e4f444f2d7746",
+    "run.py": "1474f7881f7ef13048861655f995e906df661e28e4fc29694191a0d54926b20c",
+    "experiment.py": "0c24a57bb6956194a8be7d37280e9c44ad112cf2bdc594b42352764a261e5f13",
+    "calibrate.py": "962ed812b5f58c64fd763f80427870a608f7eccf60b28022374f07ce2e1045a0",
+    "build_helpers.py": "328cdba85201125982372c522738f37f824fc703c6d745b48a22b08ca5428c03",
+    "NarrowMetrics.java": "fada6128f172c902034742f7bbbb0d79c2ccd130c7f086cab182affb8d8ae995",
+    "NarrowInspect.java": "5138a6a8c0a02ff2abafdd90fc994de5109f30a573c524bf2231b2b33ac8f104",
+    "CountingCatalogFactory.java": "36f02892d8e7edc549fe222f925c3a90f5c6d94b878b75cf9cdad9a95c285dc4",
+    "CommitMemoryBench.java": "7eb8d4a1991e6df3a5ec5c993d3a1684d352b9236edaf5b395c7d287cb118643"
+  },
+  "derivedSourceChange": "Only default seed path is replaced by PAIMON_BENCH_SEED/explicit --seed; metrics and workload unchanged."
+}
